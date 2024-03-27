@@ -1,0 +1,97 @@
+/**
+ * VDM created from one_link.urdf on Sun Mar 03 16:10:12 GMT 2024
+ * DO NOT EDIT!
+ */
+values
+  one_link_urdf =
+  mk_Element
+  (
+    "robot",
+    [
+      mk_Attribute("name", "one_link")
+    ],
+    [
+      mk_Element
+      (
+        "link",
+        [
+          mk_Attribute("name", "link1")
+        ],
+        [
+          mk_Element
+          (
+            "inertial",
+            [],
+            [
+              mk_Element
+              (
+                "mass",
+                [
+                  mk_Attribute("value", 1)
+                ],
+                []
+              ),
+              mk_Element
+              (
+                "inertia",
+                [
+                  mk_Attribute("ixx", 1),
+                  mk_Attribute("iyy", 1),
+                  mk_Attribute("izz", 1),
+                  mk_Attribute("ixz", 0),
+                  mk_Attribute("ixy", 0),
+                  mk_Attribute("iyz", 0)
+                ],
+                []
+              )
+            ]
+          ),
+          mk_Element
+          (
+            "visual",
+            [],
+            [
+              mk_Element
+              (
+                "geometry",
+                [],
+                [
+                  mk_Element
+                  (
+                    "box",
+                    [
+                      mk_Attribute("size", [1, 1, 1])
+                    ],
+                    []
+                  )
+                ]
+              )
+            ]
+          ),
+          mk_Element
+          (
+            "collision",
+            [],
+            [
+              mk_Element
+              (
+                "geometry",
+                [],
+                [
+                  mk_Element
+                  (
+                    "box",
+                    [
+                      mk_Attribute("size", [1, 1, 1])
+                    ],
+                    []
+                  )
+                ]
+              )
+            ]
+          )
+        ]
+      )
+    ]
+  );
+

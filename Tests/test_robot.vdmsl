@@ -1,0 +1,2297 @@
+/**
+ * VDM created from test_robot.urdf on Sun Mar 03 16:10:13 GMT 2024
+ * DO NOT EDIT!
+ */
+values
+  test_robot_urdf =
+  mk_Element
+  (
+    "robot",
+    [
+      mk_Attribute("name", "r2d2")
+    ],
+    [
+      mk_Element
+      (
+        "material",
+        [
+          mk_Attribute("name", "blue")
+        ],
+        [
+          mk_Element
+          (
+            "color",
+            [
+              mk_Attribute("rgba", [0, 0, 0.8, 1])
+            ],
+            []
+          )
+        ]
+      ),
+      mk_Element
+      (
+        "material",
+        [
+          mk_Attribute("name", "black")
+        ],
+        [
+          mk_Element
+          (
+            "color",
+            [
+              mk_Attribute("rgba", [0, 0, 0, 1])
+            ],
+            []
+          )
+        ]
+      ),
+      mk_Element
+      (
+        "material",
+        [
+          mk_Attribute("name", "white")
+        ],
+        [
+          mk_Element
+          (
+            "color",
+            [
+              mk_Attribute("rgba", [1, 1, 1, 1])
+            ],
+            []
+          )
+        ]
+      ),
+      mk_Element
+      (
+        "link",
+        [
+          mk_Attribute("name", "dummy_link")
+        ],
+        []
+      ),
+      mk_Element
+      (
+        "link",
+        [
+          mk_Attribute("name", "base_link")
+        ],
+        [
+          mk_Element
+          (
+            "visual",
+            [],
+            [
+              mk_Element
+              (
+                "geometry",
+                [],
+                [
+                  mk_Element
+                  (
+                    "cylinder",
+                    [
+                      mk_Attribute("length", 0.6),
+                      mk_Attribute("radius", 0.2)
+                    ],
+                    []
+                  )
+                ]
+              ),
+              mk_Element
+              (
+                "material",
+                [
+                  mk_Attribute("name", "blue")
+                ],
+                []
+              )
+            ]
+          ),
+          mk_Element
+          (
+            "collision",
+            [],
+            [
+              mk_Element
+              (
+                "geometry",
+                [],
+                [
+                  mk_Element
+                  (
+                    "cylinder",
+                    [
+                      mk_Attribute("length", 0.6),
+                      mk_Attribute("radius", 0.2)
+                    ],
+                    []
+                  )
+                ]
+              )
+            ]
+          ),
+          mk_Element
+          (
+            "inertial",
+            [],
+            [
+              mk_Element
+              (
+                "mass",
+                [
+                  mk_Attribute("value", 10)
+                ],
+                []
+              ),
+              mk_Element
+              (
+                "inertia",
+                [
+                  mk_Attribute("ixx", 1.0),
+                  mk_Attribute("iyy", 1.0),
+                  mk_Attribute("izz", 1.0),
+                  mk_Attribute("ixz", 0.0),
+                  mk_Attribute("ixy", 0.0),
+                  mk_Attribute("iyz", 0.0)
+                ],
+                []
+              )
+            ]
+          )
+        ]
+      ),
+      mk_Element
+      (
+        "joint",
+        [
+          mk_Attribute("name", "dummy_to_base"),
+          mk_Attribute("type", "fixed")
+        ],
+        [
+          mk_Element
+          (
+            "parent",
+            [
+              mk_Attribute("link", "dummy_link")
+            ],
+            []
+          ),
+          mk_Element
+          (
+            "child",
+            [
+              mk_Attribute("link", "base_link")
+            ],
+            []
+          )
+        ]
+      ),
+      mk_Element
+      (
+        "link",
+        [
+          mk_Attribute("name", "right_leg")
+        ],
+        [
+          mk_Element
+          (
+            "visual",
+            [],
+            [
+              mk_Element
+              (
+                "geometry",
+                [],
+                [
+                  mk_Element
+                  (
+                    "box",
+                    [
+                      mk_Attribute("size", [0.6, 0.1, 0.2])
+                    ],
+                    []
+                  )
+                ]
+              ),
+              mk_Element
+              (
+                "origin",
+                [
+                  mk_Attribute("xyz", [0, 0, -0.3]),
+                  mk_Attribute("rpy", [0, 1.57075, 0])
+                ],
+                []
+              ),
+              mk_Element
+              (
+                "material",
+                [
+                  mk_Attribute("name", "white")
+                ],
+                []
+              )
+            ]
+          ),
+          mk_Element
+          (
+            "collision",
+            [],
+            [
+              mk_Element
+              (
+                "geometry",
+                [],
+                [
+                  mk_Element
+                  (
+                    "box",
+                    [
+                      mk_Attribute("size", [0.6, 0.1, 0.2])
+                    ],
+                    []
+                  )
+                ]
+              ),
+              mk_Element
+              (
+                "origin",
+                [
+                  mk_Attribute("xyz", [0, 0, -0.3]),
+                  mk_Attribute("rpy", [0, 1.57075, 0])
+                ],
+                []
+              )
+            ]
+          ),
+          mk_Element
+          (
+            "inertial",
+            [],
+            [
+              mk_Element
+              (
+                "mass",
+                [
+                  mk_Attribute("value", 10)
+                ],
+                []
+              ),
+              mk_Element
+              (
+                "inertia",
+                [
+                  mk_Attribute("ixx", 1.0),
+                  mk_Attribute("iyy", 1.0),
+                  mk_Attribute("izz", 1.0),
+                  mk_Attribute("ixz", 0.0),
+                  mk_Attribute("ixy", 0.0),
+                  mk_Attribute("iyz", 0.0)
+                ],
+                []
+              )
+            ]
+          )
+        ]
+      ),
+      mk_Element
+      (
+        "joint",
+        [
+          mk_Attribute("name", "base_to_right_leg"),
+          mk_Attribute("type", "fixed")
+        ],
+        [
+          mk_Element
+          (
+            "parent",
+            [
+              mk_Attribute("link", "base_link")
+            ],
+            []
+          ),
+          mk_Element
+          (
+            "child",
+            [
+              mk_Attribute("link", "right_leg")
+            ],
+            []
+          ),
+          mk_Element
+          (
+            "origin",
+            [
+              mk_Attribute("xyz", [0, -0.22, 0.25])
+            ],
+            []
+          )
+        ]
+      ),
+      mk_Element
+      (
+        "link",
+        [
+          mk_Attribute("name", "right_base")
+        ],
+        [
+          mk_Element
+          (
+            "visual",
+            [],
+            [
+              mk_Element
+              (
+                "geometry",
+                [],
+                [
+                  mk_Element
+                  (
+                    "box",
+                    [
+                      mk_Attribute("size", [0.4, 0.1, 0.1])
+                    ],
+                    []
+                  )
+                ]
+              ),
+              mk_Element
+              (
+                "material",
+                [
+                  mk_Attribute("name", "white")
+                ],
+                []
+              )
+            ]
+          ),
+          mk_Element
+          (
+            "collision",
+            [],
+            [
+              mk_Element
+              (
+                "geometry",
+                [],
+                [
+                  mk_Element
+                  (
+                    "box",
+                    [
+                      mk_Attribute("size", [0.4, 0.1, 0.1])
+                    ],
+                    []
+                  )
+                ]
+              )
+            ]
+          ),
+          mk_Element
+          (
+            "inertial",
+            [],
+            [
+              mk_Element
+              (
+                "mass",
+                [
+                  mk_Attribute("value", 10)
+                ],
+                []
+              ),
+              mk_Element
+              (
+                "inertia",
+                [
+                  mk_Attribute("ixx", 1.0),
+                  mk_Attribute("iyy", 1.0),
+                  mk_Attribute("izz", 1.0),
+                  mk_Attribute("ixz", 0.0),
+                  mk_Attribute("ixy", 0.0),
+                  mk_Attribute("iyz", 0.0)
+                ],
+                []
+              )
+            ]
+          )
+        ]
+      ),
+      mk_Element
+      (
+        "joint",
+        [
+          mk_Attribute("name", "right_base_joint"),
+          mk_Attribute("type", "fixed")
+        ],
+        [
+          mk_Element
+          (
+            "parent",
+            [
+              mk_Attribute("link", "right_leg")
+            ],
+            []
+          ),
+          mk_Element
+          (
+            "child",
+            [
+              mk_Attribute("link", "right_base")
+            ],
+            []
+          ),
+          mk_Element
+          (
+            "origin",
+            [
+              mk_Attribute("xyz", [0, 0, -0.6])
+            ],
+            []
+          )
+        ]
+      ),
+      mk_Element
+      (
+        "link",
+        [
+          mk_Attribute("name", "right_front_wheel")
+        ],
+        [
+          mk_Element
+          (
+            "visual",
+            [],
+            [
+              mk_Element
+              (
+                "origin",
+                [
+                  mk_Attribute("xyz", [0, 0, 0]),
+                  mk_Attribute("rpy", [1.57075, 0, 0])
+                ],
+                []
+              ),
+              mk_Element
+              (
+                "geometry",
+                [],
+                [
+                  mk_Element
+                  (
+                    "cylinder",
+                    [
+                      mk_Attribute("length", 0.1),
+                      mk_Attribute("radius", 0.035)
+                    ],
+                    []
+                  )
+                ]
+              ),
+              mk_Element
+              (
+                "material",
+                [
+                  mk_Attribute("name", "black")
+                ],
+                []
+              )
+            ]
+          ),
+          mk_Element
+          (
+            "collision",
+            [],
+            [
+              mk_Element
+              (
+                "origin",
+                [
+                  mk_Attribute("xyz", [0, 0, 0]),
+                  mk_Attribute("rpy", [1.57075, 0, 0])
+                ],
+                []
+              ),
+              mk_Element
+              (
+                "geometry",
+                [],
+                [
+                  mk_Element
+                  (
+                    "cylinder",
+                    [
+                      mk_Attribute("length", 0.1),
+                      mk_Attribute("radius", 0.035)
+                    ],
+                    []
+                  )
+                ]
+              )
+            ]
+          ),
+          mk_Element
+          (
+            "inertial",
+            [],
+            [
+              mk_Element
+              (
+                "mass",
+                [
+                  mk_Attribute("value", 1)
+                ],
+                []
+              ),
+              mk_Element
+              (
+                "inertia",
+                [
+                  mk_Attribute("ixx", 1.0),
+                  mk_Attribute("iyy", 1.0),
+                  mk_Attribute("izz", 1.0),
+                  mk_Attribute("ixz", 0.0),
+                  mk_Attribute("ixy", 0.0),
+                  mk_Attribute("iyz", 0.0)
+                ],
+                []
+              )
+            ]
+          )
+        ]
+      ),
+      mk_Element
+      (
+        "joint",
+        [
+          mk_Attribute("name", "right_front_wheel_joint"),
+          mk_Attribute("type", "continuous")
+        ],
+        [
+          mk_Element
+          (
+            "axis",
+            [
+              mk_Attribute("xyz", [0, 1, 0]),
+              mk_Attribute("rpy", [0, 0, 0])
+            ],
+            []
+          ),
+          mk_Element
+          (
+            "parent",
+            [
+              mk_Attribute("link", "right_base")
+            ],
+            []
+          ),
+          mk_Element
+          (
+            "child",
+            [
+              mk_Attribute("link", "right_front_wheel")
+            ],
+            []
+          ),
+          mk_Element
+          (
+            "origin",
+            [
+              mk_Attribute("xyz", [0.133333333333, 0, -0.085]),
+              mk_Attribute("rpy", [0, 0, 0])
+            ],
+            []
+          )
+        ]
+      ),
+      mk_Element
+      (
+        "link",
+        [
+          mk_Attribute("name", "right_back_wheel")
+        ],
+        [
+          mk_Element
+          (
+            "visual",
+            [],
+            [
+              mk_Element
+              (
+                "origin",
+                [
+                  mk_Attribute("xyz", [0, 0, 0]),
+                  mk_Attribute("rpy", [1.57075, 0, 0])
+                ],
+                []
+              ),
+              mk_Element
+              (
+                "geometry",
+                [],
+                [
+                  mk_Element
+                  (
+                    "cylinder",
+                    [
+                      mk_Attribute("length", 0.1),
+                      mk_Attribute("radius", 0.035)
+                    ],
+                    []
+                  )
+                ]
+              ),
+              mk_Element
+              (
+                "material",
+                [
+                  mk_Attribute("name", "black")
+                ],
+                []
+              )
+            ]
+          ),
+          mk_Element
+          (
+            "collision",
+            [],
+            [
+              mk_Element
+              (
+                "origin",
+                [
+                  mk_Attribute("xyz", [0, 0, 0]),
+                  mk_Attribute("rpy", [1.57075, 0, 0])
+                ],
+                []
+              ),
+              mk_Element
+              (
+                "geometry",
+                [],
+                [
+                  mk_Element
+                  (
+                    "cylinder",
+                    [
+                      mk_Attribute("length", 0.1),
+                      mk_Attribute("radius", 0.035)
+                    ],
+                    []
+                  )
+                ]
+              )
+            ]
+          ),
+          mk_Element
+          (
+            "inertial",
+            [],
+            [
+              mk_Element
+              (
+                "mass",
+                [
+                  mk_Attribute("value", 1)
+                ],
+                []
+              ),
+              mk_Element
+              (
+                "inertia",
+                [
+                  mk_Attribute("ixx", 1.0),
+                  mk_Attribute("iyy", 1.0),
+                  mk_Attribute("izz", 1.0),
+                  mk_Attribute("ixz", 0.0),
+                  mk_Attribute("ixy", 0.0),
+                  mk_Attribute("iyz", 0.0)
+                ],
+                []
+              )
+            ]
+          )
+        ]
+      ),
+      mk_Element
+      (
+        "joint",
+        [
+          mk_Attribute("name", "right_back_wheel_joint"),
+          mk_Attribute("type", "continuous")
+        ],
+        [
+          mk_Element
+          (
+            "axis",
+            [
+              mk_Attribute("xyz", [0, 1, 0]),
+              mk_Attribute("rpy", [0, 0, 0])
+            ],
+            []
+          ),
+          mk_Element
+          (
+            "parent",
+            [
+              mk_Attribute("link", "right_base")
+            ],
+            []
+          ),
+          mk_Element
+          (
+            "child",
+            [
+              mk_Attribute("link", "right_back_wheel")
+            ],
+            []
+          ),
+          mk_Element
+          (
+            "origin",
+            [
+              mk_Attribute("xyz", [-0.133333333333, 0, -0.085]),
+              mk_Attribute("rpy", [0, 0, 0])
+            ],
+            []
+          )
+        ]
+      ),
+      mk_Element
+      (
+        "link",
+        [
+          mk_Attribute("name", "left_leg")
+        ],
+        [
+          mk_Element
+          (
+            "visual",
+            [],
+            [
+              mk_Element
+              (
+                "geometry",
+                [],
+                [
+                  mk_Element
+                  (
+                    "box",
+                    [
+                      mk_Attribute("size", [0.6, 0.1, 0.2])
+                    ],
+                    []
+                  )
+                ]
+              ),
+              mk_Element
+              (
+                "origin",
+                [
+                  mk_Attribute("xyz", [0, 0, -0.3]),
+                  mk_Attribute("rpy", [0, 1.57075, 0])
+                ],
+                []
+              ),
+              mk_Element
+              (
+                "material",
+                [
+                  mk_Attribute("name", "white")
+                ],
+                []
+              )
+            ]
+          ),
+          mk_Element
+          (
+            "collision",
+            [],
+            [
+              mk_Element
+              (
+                "geometry",
+                [],
+                [
+                  mk_Element
+                  (
+                    "box",
+                    [
+                      mk_Attribute("size", [0.6, 0.1, 0.2])
+                    ],
+                    []
+                  )
+                ]
+              ),
+              mk_Element
+              (
+                "origin",
+                [
+                  mk_Attribute("xyz", [0, 0, -0.3]),
+                  mk_Attribute("rpy", [0, 1.57075, 0])
+                ],
+                []
+              )
+            ]
+          ),
+          mk_Element
+          (
+            "inertial",
+            [],
+            [
+              mk_Element
+              (
+                "mass",
+                [
+                  mk_Attribute("value", 10)
+                ],
+                []
+              ),
+              mk_Element
+              (
+                "inertia",
+                [
+                  mk_Attribute("ixx", 1.0),
+                  mk_Attribute("iyy", 1.0),
+                  mk_Attribute("izz", 1.0),
+                  mk_Attribute("ixz", 0.0),
+                  mk_Attribute("ixy", 0.0),
+                  mk_Attribute("iyz", 0.0)
+                ],
+                []
+              )
+            ]
+          )
+        ]
+      ),
+      mk_Element
+      (
+        "joint",
+        [
+          mk_Attribute("name", "base_to_left_leg"),
+          mk_Attribute("type", "fixed")
+        ],
+        [
+          mk_Element
+          (
+            "parent",
+            [
+              mk_Attribute("link", "base_link")
+            ],
+            []
+          ),
+          mk_Element
+          (
+            "child",
+            [
+              mk_Attribute("link", "left_leg")
+            ],
+            []
+          ),
+          mk_Element
+          (
+            "origin",
+            [
+              mk_Attribute("xyz", [0, 0.22, 0.25])
+            ],
+            []
+          )
+        ]
+      ),
+      mk_Element
+      (
+        "link",
+        [
+          mk_Attribute("name", "left_base")
+        ],
+        [
+          mk_Element
+          (
+            "visual",
+            [],
+            [
+              mk_Element
+              (
+                "geometry",
+                [],
+                [
+                  mk_Element
+                  (
+                    "box",
+                    [
+                      mk_Attribute("size", [0.4, 0.1, 0.1])
+                    ],
+                    []
+                  )
+                ]
+              ),
+              mk_Element
+              (
+                "material",
+                [
+                  mk_Attribute("name", "white")
+                ],
+                []
+              )
+            ]
+          ),
+          mk_Element
+          (
+            "collision",
+            [],
+            [
+              mk_Element
+              (
+                "geometry",
+                [],
+                [
+                  mk_Element
+                  (
+                    "box",
+                    [
+                      mk_Attribute("size", [0.4, 0.1, 0.1])
+                    ],
+                    []
+                  )
+                ]
+              )
+            ]
+          ),
+          mk_Element
+          (
+            "inertial",
+            [],
+            [
+              mk_Element
+              (
+                "mass",
+                [
+                  mk_Attribute("value", 10)
+                ],
+                []
+              ),
+              mk_Element
+              (
+                "inertia",
+                [
+                  mk_Attribute("ixx", 1.0),
+                  mk_Attribute("iyy", 1.0),
+                  mk_Attribute("izz", 1.0),
+                  mk_Attribute("ixz", 0.0),
+                  mk_Attribute("ixy", 0.0),
+                  mk_Attribute("iyz", 0.0)
+                ],
+                []
+              )
+            ]
+          )
+        ]
+      ),
+      mk_Element
+      (
+        "joint",
+        [
+          mk_Attribute("name", "left_base_joint"),
+          mk_Attribute("type", "fixed")
+        ],
+        [
+          mk_Element
+          (
+            "parent",
+            [
+              mk_Attribute("link", "left_leg")
+            ],
+            []
+          ),
+          mk_Element
+          (
+            "child",
+            [
+              mk_Attribute("link", "left_base")
+            ],
+            []
+          ),
+          mk_Element
+          (
+            "origin",
+            [
+              mk_Attribute("xyz", [0, 0, -0.6])
+            ],
+            []
+          )
+        ]
+      ),
+      mk_Element
+      (
+        "link",
+        [
+          mk_Attribute("name", "left_front_wheel")
+        ],
+        [
+          mk_Element
+          (
+            "visual",
+            [],
+            [
+              mk_Element
+              (
+                "origin",
+                [
+                  mk_Attribute("xyz", [0, 0, 0]),
+                  mk_Attribute("rpy", [1.57075, 0, 0])
+                ],
+                []
+              ),
+              mk_Element
+              (
+                "geometry",
+                [],
+                [
+                  mk_Element
+                  (
+                    "cylinder",
+                    [
+                      mk_Attribute("length", 0.1),
+                      mk_Attribute("radius", 0.035)
+                    ],
+                    []
+                  )
+                ]
+              ),
+              mk_Element
+              (
+                "material",
+                [
+                  mk_Attribute("name", "black")
+                ],
+                []
+              )
+            ]
+          ),
+          mk_Element
+          (
+            "collision",
+            [],
+            [
+              mk_Element
+              (
+                "origin",
+                [
+                  mk_Attribute("xyz", [0, 0, 0]),
+                  mk_Attribute("rpy", [1.57075, 0, 0])
+                ],
+                []
+              ),
+              mk_Element
+              (
+                "geometry",
+                [],
+                [
+                  mk_Element
+                  (
+                    "cylinder",
+                    [
+                      mk_Attribute("length", 0.1),
+                      mk_Attribute("radius", 0.035)
+                    ],
+                    []
+                  )
+                ]
+              )
+            ]
+          ),
+          mk_Element
+          (
+            "inertial",
+            [],
+            [
+              mk_Element
+              (
+                "mass",
+                [
+                  mk_Attribute("value", 1)
+                ],
+                []
+              ),
+              mk_Element
+              (
+                "inertia",
+                [
+                  mk_Attribute("ixx", 1.0),
+                  mk_Attribute("iyy", 1.0),
+                  mk_Attribute("izz", 1.0),
+                  mk_Attribute("ixz", 0.0),
+                  mk_Attribute("ixy", 0.0),
+                  mk_Attribute("iyz", 0.0)
+                ],
+                []
+              )
+            ]
+          )
+        ]
+      ),
+      mk_Element
+      (
+        "joint",
+        [
+          mk_Attribute("name", "left_front_wheel_joint"),
+          mk_Attribute("type", "continuous")
+        ],
+        [
+          mk_Element
+          (
+            "axis",
+            [
+              mk_Attribute("xyz", [0, 1, 0]),
+              mk_Attribute("rpy", [0, 0, 0])
+            ],
+            []
+          ),
+          mk_Element
+          (
+            "parent",
+            [
+              mk_Attribute("link", "left_base")
+            ],
+            []
+          ),
+          mk_Element
+          (
+            "child",
+            [
+              mk_Attribute("link", "left_front_wheel")
+            ],
+            []
+          ),
+          mk_Element
+          (
+            "origin",
+            [
+              mk_Attribute("xyz", [0.133333333333, 0, -0.085]),
+              mk_Attribute("rpy", [0, 0, 0])
+            ],
+            []
+          )
+        ]
+      ),
+      mk_Element
+      (
+        "link",
+        [
+          mk_Attribute("name", "left_back_wheel")
+        ],
+        [
+          mk_Element
+          (
+            "visual",
+            [],
+            [
+              mk_Element
+              (
+                "origin",
+                [
+                  mk_Attribute("xyz", [0, 0, 0]),
+                  mk_Attribute("rpy", [1.57075, 0, 0])
+                ],
+                []
+              ),
+              mk_Element
+              (
+                "geometry",
+                [],
+                [
+                  mk_Element
+                  (
+                    "cylinder",
+                    [
+                      mk_Attribute("length", 0.1),
+                      mk_Attribute("radius", 0.035)
+                    ],
+                    []
+                  )
+                ]
+              ),
+              mk_Element
+              (
+                "material",
+                [
+                  mk_Attribute("name", "black")
+                ],
+                []
+              )
+            ]
+          ),
+          mk_Element
+          (
+            "collision",
+            [],
+            [
+              mk_Element
+              (
+                "origin",
+                [
+                  mk_Attribute("xyz", [0, 0, 0]),
+                  mk_Attribute("rpy", [1.57075, 0, 0])
+                ],
+                []
+              ),
+              mk_Element
+              (
+                "geometry",
+                [],
+                [
+                  mk_Element
+                  (
+                    "cylinder",
+                    [
+                      mk_Attribute("length", 0.1),
+                      mk_Attribute("radius", 0.035)
+                    ],
+                    []
+                  )
+                ]
+              )
+            ]
+          ),
+          mk_Element
+          (
+            "inertial",
+            [],
+            [
+              mk_Element
+              (
+                "mass",
+                [
+                  mk_Attribute("value", 1)
+                ],
+                []
+              ),
+              mk_Element
+              (
+                "inertia",
+                [
+                  mk_Attribute("ixx", 1.0),
+                  mk_Attribute("iyy", 1.0),
+                  mk_Attribute("izz", 1.0),
+                  mk_Attribute("ixz", 0.0),
+                  mk_Attribute("ixy", 0.0),
+                  mk_Attribute("iyz", 0.0)
+                ],
+                []
+              )
+            ]
+          )
+        ]
+      ),
+      mk_Element
+      (
+        "joint",
+        [
+          mk_Attribute("name", "left_back_wheel_joint"),
+          mk_Attribute("type", "continuous")
+        ],
+        [
+          mk_Element
+          (
+            "axis",
+            [
+              mk_Attribute("xyz", [0, 1, 0]),
+              mk_Attribute("rpy", [0, 0, 0])
+            ],
+            []
+          ),
+          mk_Element
+          (
+            "parent",
+            [
+              mk_Attribute("link", "left_base")
+            ],
+            []
+          ),
+          mk_Element
+          (
+            "child",
+            [
+              mk_Attribute("link", "left_back_wheel")
+            ],
+            []
+          ),
+          mk_Element
+          (
+            "origin",
+            [
+              mk_Attribute("xyz", [-0.133333333333, 0, -0.085]),
+              mk_Attribute("rpy", [0, 0, 0])
+            ],
+            []
+          )
+        ]
+      ),
+      mk_Element
+      (
+        "joint",
+        [
+          mk_Attribute("name", "gripper_extension"),
+          mk_Attribute("type", "prismatic")
+        ],
+        [
+          mk_Element
+          (
+            "parent",
+            [
+              mk_Attribute("link", "base_link")
+            ],
+            []
+          ),
+          mk_Element
+          (
+            "child",
+            [
+              mk_Attribute("link", "gripper_pole")
+            ],
+            []
+          ),
+          mk_Element
+          (
+            "limit",
+            [
+              mk_Attribute("lower", -0.38),
+              mk_Attribute("upper", 0),
+              mk_Attribute("effort", 1000.0),
+              mk_Attribute("velocity", 0.5)
+            ],
+            []
+          ),
+          mk_Element
+          (
+            "origin",
+            [
+              mk_Attribute("xyz", [0.19, 0, 0.2]),
+              mk_Attribute("rpy", [0, 0, 0])
+            ],
+            []
+          )
+        ]
+      ),
+      mk_Element
+      (
+        "link",
+        [
+          mk_Attribute("name", "gripper_pole")
+        ],
+        [
+          mk_Element
+          (
+            "visual",
+            [],
+            [
+              mk_Element
+              (
+                "geometry",
+                [],
+                [
+                  mk_Element
+                  (
+                    "cylinder",
+                    [
+                      mk_Attribute("length", 0.2),
+                      mk_Attribute("radius", 0.01)
+                    ],
+                    []
+                  )
+                ]
+              ),
+              mk_Element
+              (
+                "origin",
+                [
+                  mk_Attribute("xyz", [0.1, 0, 0]),
+                  mk_Attribute("rpy", [0, 1.57075, 0])
+                ],
+                []
+              )
+            ]
+          ),
+          mk_Element
+          (
+            "collision",
+            [],
+            [
+              mk_Element
+              (
+                "geometry",
+                [],
+                [
+                  mk_Element
+                  (
+                    "cylinder",
+                    [
+                      mk_Attribute("length", 0.2),
+                      mk_Attribute("radius", 0.01)
+                    ],
+                    []
+                  )
+                ]
+              ),
+              mk_Element
+              (
+                "origin",
+                [
+                  mk_Attribute("xyz", [0.1, 0, 0]),
+                  mk_Attribute("rpy", [0, 1.57075, 0])
+                ],
+                []
+              )
+            ]
+          ),
+          mk_Element
+          (
+            "inertial",
+            [],
+            [
+              mk_Element
+              (
+                "mass",
+                [
+                  mk_Attribute("value", 0.05)
+                ],
+                []
+              ),
+              mk_Element
+              (
+                "inertia",
+                [
+                  mk_Attribute("ixx", 1.0),
+                  mk_Attribute("iyy", 1.0),
+                  mk_Attribute("izz", 1.0),
+                  mk_Attribute("ixz", 0.0),
+                  mk_Attribute("ixy", 0.0),
+                  mk_Attribute("iyz", 0.0)
+                ],
+                []
+              )
+            ]
+          )
+        ]
+      ),
+      mk_Element
+      (
+        "joint",
+        [
+          mk_Attribute("name", "left_gripper_joint"),
+          mk_Attribute("type", "revolute")
+        ],
+        [
+          mk_Element
+          (
+            "axis",
+            [
+              mk_Attribute("xyz", [0, 0, 1])
+            ],
+            []
+          ),
+          mk_Element
+          (
+            "limit",
+            [
+              mk_Attribute("lower", 0.0),
+              mk_Attribute("upper", 0.548),
+              mk_Attribute("effort", 1000.0),
+              mk_Attribute("velocity", 0.5)
+            ],
+            []
+          ),
+          mk_Element
+          (
+            "origin",
+            [
+              mk_Attribute("xyz", [0.2, 0.01, 0]),
+              mk_Attribute("rpy", [0, 0, 0])
+            ],
+            []
+          ),
+          mk_Element
+          (
+            "parent",
+            [
+              mk_Attribute("link", "gripper_pole")
+            ],
+            []
+          ),
+          mk_Element
+          (
+            "child",
+            [
+              mk_Attribute("link", "left_gripper")
+            ],
+            []
+          )
+        ]
+      ),
+      mk_Element
+      (
+        "link",
+        [
+          mk_Attribute("name", "left_gripper")
+        ],
+        [
+          mk_Element
+          (
+            "visual",
+            [],
+            [
+              mk_Element
+              (
+                "origin",
+                [
+                  mk_Attribute("xyz", [0, 0, 0]),
+                  mk_Attribute("rpy", [0.0, 0, 0])
+                ],
+                []
+              ),
+              mk_Element
+              (
+                "geometry",
+                [],
+                [
+                  mk_Element
+                  (
+                    "mesh",
+                    [
+                      mk_Attribute("filename", "package://pr2_description/meshes/gripper_v0/l_finger.dae")
+                    ],
+                    []
+                  )
+                ]
+              )
+            ]
+          ),
+          mk_Element
+          (
+            "collision",
+            [],
+            [
+              mk_Element
+              (
+                "geometry",
+                [],
+                [
+                  mk_Element
+                  (
+                    "mesh",
+                    [
+                      mk_Attribute("filename", "package://pr2_description/meshes/gripper_v0/l_finger.dae")
+                    ],
+                    []
+                  )
+                ]
+              ),
+              mk_Element
+              (
+                "origin",
+                [
+                  mk_Attribute("xyz", [0, 0, 0]),
+                  mk_Attribute("rpy", [0.0, 0, 0])
+                ],
+                []
+              )
+            ]
+          ),
+          mk_Element
+          (
+            "inertial",
+            [],
+            [
+              mk_Element
+              (
+                "mass",
+                [
+                  mk_Attribute("value", 0.05)
+                ],
+                []
+              ),
+              mk_Element
+              (
+                "inertia",
+                [
+                  mk_Attribute("ixx", 1.0),
+                  mk_Attribute("iyy", 1.0),
+                  mk_Attribute("izz", 1.0),
+                  mk_Attribute("ixz", 0.0),
+                  mk_Attribute("ixy", 0.0),
+                  mk_Attribute("iyz", 0.0)
+                ],
+                []
+              )
+            ]
+          )
+        ]
+      ),
+      mk_Element
+      (
+        "joint",
+        [
+          mk_Attribute("name", "left_tip_joint"),
+          mk_Attribute("type", "fixed")
+        ],
+        [
+          mk_Element
+          (
+            "parent",
+            [
+              mk_Attribute("link", "left_gripper")
+            ],
+            []
+          ),
+          mk_Element
+          (
+            "child",
+            [
+              mk_Attribute("link", "left_tip")
+            ],
+            []
+          )
+        ]
+      ),
+      mk_Element
+      (
+        "link",
+        [
+          mk_Attribute("name", "left_tip")
+        ],
+        [
+          mk_Element
+          (
+            "visual",
+            [],
+            [
+              mk_Element
+              (
+                "origin",
+                [
+                  mk_Attribute("xyz", [0.09137, 0.00495, 0]),
+                  mk_Attribute("rpy", [0.0, 0, 0])
+                ],
+                []
+              ),
+              mk_Element
+              (
+                "geometry",
+                [],
+                [
+                  mk_Element
+                  (
+                    "mesh",
+                    [
+                      mk_Attribute("filename", "package://pr2_description/meshes/gripper_v0/l_finger_tip.dae")
+                    ],
+                    []
+                  )
+                ]
+              )
+            ]
+          ),
+          mk_Element
+          (
+            "collision",
+            [],
+            [
+              mk_Element
+              (
+                "geometry",
+                [],
+                [
+                  mk_Element
+                  (
+                    "mesh",
+                    [
+                      mk_Attribute("filename", "package://pr2_description/meshes/gripper_v0/l_finger_tip.dae")
+                    ],
+                    []
+                  )
+                ]
+              ),
+              mk_Element
+              (
+                "origin",
+                [
+                  mk_Attribute("xyz", [0.09137, 0.00495, 0]),
+                  mk_Attribute("rpy", [0.0, 0, 0])
+                ],
+                []
+              )
+            ]
+          ),
+          mk_Element
+          (
+            "inertial",
+            [],
+            [
+              mk_Element
+              (
+                "mass",
+                [
+                  mk_Attribute("value", 0.05)
+                ],
+                []
+              ),
+              mk_Element
+              (
+                "inertia",
+                [
+                  mk_Attribute("ixx", 1.0),
+                  mk_Attribute("iyy", 1.0),
+                  mk_Attribute("izz", 1.0),
+                  mk_Attribute("ixz", 0.0),
+                  mk_Attribute("ixy", 0.0),
+                  mk_Attribute("iyz", 0.0)
+                ],
+                []
+              )
+            ]
+          )
+        ]
+      ),
+      mk_Element
+      (
+        "joint",
+        [
+          mk_Attribute("name", "right_gripper_joint"),
+          mk_Attribute("type", "revolute")
+        ],
+        [
+          mk_Element
+          (
+            "axis",
+            [
+              mk_Attribute("xyz", [0, 0, -1])
+            ],
+            []
+          ),
+          mk_Element
+          (
+            "limit",
+            [
+              mk_Attribute("lower", 0.0),
+              mk_Attribute("upper", 0.548),
+              mk_Attribute("effort", 1000.0),
+              mk_Attribute("velocity", 0.5)
+            ],
+            []
+          ),
+          mk_Element
+          (
+            "origin",
+            [
+              mk_Attribute("xyz", [0.2, -0.01, 0]),
+              mk_Attribute("rpy", [0, 0, 0])
+            ],
+            []
+          ),
+          mk_Element
+          (
+            "parent",
+            [
+              mk_Attribute("link", "gripper_pole")
+            ],
+            []
+          ),
+          mk_Element
+          (
+            "child",
+            [
+              mk_Attribute("link", "right_gripper")
+            ],
+            []
+          )
+        ]
+      ),
+      mk_Element
+      (
+        "link",
+        [
+          mk_Attribute("name", "right_gripper")
+        ],
+        [
+          mk_Element
+          (
+            "visual",
+            [],
+            [
+              mk_Element
+              (
+                "origin",
+                [
+                  mk_Attribute("xyz", [0, 0, 0]),
+                  mk_Attribute("rpy", [-3.1415, 0, 0])
+                ],
+                []
+              ),
+              mk_Element
+              (
+                "geometry",
+                [],
+                [
+                  mk_Element
+                  (
+                    "mesh",
+                    [
+                      mk_Attribute("filename", "package://pr2_description/meshes/gripper_v0/l_finger.dae")
+                    ],
+                    []
+                  )
+                ]
+              )
+            ]
+          ),
+          mk_Element
+          (
+            "collision",
+            [],
+            [
+              mk_Element
+              (
+                "geometry",
+                [],
+                [
+                  mk_Element
+                  (
+                    "mesh",
+                    [
+                      mk_Attribute("filename", "package://pr2_description/meshes/gripper_v0/l_finger.dae")
+                    ],
+                    []
+                  )
+                ]
+              ),
+              mk_Element
+              (
+                "origin",
+                [
+                  mk_Attribute("xyz", [0, 0, 0]),
+                  mk_Attribute("rpy", [-3.1415, 0, 0])
+                ],
+                []
+              )
+            ]
+          ),
+          mk_Element
+          (
+            "inertial",
+            [],
+            [
+              mk_Element
+              (
+                "mass",
+                [
+                  mk_Attribute("value", 0.05)
+                ],
+                []
+              ),
+              mk_Element
+              (
+                "inertia",
+                [
+                  mk_Attribute("ixx", 1.0),
+                  mk_Attribute("iyy", 1.0),
+                  mk_Attribute("izz", 1.0),
+                  mk_Attribute("ixz", 0.0),
+                  mk_Attribute("ixy", 0.0),
+                  mk_Attribute("iyz", 0.0)
+                ],
+                []
+              )
+            ]
+          )
+        ]
+      ),
+      mk_Element
+      (
+        "joint",
+        [
+          mk_Attribute("name", "right_tip_joint"),
+          mk_Attribute("type", "fixed")
+        ],
+        [
+          mk_Element
+          (
+            "parent",
+            [
+              mk_Attribute("link", "right_gripper")
+            ],
+            []
+          ),
+          mk_Element
+          (
+            "child",
+            [
+              mk_Attribute("link", "right_tip")
+            ],
+            []
+          )
+        ]
+      ),
+      mk_Element
+      (
+        "link",
+        [
+          mk_Attribute("name", "right_tip")
+        ],
+        [
+          mk_Element
+          (
+            "visual",
+            [],
+            [
+              mk_Element
+              (
+                "origin",
+                [
+                  mk_Attribute("xyz", [0.09137, 0.00495, 0]),
+                  mk_Attribute("rpy", [-3.1415, 0, 0])
+                ],
+                []
+              ),
+              mk_Element
+              (
+                "geometry",
+                [],
+                [
+                  mk_Element
+                  (
+                    "mesh",
+                    [
+                      mk_Attribute("filename", "package://pr2_description/meshes/gripper_v0/l_finger_tip.dae")
+                    ],
+                    []
+                  )
+                ]
+              )
+            ]
+          ),
+          mk_Element
+          (
+            "collision",
+            [],
+            [
+              mk_Element
+              (
+                "geometry",
+                [],
+                [
+                  mk_Element
+                  (
+                    "mesh",
+                    [
+                      mk_Attribute("filename", "package://pr2_description/meshes/gripper_v0/l_finger_tip.dae")
+                    ],
+                    []
+                  )
+                ]
+              ),
+              mk_Element
+              (
+                "origin",
+                [
+                  mk_Attribute("xyz", [0.09137, 0.00495, 0]),
+                  mk_Attribute("rpy", [-3.1415, 0, 0])
+                ],
+                []
+              )
+            ]
+          ),
+          mk_Element
+          (
+            "inertial",
+            [],
+            [
+              mk_Element
+              (
+                "mass",
+                [
+                  mk_Attribute("value", 0.05)
+                ],
+                []
+              ),
+              mk_Element
+              (
+                "inertia",
+                [
+                  mk_Attribute("ixx", 1.0),
+                  mk_Attribute("iyy", 1.0),
+                  mk_Attribute("izz", 1.0),
+                  mk_Attribute("ixz", 0.0),
+                  mk_Attribute("ixy", 0.0),
+                  mk_Attribute("iyz", 0.0)
+                ],
+                []
+              )
+            ]
+          )
+        ]
+      ),
+      mk_Element
+      (
+        "link",
+        [
+          mk_Attribute("name", "head")
+        ],
+        [
+          mk_Element
+          (
+            "visual",
+            [],
+            [
+              mk_Element
+              (
+                "geometry",
+                [],
+                [
+                  mk_Element
+                  (
+                    "sphere",
+                    [
+                      mk_Attribute("radius", 0.2)
+                    ],
+                    []
+                  )
+                ]
+              ),
+              mk_Element
+              (
+                "material",
+                [
+                  mk_Attribute("name", "white")
+                ],
+                []
+              )
+            ]
+          ),
+          mk_Element
+          (
+            "collision",
+            [],
+            [
+              mk_Element
+              (
+                "geometry",
+                [],
+                [
+                  mk_Element
+                  (
+                    "sphere",
+                    [
+                      mk_Attribute("radius", 0.2)
+                    ],
+                    []
+                  )
+                ]
+              )
+            ]
+          ),
+          mk_Element
+          (
+            "inertial",
+            [],
+            [
+              mk_Element
+              (
+                "mass",
+                [
+                  mk_Attribute("value", 2)
+                ],
+                []
+              ),
+              mk_Element
+              (
+                "inertia",
+                [
+                  mk_Attribute("ixx", 1.0),
+                  mk_Attribute("iyy", 1.0),
+                  mk_Attribute("izz", 1.0),
+                  mk_Attribute("ixz", 0.0),
+                  mk_Attribute("ixy", 0.0),
+                  mk_Attribute("iyz", 0.0)
+                ],
+                []
+              )
+            ]
+          )
+        ]
+      ),
+      mk_Element
+      (
+        "joint",
+        [
+          mk_Attribute("name", "head_swivel"),
+          mk_Attribute("type", "continuous")
+        ],
+        [
+          mk_Element
+          (
+            "parent",
+            [
+              mk_Attribute("link", "base_link")
+            ],
+            []
+          ),
+          mk_Element
+          (
+            "child",
+            [
+              mk_Attribute("link", "head")
+            ],
+            []
+          ),
+          mk_Element
+          (
+            "axis",
+            [
+              mk_Attribute("xyz", [0, 0, 1])
+            ],
+            []
+          ),
+          mk_Element
+          (
+            "origin",
+            [
+              mk_Attribute("xyz", [0, 0, 0.3])
+            ],
+            []
+          )
+        ]
+      ),
+      mk_Element
+      (
+        "link",
+        [
+          mk_Attribute("name", "box")
+        ],
+        [
+          mk_Element
+          (
+            "visual",
+            [],
+            [
+              mk_Element
+              (
+                "geometry",
+                [],
+                [
+                  mk_Element
+                  (
+                    "box",
+                    [
+                      mk_Attribute("size", [0.08, 0.08, 0.08])
+                    ],
+                    []
+                  )
+                ]
+              ),
+              mk_Element
+              (
+                "material",
+                [
+                  mk_Attribute("name", "blue")
+                ],
+                []
+              ),
+              mk_Element
+              (
+                "origin",
+                [
+                  mk_Attribute("xyz", [-0.04, 0, 0])
+                ],
+                []
+              )
+            ]
+          ),
+          mk_Element
+          (
+            "collision",
+            [],
+            [
+              mk_Element
+              (
+                "geometry",
+                [],
+                [
+                  mk_Element
+                  (
+                    "box",
+                    [
+                      mk_Attribute("size", [0.08, 0.08, 0.08])
+                    ],
+                    []
+                  )
+                ]
+              )
+            ]
+          ),
+          mk_Element
+          (
+            "inertial",
+            [],
+            [
+              mk_Element
+              (
+                "mass",
+                [
+                  mk_Attribute("value", 1)
+                ],
+                []
+              ),
+              mk_Element
+              (
+                "inertia",
+                [
+                  mk_Attribute("ixx", 1.0),
+                  mk_Attribute("iyy", 1.0),
+                  mk_Attribute("izz", 1.0),
+                  mk_Attribute("ixz", 0.0),
+                  mk_Attribute("ixy", 0.0),
+                  mk_Attribute("iyz", 0.0)
+                ],
+                []
+              )
+            ]
+          )
+        ]
+      ),
+      mk_Element
+      (
+        "joint",
+        [
+          mk_Attribute("name", "tobox"),
+          mk_Attribute("type", "fixed")
+        ],
+        [
+          mk_Element
+          (
+            "parent",
+            [
+              mk_Attribute("link", "head")
+            ],
+            []
+          ),
+          mk_Element
+          (
+            "child",
+            [
+              mk_Attribute("link", "box")
+            ],
+            []
+          ),
+          mk_Element
+          (
+            "origin",
+            [
+              mk_Attribute("xyz", [0.1814, 0, 0.1414])
+            ],
+            []
+          )
+        ]
+      )
+    ]
+  );
+

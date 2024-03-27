@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<robot name="origin_not_number">
+  <link name="link1">
+     <visual>
+     <origin xyz="a b c" rpy="d e f" />
+     <geometry>
+       <box size="1 1 1" />
+     </geometry>
+     <material name="Cyan">
+       <color rgba="0 1.0 1.0 1.0"/>
+     </material>
+   </visual>
+  </link>
+</robot>

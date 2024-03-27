@@ -1,0 +1,274 @@
+/**
+ * Convert raw XML types to URDF types.
+ */
+functions
+	convertRobot: [Element] +> [robot]
+	convertRobot(xml) == if xml = nil then nil else
+		mk_robot
+		(
+			getAttr(xml, "name", nil),
+			getAttr(xml, "version", "1.0"),
+			[ convertJoint(j)			| j in seq getChildren(xml, "joint") ],
+			[ convertLink(l)			| l in seq getChildren(xml, "link") ],
+			[ convertMaterial(m)		| m in seq getChildren(xml, "material") ],
+			[ convertTransmission(t)	| t in seq getChildren(xml, "transmission") ]
+		)
+	pre xml = nil or xml.type = "robot";
+
+	convertJoint: [Element] +> [joint]
+	convertJoint(xml) == if xml = nil then nil else
+		mk_joint
+		(
+			getAttr(xml, "name", nil),
+			getAttr(xml, "type", nil),
+			getAttr(getChild(xml, "parent"), "link", nil),
+			getAttr(getChild(xml, "child"), "link", nil),
+			convertOrigin(getChild(xml, "origin")),
+			convertAxis(getChild(xml, "axis")),
+			convertCalibration(getChild(xml, "calibration")),
+			convertDynamics(getChild(xml, "dynamics")),
+			convertLimit(getChild(xml, "limit")),
+			convertSafetyController(getChild(xml, "safety_controller")),
+			convertMimic(getChild(xml, "mimic"))
+		)
+	pre xml = nil or xml.type = "joint";
+
+	convertLink: [Element] +> [link]
+	convertLink(xml) == if xml = nil then nil else
+		mk_link
+		(
+			getAttr(xml, "name", nil),
+			getAttr(xml, "type", nil),
+			convertInertial(getChild(xml, "inertial")),
+			convertVisual(getChild(xml, "visual")),
+			convertCollision(getChild(xml, "collision"))
+		)
+	pre xml = nil or xml.type = "link";
+
+	convertOrigin: [Element] +> [origin]
+	convertOrigin(xml) == if xml = nil then nil else
+		mk_origin
+		(
+			getAttr(xml, "xyz", [0,0,0]),
+			getAttr(xml, "rpy", [0,0,0])
+		)
+	pre xml = nil or xml.type = "origin";
+
+	convertAxis: [Element] +> [axis]
+	convertAxis(xml) == if xml = nil then nil else
+		mk_axis
+		(
+			getAttr(xml, "xyz", [1, 0, 0])
+		)
+	pre xml = nil or xml.type = "axis";
+
+	convertCalibration: [Element] +> [calibration]
+	convertCalibration(xml) == if xml = nil then nil else
+		mk_calibration
+		(
+			getAttr(xml, "reference_position", 0),
+			getAttr(xml, "rising", 0),
+			getAttr(xml, "falling", 0)
+		)
+	pre xml = nil or xml.type = "calibration";
+
+	convertDynamics: [Element] +> [dynamics]
+	convertDynamics(xml) == if xml = nil then nil else
+		mk_dynamics
+		(
+			getAttr(xml, "damping", 0),
+			getAttr(xml, "friction", 0)
+		)
+	pre xml = nil or xml.type = "dynamics";
+
+	convertLimit: [Element] +> [limit]
+	convertLimit(xml) == if xml = nil then nil else
+		mk_limit
+		(
+			getAttr(xml, "lower", 0),
+			getAttr(xml, "upper", 0),
+			getAttr(xml, "effort", 0),
+			getAttr(xml, "velocity", 0)
+		)
+	pre xml = nil or xml.type = "limit";
+
+	convertSafetyController: [Element] +> [safety_controller]
+	convertSafetyController(xml) == if xml = nil then nil else
+		mk_safety_controller
+		(
+			getAttr(xml, "soft_lower_limit", 0),
+			getAttr(xml, "soft_upper_limit", 0),
+			getAttr(xml, "k_position", 0),
+			getAttr(xml, "k_velocity", nil)
+		)
+	pre xml = nil or xml.type = "safety_controller";
+
+	convertMimic: [Element] +> [mimic]
+	convertMimic(xml) == if xml = nil then nil else
+		mk_mimic
+		(
+			getAttr(xml, "joint", nil),
+			getAttr(xml, "multiplier", 1),
+			getAttr(xml, "offset", 0)
+		)
+	pre xml = nil or xml.type = "mimic";
+
+	convertInertial: [Element] +> [inertial]
+	convertInertial(xml) == if xml = nil then nil else
+		mk_inertial
+		(
+			convertOrigin(getChild(xml, "origin")),
+			convertMass(getChild(xml, "mass")),
+			convertInertia(getChild(xml, "inertia"))
+		)
+	pre xml = nil or xml.type = "inertial";
+
+	convertVisual: [Element] +> [visual]
+	convertVisual(xml) == if xml = nil then nil else
+		mk_visual
+		(
+			convertOrigin(getChild(xml, "origin")),
+			convertGeometry(getChild(xml, "geometry")),
+			convertMaterial(getChild(xml, "material"))
+		)
+	pre xml = nil or xml.type = "visual";
+
+
+	convertCollision: [Element] +> [collision]
+	convertCollision(xml) == if xml = nil then nil else
+		mk_collision
+		(
+			getAttr(xml, "name", nil),
+			convertOrigin(getChild(xml, "origin")),
+			convertGeometry(getChild(xml, "geometry")),
+			convertVerbose(getChild(xml, "verbose"))
+		)
+	pre xml = nil or xml.type = "collision";
+
+	convertMass: [Element] +> [mass]
+	convertMass(xml) == if xml = nil then nil else
+		mk_mass
+		(
+			getAttr(xml, "value", 0)
+		)
+	pre xml = nil or xml.type = "mass";
+
+	convertInertia: [Element] +> [inertia]
+	convertInertia(xml) == if xml = nil then nil else
+		mk_inertia
+		(
+			getAttr(xml, "ixx", 0),
+			getAttr(xml, "ixy", 0),
+			getAttr(xml, "ixz", 0),
+			getAttr(xml, "iyy", 0),
+			getAttr(xml, "iyz", 0),
+			getAttr(xml, "izz", 0)
+		)
+	pre xml = nil or xml.type = "inertia";
+
+	convertGeometry: [Element] +> [geometry]
+	convertGeometry(xml) == if xml = nil then nil else
+		mk_geometry
+		(
+			convertBox(getChild(xml, "box")),
+			convertCylinder(getChild(xml, "cylinder")),
+			convertSphere(getChild(xml, "sphere")),
+			convertMesh(getChild(xml, "mesh"))
+		)
+	pre xml = nil or xml.type = "geometry";
+
+
+	convertVerbose: [Element] +> [verbose]
+	convertVerbose(xml) == if xml = nil then nil else
+		mk_verbose
+		(
+			getAttr(xml, "value", nil)
+		)
+	pre xml = nil or xml.type = "verbose";
+
+	convertBox: [Element] +> [box]
+	convertBox(xml) == if xml = nil then nil else
+		mk_box
+		(
+			getAttr(xml, "size", [0, 0, 0])
+		)
+	pre xml = nil or xml.type = "box";
+
+	convertCylinder: [Element] +> [cylinder]
+	convertCylinder(xml) == if xml = nil then nil else
+		mk_cylinder
+		(
+			getAttr(xml, "radius", 0),
+			getAttr(xml, "length", 0)
+		)
+	pre xml = nil or xml.type = "cylinder";
+
+	convertSphere: [Element] +> [sphere]
+	convertSphere(xml) == if xml = nil then nil else
+		mk_sphere
+		(
+			getAttr(xml, "radius", 0)
+		)
+	pre xml = nil or xml.type = "sphere";
+
+	convertMesh: [Element] +> [mesh]
+	convertMesh(xml) == if xml = nil then nil else
+		mk_mesh
+		(
+			getAttr(xml, "filename", nil),
+			getAttr(xml, "scale", [1, 1, 1])
+		)
+	pre xml = nil or xml.type = "mesh";
+
+	convertColor: [Element] +> [color]
+	convertColor(xml) == if xml = nil then nil else
+		mk_color
+		(
+			getAttr(xml, "rgba", nil)
+		)
+	pre xml = nil or xml.type = "color";
+
+	convertTexture: [Element] +> [texture]
+	convertTexture(xml) ==  if xml = nil then nil else
+		mk_texture
+		(
+			getAttr(xml, "filename", nil)
+		)
+	pre xml = nil or xml.type = "texture";
+
+	convertMaterial: [Element] +> [material]
+	convertMaterial(xml) == if xml = nil then nil else
+		mk_material
+		(
+			getAttr(xml, "name", nil),
+			convertColor(getChild(xml, "color")),
+			convertTexture(getChild(xml, "texture"))
+		)
+	pre xml = nil or xml.type = "material";
+
+	convertTransmission: [Element] +> [transmission]
+	convertTransmission(xml) == is not yet specified
+	pre xml = nil or xml.type = "transmission";
+
+	/**
+	 * XML access functions.
+	 */
+	getChildren: Element * QName +> seq of Element
+	getChildren(xml, qname) ==
+		[ child | child in seq xml.children & is_(child, Element) and child.type = qname ];
+
+	getChild: Element * QName +> [Element]
+	getChild(xml, qname) ==
+		let s = [ child | child in seq xml.children & is_(child, Element) and child.type = qname ] in
+			if s = []
+			then nil
+			else hd s;
+
+	getAttr: [Element] * AName * [AValue] +> [AValue]
+	getAttr(xml, name, default) ==
+		if xml = nil
+		then nil
+		else let s = [ a.value | a in seq xml.attrs & a.name = name ] in
+			if s = []
+			then default
+			else hd s;

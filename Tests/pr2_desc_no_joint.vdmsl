@@ -1,0 +1,61 @@
+/**
+ * VDM created from pr2_desc_no_joint.urdf on Sun Mar 03 16:10:12 GMT 2024
+ * DO NOT EDIT!
+ */
+values
+  pr2_desc_no_joint_urdf =
+  mk_Element
+  (
+    "robot",
+    [
+      mk_Attribute("name", "pr2")
+    ],
+    [
+      mk_Element
+      (
+        "link",
+        [
+          mk_Attribute("name", "fl_caster_rotation_link")
+        ],
+        [
+          mk_Element
+          (
+            "inertial",
+            [],
+            [
+              mk_Element
+              (
+                "mass",
+                [
+                  mk_Attribute("value", 3.473082)
+                ],
+                []
+              ),
+              mk_Element
+              (
+                "origin",
+                [
+                  mk_Attribute("xyz", [0, 0, 0.07])
+                ],
+                []
+              ),
+              mk_Element
+              (
+                "inertia",
+                [
+                  mk_Attribute("ixx", 0.012411765597),
+                  mk_Attribute("iyy", 0.015218160428),
+                  mk_Attribute("izz", 0.011763977943),
+                  mk_Attribute("ixz", 0.00050272983),
+                  mk_Attribute("ixy", -0.000711733678),
+                  mk_Attribute("iyz", -0.000004273467)
+                ],
+                []
+              )
+            ]
+          )
+        ]
+      )
+    ]
+  );
+

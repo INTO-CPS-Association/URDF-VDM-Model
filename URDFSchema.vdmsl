@@ -1,0 +1,192 @@
+/**
+ * VDM-SL types to represent a URDF description.
+ */
+types
+	String	= seq of char;
+	anyURI	= String;
+	Name	= String;
+
+	origin ::
+		xyz		: seq1 of real
+		rpy		: seq1 of real /*Represents the fixed axis roll, pitch and yaw angles in radians. */
+	;
+
+	color ::
+		rgba	: seq1 of real
+	;
+
+	verbose ::
+		value	: String
+	;
+
+	mass ::
+		value	: real 
+	;
+
+	inertia ::
+		ixx		: real
+		ixy		: real
+		ixz		: real
+		iyy		: real
+		iyz		: real
+		izz		: real
+	;
+
+    inertial ::
+		origin		: [origin]
+		mass		: [mass]
+		inertia		: [inertia]
+	;
+
+	box ::
+		size		: seq1 of real
+	;
+
+	cylinder ::
+		radius		: real
+		length		: real
+	;
+
+	sphere ::
+		radius		 : real
+	;
+
+	mesh ::
+		filename	: anyURI
+		scale		: seq1 of real
+	;
+
+	geometry ::
+		box			: [box]
+		cylinder	: [cylinder]
+		sphere		: [sphere]
+		mesh		: [mesh]
+	;
+
+	texture ::
+		filename	: anyURI
+	;
+
+	material ::
+		name		: String
+		color		: [color]
+		texture		: [texture]
+	;
+
+	visual ::
+		origin		: [origin]
+		geometry	: geometry
+		material	: [material]
+	;
+
+	collision ::
+		name		: [String]
+		origin		: [origin]
+		geometry	: geometry
+		verbose		: [verbose]
+	;
+
+	link ::
+		name		: String
+		type		: [String]
+		inertial	: [inertial]
+		visual		: [visual]
+		collision	: [collision]
+	;
+
+	axis ::
+		xyz			: seq1 of real
+	;
+
+	calibration ::
+		reference_position	: real
+		rising				: real
+		falling				: real
+	;
+
+	dynamics ::
+		damping		: real
+		friction	: real
+	;
+
+	limit ::
+		lower		: real
+		upper		: real
+		effort		: real
+		velocity	: real
+	;
+
+	safety_controller ::
+		soft_lower_limit	: real
+		soft_upper_limit	: real
+		k_position			: real
+		k_velocity			: real
+	;
+
+	mimic ::
+		joint		: String
+		multiplier	: real	
+		offset		: real	
+	;
+
+	actuator_transmission ::
+		mechanicalReduction		: real
+		name					: String
+	;
+
+	gap_joint_transmission ::
+		name					: String
+		L0						: real
+		a						: real
+		b						: real
+		gear_ratio				: real
+		h						: real
+		mechanical_reduction	: real
+		phi0					: real
+		r						: real
+		screw_reduction			: real
+		t0						: real
+		theta0					: real
+	;
+
+	transmissionType ::
+		leftActuator				: [actuator_transmission]
+		rightActuator				: [actuator_transmission]
+		flexJoint					: [actuator_transmission]
+		rollJoint					: [actuator_transmission]
+		gap_joint					: [gap_joint_transmission]
+		passive_joint				: seq of Name
+		use_simulated_gripper_joint	: bool
+		mechanicalReduction			: [real]
+		actuator					: Name
+		joint						: Name
+	;
+
+	transmission ::
+		name				: String
+		type				: String
+		transmissionTypes	: seq of transmissionType
+	;
+
+	joint ::
+		name				: String
+		type				: String
+		parent				: String
+		child				: String
+		origin				: [origin]
+		axis				: [axis]
+		calibration			: [calibration]
+		dynamics			: [dynamics]
+		limit				: [limit]
+		safety_controller	: [safety_controller]
+		mimic				: [mimic]
+	;
+
+	robot ::
+		name			: String
+		version			: String
+    	joints			: seq of joint
+    	links			: seq of link
+    	materials		: seq of material
+    	transmissions	: seq of transmission
+	;

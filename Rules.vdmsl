@@ -1,0 +1,24 @@
+/**
+ * Rules invoked from the ValidatedTypes' invariants. They all return booleans and
+ * may use @OnFail annotations to raise errors.
+ */
+functions
+	jointsAndLinksMatch: robot +> bool
+	jointsAndLinksMatch(r) ==
+		-- Test the subelements to check parent/child match links. If a test fails,
+		-- an @OnFail can be used to explain the problem, and @DocLinks can be
+		-- used to give URL context to the error.
+
+		-- @DocLink("http://wiki.ros.org/urdf/XML/joint")
+		allOf
+		([
+			[
+				-- @OnFail("Joint %s: parent link %s not found", j.name, j.parent)
+				( exists l in seq r.links & l.name = j.parent ),
+
+				-- @OnFail("Joint %s: child link %s not found", j.name, j.child)
+				( exists l in seq r.links & l.name = j.child )
+			]
+
+			| j in seq r.joints
+		]);

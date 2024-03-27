@@ -1,0 +1,75 @@
+/**
+ * VDM created from URDF\tests\no_visual.urdf on Tue Mar 12 10:28:30 CET 2024
+ * DO NOT EDIT!
+ */
+values
+  no_visual_urdf =
+  mk_Element
+  (
+    "robot",
+    [
+      mk_Attribute("name", "no_visual")
+    ],
+    [
+      mk_Element
+      (
+        "link",
+        [
+          mk_Attribute("name", "link1")
+        ],
+        [
+          mk_Element
+          (
+            "inertial",
+            [],
+            [
+              mk_Element
+              (
+                "mass",
+                [
+                  mk_Attribute("value", 1)
+                ],
+                []
+              ),
+              mk_Element
+              (
+                "inertia",
+                [
+                  mk_Attribute("ixx", 1),
+                  mk_Attribute("iyy", 1),
+                  mk_Attribute("izz", 1),
+                  mk_Attribute("ixz", 0),
+                  mk_Attribute("ixy", 0),
+                  mk_Attribute("iyz", 0)
+                ],
+                []
+              )
+            ]
+          ),
+          mk_Element
+          (
+            "collision",
+            [],
+            [
+              mk_Element
+              (
+                "geometry",
+                [],
+                [
+                  mk_Element
+                  (
+                    "box",
+                    [
+                      mk_Attribute("size", [1, 1, 1])
+                    ],
+                    []
+                  )
+                ]
+              )
+            ]
+          )
+        ]
+      )
+    ]
+  );
+

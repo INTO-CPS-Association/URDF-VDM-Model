@@ -1,0 +1,197 @@
+/**
+ * VDM created from singularity.urdf on Sun Mar 03 16:10:13 GMT 2024
+ * DO NOT EDIT!
+ */
+values
+  singularity_urdf =
+  mk_Element
+  (
+    "robot",
+    [
+      mk_Attribute("name", "no_visual")
+    ],
+    [
+      mk_Element
+      (
+        "link",
+        [
+          mk_Attribute("name", "link1")
+        ],
+        [
+          mk_Element
+          (
+            "inertial",
+            [],
+            [
+              mk_Element
+              (
+                "mass",
+                [
+                  mk_Attribute("value", 1)
+                ],
+                []
+              ),
+              mk_Element
+              (
+                "inertia",
+                [
+                  mk_Attribute("ixx", 1),
+                  mk_Attribute("iyy", 1),
+                  mk_Attribute("izz", 1),
+                  mk_Attribute("ixz", 0),
+                  mk_Attribute("ixy", 0),
+                  mk_Attribute("iyz", 0)
+                ],
+                []
+              )
+            ]
+          )
+        ]
+      ),
+      mk_Element
+      (
+        "link",
+        [
+          mk_Attribute("name", "link2")
+        ],
+        [
+          mk_Element
+          (
+            "inertial",
+            [],
+            [
+              mk_Element
+              (
+                "mass",
+                [
+                  mk_Attribute("value", 1)
+                ],
+                []
+              ),
+              mk_Element
+              (
+                "inertia",
+                [
+                  mk_Attribute("ixx", 1),
+                  mk_Attribute("iyy", 1),
+                  mk_Attribute("izz", 1),
+                  mk_Attribute("ixz", 0),
+                  mk_Attribute("ixy", 0),
+                  mk_Attribute("iyz", 0)
+                ],
+                []
+              )
+            ]
+          )
+        ]
+      ),
+      mk_Element
+      (
+        "joint",
+        [
+          mk_Attribute("name", "joint12"),
+          mk_Attribute("type", "fixed")
+        ],
+        [
+          mk_Element
+          (
+            "parent",
+            [
+              mk_Attribute("link", "link1")
+            ],
+            []
+          ),
+          mk_Element
+          (
+            "child",
+            [
+              mk_Attribute("link", "link2")
+            ],
+            []
+          ),
+          mk_Element
+          (
+            "origin",
+            [
+              mk_Attribute("xyz", [0, 0, 0]),
+              mk_Attribute("rpy", [1.0, 1.5707963267948966, 0.5707963267948966])
+            ],
+            []
+          )
+        ]
+      ),
+      mk_Element
+      (
+        "link",
+        [
+          mk_Attribute("name", "link3")
+        ],
+        [
+          mk_Element
+          (
+            "inertial",
+            [],
+            [
+              mk_Element
+              (
+                "mass",
+                [
+                  mk_Attribute("value", 1)
+                ],
+                []
+              ),
+              mk_Element
+              (
+                "inertia",
+                [
+                  mk_Attribute("ixx", 1),
+                  mk_Attribute("iyy", 1),
+                  mk_Attribute("izz", 1),
+                  mk_Attribute("ixz", 0),
+                  mk_Attribute("ixy", 0),
+                  mk_Attribute("iyz", 0)
+                ],
+                []
+              )
+            ]
+          )
+        ]
+      ),
+      mk_Element
+      (
+        "joint",
+        [
+          mk_Attribute("name", "joint13"),
+          mk_Attribute("type", "fixed")
+        ],
+        [
+          mk_Element
+          (
+            "parent",
+            [
+              mk_Attribute("link", "link2")
+            ],
+            []
+          ),
+          mk_Element
+          (
+            "child",
+            [
+              mk_Attribute("link", "link3")
+            ],
+            []
+          ),
+          mk_Element
+          (
+            "origin",
+            [
+              mk_Attribute("xyz", [0, 0, 0]),
+              mk_Attribute("rpy", [1.5707963267948966, 1.5707963267948966, 1.5707963267948966])
+            ],
+            []
+          )
+        ]
+      )
+    ]
+  );
+

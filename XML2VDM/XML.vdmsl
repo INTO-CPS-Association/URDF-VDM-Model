@@ -1,0 +1,18 @@
+/**
+ * A simple model of XML document elements.
+ */
+types
+	QName	= seq1 of char;	-- Qualified element name, like "ns:thing"
+	AName	= seq1 of char;	-- A simple attribute name
+	AValue	= real | seq1 of real | seq1 of char;
+
+	Element ::
+		type		: QName
+		attrs		: seq of Attribute
+		children	: seq of (Element | Content);
+
+	Attribute ::
+		name		: AName
+		value		: AValue;
+
+	Content = seq of char;

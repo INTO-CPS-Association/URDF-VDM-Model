@@ -1,0 +1,116 @@
+/**
+ * VDM created from two_links_one_joint.urdf on Sun Mar 03 16:10:13 GMT 2024
+ * DO NOT EDIT!
+ */
+values
+  two_links_one_joint_urdf =
+  mk_Element
+  (
+    "robot",
+    [
+      mk_Attribute("name", "two_links_one_joint")
+    ],
+    [
+      mk_Element
+      (
+        "link",
+        [
+          mk_Attribute("name", "link1")
+        ],
+        [
+          mk_Element
+          (
+            "inertial",
+            [],
+            [
+              mk_Element
+              (
+                "mass",
+                [
+                  mk_Attribute("value", 1)
+                ],
+                []
+              ),
+              mk_Element
+              (
+                "inertia",
+                [
+                  mk_Attribute("ixx", 1),
+                  mk_Attribute("iyy", 1),
+                  mk_Attribute("izz", 1),
+                  mk_Attribute("ixz", 0),
+                  mk_Attribute("ixy", 0),
+                  mk_Attribute("iyz", 0)
+                ],
+                []
+              )
+            ]
+          )
+        ]
+      ),
+      mk_Element
+      (
+        "link",
+        [
+          mk_Attribute("name", "link2")
+        ],
+        [
+          mk_Element
+          (
+            "inertial",
+            [],
+            [
+              mk_Element
+              (
+                "mass",
+                [
+                  mk_Attribute("value", 1)
+                ],
+                []
+              ),
+              mk_Element
+              (
+                "inertia",
+                [
+                  mk_Attribute("ixx", 1),
+                  mk_Attribute("iyy", 1),
+                  mk_Attribute("izz", 1),
+                  mk_Attribute("ixz", 0),
+                  mk_Attribute("ixy", 0),
+                  mk_Attribute("iyz", 0)
+                ],
+                []
+              )
+            ]
+          )
+        ]
+      ),
+      mk_Element
+      (
+        "joint",
+        [
+          mk_Attribute("name", "joint12"),
+          mk_Attribute("type", "fixed")
+        ],
+        [
+          mk_Element
+          (
+            "parent",
+            [
+              mk_Attribute("link", "link1")
+            ],
+            []
+          ),
+          mk_Element
+          (
+            "child",
+            [
+              mk_Attribute("link", "link2")
+            ],
+            []
+          )
+        ]
+      )
+    ]
+  );
+

@@ -1,0 +1,101 @@
+/**
+ * Validated types for all URDF elements.
+ */
+functions
+	/**
+	 * Function to validate the top level robot record. This just
+	 * calls the invariant function for the corresponding Robot validated type.
+	 */
+	validateURDF: robot +> bool
+	validateURDF(r) == inv_Robot(r);
+
+types
+	Robot = robot
+	inv r == allOf
+	([
+		-- Invariants of subelements (use apply[...](...) for sequences)
+		apply[joint](inv_Joint, r.joints),
+		apply[link](inv_Link, r.links),
+		apply[material](inv_Material, r.materials),
+
+		-- rules that span a robot go here
+		jointsAndLinksMatch(r)
+	]);
+
+	Joint = [joint]
+	inv j == j <> nil => allOf
+	([
+		-- Invariants of subelements
+		inv_Origin(j.origin),
+		inv_Axis(j.axis),
+		inv_Calibration(j.calibration),
+		inv_Dynamics(j.dynamics),
+		inv_Limit(j.limit),
+		inv_SafetyController(j.safety_controller),
+		inv_Mimic(j.mimic)
+
+		-- rules that span a single joint go here
+	]);
+
+	Link = [link]
+	inv l == l <> nil => allOf
+	([
+		-- Invariants of subelements
+		-- rules that span this element
+	]);
+
+	Material = [material]
+	inv m == m <> nil => allOf
+	([
+		-- Invariants of subelements
+		-- rules that span this element
+	]);
+
+	Origin = [origin]
+	inv x == x <> nil => allOf
+	([
+		-- Invariants of subelements
+		-- rules that span this element
+	]);
+
+	Axis = [axis]
+	inv x == x <> nil => allOf
+	([
+		-- Invariants of subelements
+		-- rules that span this element
+	]);
+
+	Calibration = [calibration]
+	inv x == x <> nil => allOf
+	([
+		-- Invariants of subelements
+		-- rules that span this element
+	]);
+
+	Dynamics = [dynamics]
+	inv x == x <> nil => allOf
+	([
+		-- Invariants of subelements
+		-- rules that span this element
+	]);
+
+	Limit = [limit]
+	inv x == x <> nil => allOf
+	([
+		-- Invariants of subelements
+		-- rules that span this element
+	]);
+
+	SafetyController = [safety_controller]
+	inv x == x <> nil => allOf
+	([
+		-- Invariants of subelements
+		-- rules that span this element
+	]);
+
+	Mimic = [mimic]
+	inv x == x <> nil => allOf
+	([
+		-- Invariants of subelements
+		-- rules that span this element
+	]);
