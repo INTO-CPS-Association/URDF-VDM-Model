@@ -8,7 +8,7 @@ functions
 		convertRobot(no_visual_urdf),
 		convertRobot(one_link_urdf),
 		convertRobot(pr2_desc_no_joint_urdf),
-		-- convertRobot(pr2_desc_urdf),			-- Uses transmissions
+		convertRobot(pr2_desc_urdf),			-- NB. Uses transmissions
 		convertRobot(singularity_urdf),
 		convertRobot(test_robot_urdf),
 		convertRobot(two_links_one_joint_urdf),
@@ -21,7 +21,7 @@ functions
 		validateURDF(convertRobot(no_visual_urdf)),
 		validateURDF(convertRobot(one_link_urdf)),
 		validateURDF(convertRobot(pr2_desc_no_joint_urdf)),
-		-- validateURDF(convertRobot(pr2_desc_urdf)),	-- Uses transmissions
+		validateURDF(convertRobot(pr2_desc_urdf)),	-- NB. Uses transmissions
 		validateURDF(convertRobot(singularity_urdf)),
 		validateURDF(convertRobot(test_robot_urdf)),
 		validateURDF(convertRobot(two_links_one_joint_urdf)),

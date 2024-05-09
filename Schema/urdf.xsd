@@ -256,13 +256,9 @@
 		  type="gap_joint_transmission" minOccurs="0" maxOccurs="1" />
       <xs:element name="passive_joint"
 		  type="passive_joint_transmission" minOccurs="0" maxOccurs="unbounded" />
-      <xs:element name="use_simulated_gripper_joint" minOccurs="0" maxOccurs="1">
-	<xs:complexType>
-	</xs:complexType>
-      </xs:element>
+      <xs:element name="use_simulated_gripper_joint" minOccurs="0" maxOccurs="1" />
       <xs:element name="mechanicalReduction" type="xs:double"
 		  minOccurs="0" maxOccurs="1" />
-
       <xs:element name="actuator" type="name" minOccurs="0" maxOccurs="1" />
       <xs:element name="joint" type="name" minOccurs="0" maxOccurs="1" />
     </xs:sequence>

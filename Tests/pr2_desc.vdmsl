@@ -1,5 +1,5 @@
 /**
- * VDM created from pr2_desc.urdf on Sun Mar 03 16:10:12 GMT 2024
+ * VDM created from pr2_desc.urdf on Thu May 09 16:26:48 BST 2024
  * DO NOT EDIT!
  */
 values
@@ -44,7 +44,7 @@ values
                 "updateRate",
                 [],
                 [
-                  "1000.0"
+                  1000.0
                 ]
               ),
               mk_Element
@@ -78,7 +78,7 @@ values
                 "updateRate",
                 [],
                 [
-                  "1.0"
+                  1.0
                 ]
               ),
               mk_Element
@@ -86,7 +86,7 @@ values
                 "timeout",
                 [],
                 [
-                  "5"
+                  5
                 ]
               ),
               mk_Element
@@ -110,7 +110,7 @@ values
                 "powerStateRate",
                 [],
                 [
-                  "10.0"
+                  10.0
                 ]
               ),
               mk_Element
@@ -118,7 +118,7 @@ values
                 "fullChargeCapacity",
                 [],
                 [
-                  "87.78"
+                  87.78
                 ]
               ),
               mk_Element
@@ -126,7 +126,7 @@ values
                 "dischargeRate",
                 [],
                 [
-                  "-474"
+                  -474
                 ]
               ),
               mk_Element
@@ -134,7 +134,7 @@ values
                 "chargeRate",
                 [],
                 [
-                  "525"
+                  525
                 ]
               ),
               mk_Element
@@ -142,7 +142,7 @@ values
                 "dischargeVoltage",
                 [],
                 [
-                  "15.52"
+                  15.52
                 ]
               ),
               mk_Element
@@ -150,7 +150,7 @@ values
                 "chargeVoltage",
                 [],
                 [
-                  "16.41"
+                  16.41
                 ]
               )
             ]
@@ -788,7 +788,7 @@ values
                 "rayCount",
                 [],
                 [
-                  "640"
+                  640
                 ]
               ),
               mk_Element
@@ -796,7 +796,7 @@ values
                 "rangeCount",
                 [],
                 [
-                  "640"
+                  640
                 ]
               ),
               mk_Element
@@ -804,7 +804,7 @@ values
                 "laserCount",
                 [],
                 [
-                  "1"
+                  1
                 ]
               ),
               mk_Element
@@ -812,7 +812,7 @@ values
                 "origin",
                 [],
                 [
-                  "0.0 0.0 0.0"
+                  [0.0, 0.0, 0.0]
                 ]
               ),
               mk_Element
@@ -828,7 +828,7 @@ values
                 "minAngle",
                 [],
                 [
-                  "-129.998394137"
+                  -129.998394137
                 ]
               ),
               mk_Element
@@ -836,7 +836,7 @@ values
                 "maxAngle",
                 [],
                 [
-                  "129.998394137"
+                  129.998394137
                 ]
               ),
               mk_Element
@@ -844,7 +844,7 @@ values
                 "minRange",
                 [],
                 [
-                  "0.08"
+                  0.08
                 ]
               ),
               mk_Element
@@ -852,7 +852,7 @@ values
                 "maxRange",
                 [],
                 [
-                  "10.0"
+                  10.0
                 ]
               ),
               mk_Element
@@ -860,7 +860,7 @@ values
                 "resRange",
                 [],
                 [
-                  "0.01"
+                  0.01
                 ]
               ),
               mk_Element
@@ -868,7 +868,7 @@ values
                 "updateRate",
                 [],
                 [
-                  "20"
+                  20
                 ]
               ),
               mk_Element
@@ -884,7 +884,7 @@ values
                     "gaussianNoise",
                     [],
                     [
-                      "0.005"
+                      0.005
                     ]
                   ),
                   mk_Element
@@ -900,7 +900,7 @@ values
                     "updateRate",
                     [],
                     [
-                      "20"
+                      20
                     ]
                   ),
                   mk_Element
@@ -1154,7 +1154,7 @@ values
             "mechanicalReduction",
             [],
             [
-              "-79.2380952381"
+              -79.2380952381
             ]
           )
         ]
@@ -1414,7 +1414,7 @@ values
             "mechanicalReduction",
             [],
             [
-              "79.2380952381"
+              79.2380952381
             ]
           )
         ]
@@ -1674,7 +1674,7 @@ values
             "mechanicalReduction",
             [],
             [
-              "-79.2380952381"
+              -79.2380952381
             ]
           )
         ]
@@ -1917,7 +1917,7 @@ values
             "mechanicalReduction",
             [],
             [
-              "-79.2380952381"
+              -79.2380952381
             ]
           )
         ]
@@ -2177,7 +2177,7 @@ values
             "mechanicalReduction",
             [],
             [
-              "79.2380952381"
+              79.2380952381
             ]
           )
         ]
@@ -2437,7 +2437,7 @@ values
             "mechanicalReduction",
             [],
             [
-              "-79.2380952381"
+              -79.2380952381
             ]
           )
         ]
@@ -2680,7 +2680,7 @@ values
             "mechanicalReduction",
             [],
             [
-              "-79.2380952381"
+              -79.2380952381
             ]
           )
         ]
@@ -2940,7 +2940,7 @@ values
             "mechanicalReduction",
             [],
             [
-              "79.2380952381"
+              79.2380952381
             ]
           )
         ]
@@ -3200,7 +3200,7 @@ values
             "mechanicalReduction",
             [],
             [
-              "-79.2380952381"
+              -79.2380952381
             ]
           )
         ]
@@ -3443,7 +3443,7 @@ values
             "mechanicalReduction",
             [],
             [
-              "-79.2380952381"
+              -79.2380952381
             ]
           )
         ]
@@ -3703,7 +3703,7 @@ values
             "mechanicalReduction",
             [],
             [
-              "79.2380952381"
+              79.2380952381
             ]
           )
         ]
@@ -3963,7 +3963,7 @@ values
             "mechanicalReduction",
             [],
             [
-              "-79.2380952381"
+              -79.2380952381
             ]
           )
         ]
@@ -4020,7 +4020,7 @@ values
                 "updateRate",
                 [],
                 [
-                  "100.0"
+                  100.0
                 ]
               ),
               mk_Element
@@ -4044,7 +4044,7 @@ values
                     "updateRate",
                     [],
                     [
-                      "100.0"
+                      100.0
                     ]
                   ),
                   mk_Element
@@ -4095,7 +4095,7 @@ values
                 "updateRate",
                 [],
                 [
-                  "100.0"
+                  100.0
                 ]
               ),
               mk_Element
@@ -4119,7 +4119,7 @@ values
                 "gaussianNoise",
                 [],
                 [
-                  "0.01"
+                  0.01
                 ]
               ),
               mk_Element
@@ -4135,7 +4135,7 @@ values
                 "xyzOffsets",
                 [],
                 [
-                  "25.7 25.7 0"
+                  [25.7, 25.7, 0]
                 ]
               ),
               mk_Element
@@ -4143,7 +4143,7 @@ values
                 "rpyOffsets",
                 [],
                 [
-                  "0 0 0"
+                  [0, 0, 0]
                 ]
               ),
               mk_Element
@@ -4391,7 +4391,7 @@ values
                 "updateRate",
                 [],
                 [
-                  "100.0"
+                  100.0
                 ]
               ),
               mk_Element
@@ -4415,7 +4415,7 @@ values
                     "updateRate",
                     [],
                     [
-                      "100.0"
+                      100.0
                     ]
                   ),
                   mk_Element
@@ -4469,7 +4469,7 @@ values
             "mechanicalReduction",
             [],
             [
-              "-52143.33"
+              -52143.33
             ]
           )
         ]
@@ -4659,7 +4659,7 @@ values
                 "updateRate",
                 [],
                 [
-                  "100.0"
+                  100.0
                 ]
               ),
               mk_Element
@@ -4683,7 +4683,7 @@ values
                 "gaussianNoise",
                 [],
                 [
-                  "2.89e-08"
+                  2.89e-08
                 ]
               ),
               mk_Element
@@ -4691,7 +4691,7 @@ values
                 "xyzOffsets",
                 [],
                 [
-                  "0 0 0"
+                  [0, 0, 0]
                 ]
               ),
               mk_Element
@@ -4699,7 +4699,7 @@ values
                 "rpyOffsets",
                 [],
                 [
-                  "0 0 0"
+                  [0, 0, 0]
                 ]
               ),
               mk_Element
@@ -4939,7 +4939,7 @@ values
             "mechanicalReduction",
             [],
             [
-              "6.0"
+              6.0
             ]
           )
         ]
@@ -5178,7 +5178,7 @@ values
             "mechanicalReduction",
             [],
             [
-              "6.0"
+              6.0
             ]
           )
         ]
@@ -5834,7 +5834,7 @@ values
                 "imageSize",
                 [],
                 [
-                  "2448 2050"
+                  [2448, 2050]
                 ]
               ),
               mk_Element
@@ -5842,7 +5842,7 @@ values
                 "hfov",
                 [],
                 [
-                  "45"
+                  45
                 ]
               ),
               mk_Element
@@ -5850,7 +5850,7 @@ values
                 "nearClip",
                 [],
                 [
-                  "0.1"
+                  0.1
                 ]
               ),
               mk_Element
@@ -5858,7 +5858,7 @@ values
                 "farClip",
                 [],
                 [
-                  "100"
+                  100
                 ]
               ),
               mk_Element
@@ -5866,7 +5866,7 @@ values
                 "updateRate",
                 [],
                 [
-                  "20.0"
+                  20.0
                 ]
               ),
               mk_Element
@@ -5890,7 +5890,7 @@ values
                     "updateRate",
                     [],
                     [
-                      "20.0"
+                      20.0
                     ]
                   ),
                   mk_Element
@@ -5930,7 +5930,7 @@ values
                     "CxPrime",
                     [],
                     [
-                      "1224.5"
+                      1224.5
                     ]
                   ),
                   mk_Element
@@ -5938,7 +5938,7 @@ values
                     "Cx",
                     [],
                     [
-                      "1224.5"
+                      1224.5
                     ]
                   ),
                   mk_Element
@@ -5946,7 +5946,7 @@ values
                     "Cy",
                     [],
                     [
-                      "1025.5"
+                      1025.5
                     ]
                   ),
                   mk_Element
@@ -5954,7 +5954,7 @@ values
                     "focal_length",
                     [],
                     [
-                      "2955"
+                      2955
                     ]
                   ),
                   mk_Element
@@ -5962,7 +5962,7 @@ values
                     "distortion_k1",
                     [],
                     [
-                      "0.00000001"
+                      0.00000001
                     ]
                   ),
                   mk_Element
@@ -5970,7 +5970,7 @@ values
                     "distortion_k2",
                     [],
                     [
-                      "0.00000001"
+                      0.00000001
                     ]
                   ),
                   mk_Element
@@ -5978,7 +5978,7 @@ values
                     "distortion_k3",
                     [],
                     [
-                      "0.00000001"
+                      0.00000001
                     ]
                   ),
                   mk_Element
@@ -5986,7 +5986,7 @@ values
                     "distortion_t1",
                     [],
                     [
-                      "0.00000001"
+                      0.00000001
                     ]
                   ),
                   mk_Element
@@ -5994,7 +5994,7 @@ values
                     "distortion_t2",
                     [],
                     [
-                      "0.00000001"
+                      0.00000001
                     ]
                   ),
                   mk_Element
@@ -6569,7 +6569,7 @@ values
                 "imageSize",
                 [],
                 [
-                  "640 480"
+                  [640, 480]
                 ]
               ),
               mk_Element
@@ -6585,7 +6585,7 @@ values
                 "hfov",
                 [],
                 [
-                  "90"
+                  90
                 ]
               ),
               mk_Element
@@ -6593,7 +6593,7 @@ values
                 "nearClip",
                 [],
                 [
-                  "0.1"
+                  0.1
                 ]
               ),
               mk_Element
@@ -6601,7 +6601,7 @@ values
                 "farClip",
                 [],
                 [
-                  "100"
+                  100
                 ]
               ),
               mk_Element
@@ -6609,7 +6609,7 @@ values
                 "updateRate",
                 [],
                 [
-                  "25.0"
+                  25.0
                 ]
               ),
               mk_Element
@@ -6633,7 +6633,7 @@ values
                     "updateRate",
                     [],
                     [
-                      "25.0"
+                      25.0
                     ]
                   ),
                   mk_Element
@@ -6665,7 +6665,7 @@ values
                     "hackBaseline",
                     [],
                     [
-                      "0"
+                      0
                     ]
                   ),
                   mk_Element
@@ -6673,7 +6673,7 @@ values
                     "CxPrime",
                     [],
                     [
-                      "320.5"
+                      320.5
                     ]
                   ),
                   mk_Element
@@ -6681,7 +6681,7 @@ values
                     "Cx",
                     [],
                     [
-                      "320.5"
+                      320.5
                     ]
                   ),
                   mk_Element
@@ -6689,7 +6689,7 @@ values
                     "Cy",
                     [],
                     [
-                      "240.5"
+                      240.5
                     ]
                   ),
                   mk_Element
@@ -6697,7 +6697,7 @@ values
                     "focal_length",
                     [],
                     [
-                      "320"
+                      320
                     ]
                   ),
                   mk_Element
@@ -6705,7 +6705,7 @@ values
                     "distortion_k1",
                     [],
                     [
-                      "0.00000001"
+                      0.00000001
                     ]
                   ),
                   mk_Element
@@ -6713,7 +6713,7 @@ values
                     "distortion_k2",
                     [],
                     [
-                      "0.00000001"
+                      0.00000001
                     ]
                   ),
                   mk_Element
@@ -6721,7 +6721,7 @@ values
                     "distortion_k3",
                     [],
                     [
-                      "0.00000001"
+                      0.00000001
                     ]
                   ),
                   mk_Element
@@ -6729,7 +6729,7 @@ values
                     "distortion_t1",
                     [],
                     [
-                      "0.00000001"
+                      0.00000001
                     ]
                   ),
                   mk_Element
@@ -6737,7 +6737,7 @@ values
                     "distortion_t2",
                     [],
                     [
-                      "0.00000001"
+                      0.00000001
                     ]
                   ),
                   mk_Element
@@ -6974,7 +6974,7 @@ values
                 "imageSize",
                 [],
                 [
-                  "640 480"
+                  [640, 480]
                 ]
               ),
               mk_Element
@@ -6990,7 +6990,7 @@ values
                 "hfov",
                 [],
                 [
-                  "90"
+                  90
                 ]
               ),
               mk_Element
@@ -6998,7 +6998,7 @@ values
                 "nearClip",
                 [],
                 [
-                  "0.1"
+                  0.1
                 ]
               ),
               mk_Element
@@ -7006,7 +7006,7 @@ values
                 "farClip",
                 [],
                 [
-                  "100"
+                  100
                 ]
               ),
               mk_Element
@@ -7014,7 +7014,7 @@ values
                 "updateRate",
                 [],
                 [
-                  "25.0"
+                  25.0
                 ]
               ),
               mk_Element
@@ -7038,7 +7038,7 @@ values
                     "updateRate",
                     [],
                     [
-                      "25.0"
+                      25.0
                     ]
                   ),
                   mk_Element
@@ -7070,7 +7070,7 @@ values
                     "hackBaseline",
                     [],
                     [
-                      "0.09"
+                      0.09
                     ]
                   ),
                   mk_Element
@@ -7078,7 +7078,7 @@ values
                     "CxPrime",
                     [],
                     [
-                      "320.5"
+                      320.5
                     ]
                   ),
                   mk_Element
@@ -7086,7 +7086,7 @@ values
                     "Cx",
                     [],
                     [
-                      "320.5"
+                      320.5
                     ]
                   ),
                   mk_Element
@@ -7094,7 +7094,7 @@ values
                     "Cy",
                     [],
                     [
-                      "240.5"
+                      240.5
                     ]
                   ),
                   mk_Element
@@ -7102,7 +7102,7 @@ values
                     "focal_length",
                     [],
                     [
-                      "320"
+                      320
                     ]
                   ),
                   mk_Element
@@ -7110,7 +7110,7 @@ values
                     "distortion_k1",
                     [],
                     [
-                      "0.00000001"
+                      0.00000001
                     ]
                   ),
                   mk_Element
@@ -7118,7 +7118,7 @@ values
                     "distortion_k2",
                     [],
                     [
-                      "0.00000001"
+                      0.00000001
                     ]
                   ),
                   mk_Element
@@ -7126,7 +7126,7 @@ values
                     "distortion_k3",
                     [],
                     [
-                      "0.00000001"
+                      0.00000001
                     ]
                   ),
                   mk_Element
@@ -7134,7 +7134,7 @@ values
                     "distortion_t1",
                     [],
                     [
-                      "0.00000001"
+                      0.00000001
                     ]
                   ),
                   mk_Element
@@ -7142,7 +7142,7 @@ values
                     "distortion_t2",
                     [],
                     [
-                      "0.00000001"
+                      0.00000001
                     ]
                   ),
                   mk_Element
@@ -7624,7 +7624,7 @@ values
                 "imageSize",
                 [],
                 [
-                  "640 480"
+                  [640, 480]
                 ]
               ),
               mk_Element
@@ -7640,7 +7640,7 @@ values
                 "hfov",
                 [],
                 [
-                  "45"
+                  45
                 ]
               ),
               mk_Element
@@ -7648,7 +7648,7 @@ values
                 "nearClip",
                 [],
                 [
-                  "0.1"
+                  0.1
                 ]
               ),
               mk_Element
@@ -7656,7 +7656,7 @@ values
                 "farClip",
                 [],
                 [
-                  "100"
+                  100
                 ]
               ),
               mk_Element
@@ -7664,7 +7664,7 @@ values
                 "updateRate",
                 [],
                 [
-                  "25.0"
+                  25.0
                 ]
               ),
               mk_Element
@@ -7688,7 +7688,7 @@ values
                     "updateRate",
                     [],
                     [
-                      "25.0"
+                      25.0
                     ]
                   ),
                   mk_Element
@@ -7720,7 +7720,7 @@ values
                     "hackBaseline",
                     [],
                     [
-                      "0"
+                      0
                     ]
                   ),
                   mk_Element
@@ -7728,7 +7728,7 @@ values
                     "CxPrime",
                     [],
                     [
-                      "320.5"
+                      320.5
                     ]
                   ),
                   mk_Element
@@ -7736,7 +7736,7 @@ values
                     "Cx",
                     [],
                     [
-                      "320.5"
+                      320.5
                     ]
                   ),
                   mk_Element
@@ -7744,7 +7744,7 @@ values
                     "Cy",
                     [],
                     [
-                      "240.5"
+                      240.5
                     ]
                   ),
                   mk_Element
@@ -7752,7 +7752,7 @@ values
                     "focal_length",
                     [],
                     [
-                      "772.55"
+                      772.55
                     ]
                   ),
                   mk_Element
@@ -7760,7 +7760,7 @@ values
                     "distortion_k1",
                     [],
                     [
-                      "0.00000001"
+                      0.00000001
                     ]
                   ),
                   mk_Element
@@ -7768,7 +7768,7 @@ values
                     "distortion_k2",
                     [],
                     [
-                      "0.00000001"
+                      0.00000001
                     ]
                   ),
                   mk_Element
@@ -7776,7 +7776,7 @@ values
                     "distortion_k3",
                     [],
                     [
-                      "0.00000001"
+                      0.00000001
                     ]
                   ),
                   mk_Element
@@ -7784,7 +7784,7 @@ values
                     "distortion_t1",
                     [],
                     [
-                      "0.00000001"
+                      0.00000001
                     ]
                   ),
                   mk_Element
@@ -7792,7 +7792,7 @@ values
                     "distortion_t2",
                     [],
                     [
-                      "0.00000001"
+                      0.00000001
                     ]
                   ),
                   mk_Element
@@ -8029,7 +8029,7 @@ values
                 "imageSize",
                 [],
                 [
-                  "640 480"
+                  [640, 480]
                 ]
               ),
               mk_Element
@@ -8045,7 +8045,7 @@ values
                 "hfov",
                 [],
                 [
-                  "45"
+                  45
                 ]
               ),
               mk_Element
@@ -8053,7 +8053,7 @@ values
                 "nearClip",
                 [],
                 [
-                  "0.1"
+                  0.1
                 ]
               ),
               mk_Element
@@ -8061,7 +8061,7 @@ values
                 "farClip",
                 [],
                 [
-                  "100"
+                  100
                 ]
               ),
               mk_Element
@@ -8069,7 +8069,7 @@ values
                 "updateRate",
                 [],
                 [
-                  "25.0"
+                  25.0
                 ]
               ),
               mk_Element
@@ -8093,7 +8093,7 @@ values
                     "updateRate",
                     [],
                     [
-                      "25.0"
+                      25.0
                     ]
                   ),
                   mk_Element
@@ -8125,7 +8125,7 @@ values
                     "hackBaseline",
                     [],
                     [
-                      "0.09"
+                      0.09
                     ]
                   ),
                   mk_Element
@@ -8133,7 +8133,7 @@ values
                     "CxPrime",
                     [],
                     [
-                      "320.5"
+                      320.5
                     ]
                   ),
                   mk_Element
@@ -8141,7 +8141,7 @@ values
                     "Cx",
                     [],
                     [
-                      "320.5"
+                      320.5
                     ]
                   ),
                   mk_Element
@@ -8149,7 +8149,7 @@ values
                     "Cy",
                     [],
                     [
-                      "240.5"
+                      240.5
                     ]
                   ),
                   mk_Element
@@ -8157,7 +8157,7 @@ values
                     "focal_length",
                     [],
                     [
-                      "772.55"
+                      772.55
                     ]
                   ),
                   mk_Element
@@ -8165,7 +8165,7 @@ values
                     "distortion_k1",
                     [],
                     [
-                      "0.00000001"
+                      0.00000001
                     ]
                   ),
                   mk_Element
@@ -8173,7 +8173,7 @@ values
                     "distortion_k2",
                     [],
                     [
-                      "0.00000001"
+                      0.00000001
                     ]
                   ),
                   mk_Element
@@ -8181,7 +8181,7 @@ values
                     "distortion_k3",
                     [],
                     [
-                      "0.00000001"
+                      0.00000001
                     ]
                   ),
                   mk_Element
@@ -8189,7 +8189,7 @@ values
                     "distortion_t1",
                     [],
                     [
-                      "0.00000001"
+                      0.00000001
                     ]
                   ),
                   mk_Element
@@ -8197,7 +8197,7 @@ values
                     "distortion_t2",
                     [],
                     [
-                      "0.00000001"
+                      0.00000001
                     ]
                   ),
                   mk_Element
@@ -8643,7 +8643,7 @@ values
                 "updateRate",
                 [],
                 [
-                  "15.0"
+                  15.0
                 ]
               ),
               mk_Element
@@ -8691,7 +8691,7 @@ values
                 "fov",
                 [],
                 [
-                  "0.785398163397"
+                  0.785398163397
                 ]
               ),
               mk_Element
@@ -8699,7 +8699,7 @@ values
                 "nearClipDist",
                 [],
                 [
-                  "0.4"
+                  0.4
                 ]
               ),
               mk_Element
@@ -8707,7 +8707,7 @@ values
                 "farClipDist",
                 [],
                 [
-                  "10"
+                  10
                 ]
               )
             ]
@@ -9090,7 +9090,7 @@ values
                 "rayCount",
                 [],
                 [
-                  "640"
+                  640
                 ]
               ),
               mk_Element
@@ -9098,7 +9098,7 @@ values
                 "rangeCount",
                 [],
                 [
-                  "640"
+                  640
                 ]
               ),
               mk_Element
@@ -9106,7 +9106,7 @@ values
                 "laserCount",
                 [],
                 [
-                  "1"
+                  1
                 ]
               ),
               mk_Element
@@ -9114,7 +9114,7 @@ values
                 "origin",
                 [],
                 [
-                  "0.0 0.0 0.0"
+                  [0.0, 0.0, 0.0]
                 ]
               ),
               mk_Element
@@ -9130,7 +9130,7 @@ values
                 "minAngle",
                 [],
                 [
-                  "-79.9999999086"
+                  -79.9999999086
                 ]
               ),
               mk_Element
@@ -9138,7 +9138,7 @@ values
                 "maxAngle",
                 [],
                 [
-                  "79.9999999086"
+                  79.9999999086
                 ]
               ),
               mk_Element
@@ -9146,7 +9146,7 @@ values
                 "minRange",
                 [],
                 [
-                  "0.08"
+                  0.08
                 ]
               ),
               mk_Element
@@ -9154,7 +9154,7 @@ values
                 "maxRange",
                 [],
                 [
-                  "10.0"
+                  10.0
                 ]
               ),
               mk_Element
@@ -9162,7 +9162,7 @@ values
                 "resRange",
                 [],
                 [
-                  "0.01"
+                  0.01
                 ]
               ),
               mk_Element
@@ -9170,7 +9170,7 @@ values
                 "updateRate",
                 [],
                 [
-                  "40"
+                  40
                 ]
               ),
               mk_Element
@@ -9186,7 +9186,7 @@ values
                     "gaussianNoise",
                     [],
                     [
-                      "0.005"
+                      0.005
                     ]
                   ),
                   mk_Element
@@ -9202,7 +9202,7 @@ values
                     "updateRate",
                     [],
                     [
-                      "40"
+                      40
                     ]
                   ),
                   mk_Element
@@ -9272,7 +9272,7 @@ values
             "mechanicalReduction",
             [],
             [
-              "-6.05"
+              -6.05
             ]
           )
         ]
@@ -9955,7 +9955,7 @@ values
             "mechanicalReduction",
             [],
             [
-              "32.6525111499"
+              32.6525111499
             ]
           )
         ]
@@ -10073,7 +10073,7 @@ values
             "mechanicalReduction",
             [],
             [
-              "63.1552452977"
+              63.1552452977
             ]
           )
         ]
@@ -10107,7 +10107,7 @@ values
             "mechanicalReduction",
             [],
             [
-              "61.8948225713"
+              61.8948225713
             ]
           )
         ]
@@ -10541,7 +10541,7 @@ values
             "mechanicalReduction",
             [],
             [
-              "-90.5142857143"
+              -90.5142857143
             ]
           )
         ]
@@ -10754,7 +10754,7 @@ values
             "initial_joint_position",
             [],
             [
-              "-1.0"
+              -1.0
             ]
           )
         ]
@@ -10830,7 +10830,7 @@ values
             "mechanicalReduction",
             [],
             [
-              "-36.167452007"
+              -36.167452007
             ]
           )
         ]
@@ -12723,7 +12723,7 @@ values
                 "updateRate",
                 [],
                 [
-                  "100.0"
+                  100.0
                 ]
               ),
               mk_Element
@@ -12747,7 +12747,7 @@ values
                     "updateRate",
                     [],
                     [
-                      "100.0"
+                      100.0
                     ]
                   ),
                   mk_Element
@@ -12888,7 +12888,7 @@ values
                 "updateRate",
                 [],
                 [
-                  "100.0"
+                  100.0
                 ]
               ),
               mk_Element
@@ -12920,7 +12920,7 @@ values
                     "updateRate",
                     [],
                     [
-                      "100.0"
+                      100.0
                     ]
                   ),
                   mk_Element
@@ -13061,7 +13061,7 @@ values
                 "updateRate",
                 [],
                 [
-                  "100.0"
+                  100.0
                 ]
               ),
               mk_Element
@@ -13093,7 +13093,7 @@ values
                     "updateRate",
                     [],
                     [
-                      "100.0"
+                      100.0
                     ]
                   ),
                   mk_Element
@@ -13234,7 +13234,7 @@ values
                 "updateRate",
                 [],
                 [
-                  "100.0"
+                  100.0
                 ]
               ),
               mk_Element
@@ -13266,7 +13266,7 @@ values
                     "updateRate",
                     [],
                     [
-                      "100.0"
+                      100.0
                     ]
                   ),
                   mk_Element
@@ -13349,7 +13349,7 @@ values
                 "updateRate",
                 [],
                 [
-                  "100.0"
+                  100.0
                 ]
               ),
               mk_Element
@@ -13373,7 +13373,7 @@ values
                 "gaussianNoise",
                 [],
                 [
-                  "0.0"
+                  0.0
                 ]
               ),
               mk_Element
@@ -13415,7 +13415,7 @@ values
                 "updateRate",
                 [],
                 [
-                  "100.0"
+                  100.0
                 ]
               ),
               mk_Element
@@ -13520,7 +13520,7 @@ values
                 "mass",
                 [],
                 [
-                  "0.17126"
+                  0.17126
                 ]
               ),
               mk_Element
@@ -13528,7 +13528,7 @@ values
                 "ixx",
                 [],
                 [
-                  "7.7562e-05"
+                  7.7562e-05
                 ]
               ),
               mk_Element
@@ -13536,7 +13536,7 @@ values
                 "ixy",
                 [],
                 [
-                  "1.49095e-06"
+                  1.49095e-06
                 ]
               ),
               mk_Element
@@ -13544,7 +13544,7 @@ values
                 "ixz",
                 [],
                 [
-                  "-9.83385e-06"
+                  -9.83385e-06
                 ]
               ),
               mk_Element
@@ -13552,7 +13552,7 @@ values
                 "iyy",
                 [],
                 [
-                  "0.000197083"
+                  0.000197083
                 ]
               ),
               mk_Element
@@ -13560,7 +13560,7 @@ values
                 "iyz",
                 [],
                 [
-                  "-3.06125e-06"
+                  -3.06125e-06
                 ]
               ),
               mk_Element
@@ -13568,7 +13568,7 @@ values
                 "izz",
                 [],
                 [
-                  "0.000181054"
+                  0.000181054
                 ]
               ),
               mk_Element
@@ -13576,7 +13576,7 @@ values
                 "cx",
                 [],
                 [
-                  "0.03598"
+                  0.03598
                 ]
               ),
               mk_Element
@@ -13584,7 +13584,7 @@ values
                 "cy",
                 [],
                 [
-                  "0.0173"
+                  0.0173
                 ]
               ),
               mk_Element
@@ -13592,7 +13592,7 @@ values
                 "cz",
                 [],
                 [
-                  "-0.00164"
+                  -0.00164
                 ]
               ),
               mk_Element
@@ -13600,7 +13600,7 @@ values
                 "xyz",
                 [],
                 [
-                  "0.82991 -0.157 0.790675"
+                  [0.82991, -0.157, 0.790675]
                 ]
               ),
               mk_Element
@@ -13608,7 +13608,7 @@ values
                 "rpy",
                 [],
                 [
-                  "0 -0 0"
+                  [0, -0, 0]
                 ]
               ),
               mk_Element
@@ -13649,7 +13649,7 @@ values
                 "mass",
                 [],
                 [
-                  "0.17389"
+                  0.17389
                 ]
               ),
               mk_Element
@@ -13657,7 +13657,7 @@ values
                 "ixx",
                 [],
                 [
-                  "7.73841e-05"
+                  7.73841e-05
                 ]
               ),
               mk_Element
@@ -13665,7 +13665,7 @@ values
                 "ixy",
                 [],
                 [
-                  "-2.09309e-06"
+                  -2.09309e-06
                 ]
               ),
               mk_Element
@@ -13673,7 +13673,7 @@ values
                 "ixz",
                 [],
                 [
-                  "-8.36228e-06"
+                  -8.36228e-06
                 ]
               ),
               mk_Element
@@ -13681,7 +13681,7 @@ values
                 "iyy",
                 [],
                 [
-                  "0.000198474"
+                  0.000198474
                 ]
               ),
               mk_Element
@@ -13689,7 +13689,7 @@ values
                 "iyz",
                 [],
                 [
-                  "2.4611e-06"
+                  2.4611e-06
                 ]
               ),
               mk_Element
@@ -13697,7 +13697,7 @@ values
                 "izz",
                 [],
                 [
-                  "0.00018107"
+                  0.00018107
                 ]
               ),
               mk_Element
@@ -13705,7 +13705,7 @@ values
                 "cx",
                 [],
                 [
-                  "0.03576"
+                  0.03576
                 ]
               ),
               mk_Element
@@ -13713,7 +13713,7 @@ values
                 "cy",
                 [],
                 [
-                  "-0.01736"
+                  -0.01736
                 ]
               ),
               mk_Element
@@ -13721,7 +13721,7 @@ values
                 "cz",
                 [],
                 [
-                  "-0.00095"
+                  -0.00095
                 ]
               ),
               mk_Element
@@ -13729,7 +13729,7 @@ values
                 "xyz",
                 [],
                 [
-                  "0.82991 -0.219 0.790675"
+                  [0.82991, -0.219, 0.790675]
                 ]
               ),
               mk_Element
@@ -13737,7 +13737,7 @@ values
                 "rpy",
                 [],
                 [
-                  "0 -0 0"
+                  [0, -0, 0]
                 ]
               ),
               mk_Element
@@ -13801,7 +13801,7 @@ values
                 "axis",
                 [],
                 [
-                  "0 0 -1"
+                  [0, 0, -1]
                 ]
               ),
               mk_Element
@@ -13809,7 +13809,7 @@ values
                 "damping",
                 [],
                 [
-                  "0.2"
+                  0.2
                 ]
               ),
               mk_Element
@@ -13817,7 +13817,7 @@ values
                 "anchorOffset",
                 [],
                 [
-                  "0.05891 -0.031 0"
+                  [0.05891, -0.031, 0]
                 ]
               )
             ]
@@ -13858,7 +13858,7 @@ values
                 "axis",
                 [],
                 [
-                  "0 0 1"
+                  [0, 0, 1]
                 ]
               ),
               mk_Element
@@ -13866,7 +13866,7 @@ values
                 "damping",
                 [],
                 [
-                  "0.2"
+                  0.2
                 ]
               ),
               mk_Element
@@ -13874,7 +13874,7 @@ values
                 "anchorOffset",
                 [],
                 [
-                  "0.05891 0.031 0"
+                  [0.05891, 0.031, 0]
                 ]
               )
             ]
@@ -13915,7 +13915,7 @@ values
                 "axis",
                 [],
                 [
-                  "0 0 1"
+                  [0, 0, 1]
                 ]
               ),
               mk_Element
@@ -13923,7 +13923,7 @@ values
                 "anchorOffset",
                 [],
                 [
-                  "-0.018 -0.021 0"
+                  [-0.018, -0.021, 0]
                 ]
               )
             ]
@@ -13964,7 +13964,7 @@ values
                 "axis",
                 [],
                 [
-                  "0 0 1"
+                  [0, 0, 1]
                 ]
               ),
               mk_Element
@@ -13972,7 +13972,7 @@ values
                 "anchorOffset",
                 [],
                 [
-                  "-0.018 0.021 0"
+                  [-0.018, 0.021, 0]
                 ]
               )
             ]
@@ -14013,7 +14013,7 @@ values
                 "axis",
                 [],
                 [
-                  "0 1 0"
+                  [0, 1, 0]
                 ]
               )
             ]
@@ -14177,7 +14177,7 @@ values
                 "updateRate",
                 [],
                 [
-                  "100.0"
+                  100.0
                 ]
               ),
               mk_Element
@@ -14201,7 +14201,7 @@ values
                     "updateRate",
                     [],
                     [
-                      "100.0"
+                      100.0
                     ]
                   ),
                   mk_Element
@@ -14260,7 +14260,7 @@ values
                 "updateRate",
                 [],
                 [
-                  "100.0"
+                  100.0
                 ]
               ),
               mk_Element
@@ -14284,7 +14284,7 @@ values
                 "xyzOffsets",
                 [],
                 [
-                  "0 0 0"
+                  [0, 0, 0]
                 ]
               ),
               mk_Element
@@ -14292,7 +14292,7 @@ values
                 "rpyOffsets",
                 [],
                 [
-                  "0 0 0"
+                  [0, 0, 0]
                 ]
               ),
               mk_Element
@@ -14300,7 +14300,7 @@ values
                 "gaussianNoise",
                 [],
                 [
-                  "0.0"
+                  0.0
                 ]
               ),
               mk_Element
@@ -15076,7 +15076,7 @@ values
             "mechanicalReduction",
             [],
             [
-              "32.6525111499"
+              32.6525111499
             ]
           )
         ]
@@ -15194,7 +15194,7 @@ values
             "mechanicalReduction",
             [],
             [
-              "63.1552452977"
+              63.1552452977
             ]
           )
         ]
@@ -15228,7 +15228,7 @@ values
             "mechanicalReduction",
             [],
             [
-              "61.8948225713"
+              61.8948225713
             ]
           )
         ]
@@ -15662,7 +15662,7 @@ values
             "mechanicalReduction",
             [],
             [
-              "-90.5142857143"
+              -90.5142857143
             ]
           )
         ]
@@ -15875,7 +15875,7 @@ values
             "initial_joint_position",
             [],
             [
-              "-1.0"
+              -1.0
             ]
           )
         ]
@@ -15951,7 +15951,7 @@ values
             "mechanicalReduction",
             [],
             [
-              "-36.167452007"
+              -36.167452007
             ]
           )
         ]
@@ -17844,7 +17844,7 @@ values
                 "updateRate",
                 [],
                 [
-                  "100.0"
+                  100.0
                 ]
               ),
               mk_Element
@@ -17868,7 +17868,7 @@ values
                     "updateRate",
                     [],
                     [
-                      "100.0"
+                      100.0
                     ]
                   ),
                   mk_Element
@@ -18009,7 +18009,7 @@ values
                 "updateRate",
                 [],
                 [
-                  "100.0"
+                  100.0
                 ]
               ),
               mk_Element
@@ -18041,7 +18041,7 @@ values
                     "updateRate",
                     [],
                     [
-                      "100.0"
+                      100.0
                     ]
                   ),
                   mk_Element
@@ -18182,7 +18182,7 @@ values
                 "updateRate",
                 [],
                 [
-                  "100.0"
+                  100.0
                 ]
               ),
               mk_Element
@@ -18214,7 +18214,7 @@ values
                     "updateRate",
                     [],
                     [
-                      "100.0"
+                      100.0
                     ]
                   ),
                   mk_Element
@@ -18355,7 +18355,7 @@ values
                 "updateRate",
                 [],
                 [
-                  "100.0"
+                  100.0
                 ]
               ),
               mk_Element
@@ -18387,7 +18387,7 @@ values
                     "updateRate",
                     [],
                     [
-                      "100.0"
+                      100.0
                     ]
                   ),
                   mk_Element
@@ -18470,7 +18470,7 @@ values
                 "updateRate",
                 [],
                 [
-                  "100.0"
+                  100.0
                 ]
               ),
               mk_Element
@@ -18494,7 +18494,7 @@ values
                 "gaussianNoise",
                 [],
                 [
-                  "0.0"
+                  0.0
                 ]
               ),
               mk_Element
@@ -18536,7 +18536,7 @@ values
                 "updateRate",
                 [],
                 [
-                  "100.0"
+                  100.0
                 ]
               ),
               mk_Element
@@ -18641,7 +18641,7 @@ values
                 "mass",
                 [],
                 [
-                  "0.17126"
+                  0.17126
                 ]
               ),
               mk_Element
@@ -18649,7 +18649,7 @@ values
                 "ixx",
                 [],
                 [
-                  "7.7562e-05"
+                  7.7562e-05
                 ]
               ),
               mk_Element
@@ -18657,7 +18657,7 @@ values
                 "ixy",
                 [],
                 [
-                  "1.49095e-06"
+                  1.49095e-06
                 ]
               ),
               mk_Element
@@ -18665,7 +18665,7 @@ values
                 "ixz",
                 [],
                 [
-                  "-9.83385e-06"
+                  -9.83385e-06
                 ]
               ),
               mk_Element
@@ -18673,7 +18673,7 @@ values
                 "iyy",
                 [],
                 [
-                  "0.000197083"
+                  0.000197083
                 ]
               ),
               mk_Element
@@ -18681,7 +18681,7 @@ values
                 "iyz",
                 [],
                 [
-                  "-3.06125e-06"
+                  -3.06125e-06
                 ]
               ),
               mk_Element
@@ -18689,7 +18689,7 @@ values
                 "izz",
                 [],
                 [
-                  "0.000181054"
+                  0.000181054
                 ]
               ),
               mk_Element
@@ -18697,7 +18697,7 @@ values
                 "cx",
                 [],
                 [
-                  "0.03598"
+                  0.03598
                 ]
               ),
               mk_Element
@@ -18705,7 +18705,7 @@ values
                 "cy",
                 [],
                 [
-                  "0.0173"
+                  0.0173
                 ]
               ),
               mk_Element
@@ -18713,7 +18713,7 @@ values
                 "cz",
                 [],
                 [
-                  "-0.00164"
+                  -0.00164
                 ]
               ),
               mk_Element
@@ -18721,7 +18721,7 @@ values
                 "xyz",
                 [],
                 [
-                  "0.82991 0.219 0.790675"
+                  [0.82991, 0.219, 0.790675]
                 ]
               ),
               mk_Element
@@ -18729,7 +18729,7 @@ values
                 "rpy",
                 [],
                 [
-                  "0 -0 0"
+                  [0, -0, 0]
                 ]
               ),
               mk_Element
@@ -18770,7 +18770,7 @@ values
                 "mass",
                 [],
                 [
-                  "0.17389"
+                  0.17389
                 ]
               ),
               mk_Element
@@ -18778,7 +18778,7 @@ values
                 "ixx",
                 [],
                 [
-                  "7.73841e-05"
+                  7.73841e-05
                 ]
               ),
               mk_Element
@@ -18786,7 +18786,7 @@ values
                 "ixy",
                 [],
                 [
-                  "-2.09309e-06"
+                  -2.09309e-06
                 ]
               ),
               mk_Element
@@ -18794,7 +18794,7 @@ values
                 "ixz",
                 [],
                 [
-                  "-8.36228e-06"
+                  -8.36228e-06
                 ]
               ),
               mk_Element
@@ -18802,7 +18802,7 @@ values
                 "iyy",
                 [],
                 [
-                  "0.000198474"
+                  0.000198474
                 ]
               ),
               mk_Element
@@ -18810,7 +18810,7 @@ values
                 "iyz",
                 [],
                 [
-                  "2.4611e-06"
+                  2.4611e-06
                 ]
               ),
               mk_Element
@@ -18818,7 +18818,7 @@ values
                 "izz",
                 [],
                 [
-                  "0.00018107"
+                  0.00018107
                 ]
               ),
               mk_Element
@@ -18826,7 +18826,7 @@ values
                 "cx",
                 [],
                 [
-                  "0.03576"
+                  0.03576
                 ]
               ),
               mk_Element
@@ -18834,7 +18834,7 @@ values
                 "cy",
                 [],
                 [
-                  "-0.01736"
+                  -0.01736
                 ]
               ),
               mk_Element
@@ -18842,7 +18842,7 @@ values
                 "cz",
                 [],
                 [
-                  "-0.00095"
+                  -0.00095
                 ]
               ),
               mk_Element
@@ -18850,7 +18850,7 @@ values
                 "xyz",
                 [],
                 [
-                  "0.82991 0.157 0.790675"
+                  [0.82991, 0.157, 0.790675]
                 ]
               ),
               mk_Element
@@ -18858,7 +18858,7 @@ values
                 "rpy",
                 [],
                 [
-                  "0 -0 0"
+                  [0, -0, 0]
                 ]
               ),
               mk_Element
@@ -18922,7 +18922,7 @@ values
                 "axis",
                 [],
                 [
-                  "0 0 -1"
+                  [0, 0, -1]
                 ]
               ),
               mk_Element
@@ -18930,7 +18930,7 @@ values
                 "damping",
                 [],
                 [
-                  "0.2"
+                  0.2
                 ]
               ),
               mk_Element
@@ -18938,7 +18938,7 @@ values
                 "anchorOffset",
                 [],
                 [
-                  "0.05891 -0.031 0"
+                  [0.05891, -0.031, 0]
                 ]
               )
             ]
@@ -18979,7 +18979,7 @@ values
                 "axis",
                 [],
                 [
-                  "0 0 1"
+                  [0, 0, 1]
                 ]
               ),
               mk_Element
@@ -18987,7 +18987,7 @@ values
                 "damping",
                 [],
                 [
-                  "0.2"
+                  0.2
                 ]
               ),
               mk_Element
@@ -18995,7 +18995,7 @@ values
                 "anchorOffset",
                 [],
                 [
-                  "0.05891 0.031 0"
+                  [0.05891, 0.031, 0]
                 ]
               )
             ]
@@ -19036,7 +19036,7 @@ values
                 "axis",
                 [],
                 [
-                  "0 0 1"
+                  [0, 0, 1]
                 ]
               ),
               mk_Element
@@ -19044,7 +19044,7 @@ values
                 "anchorOffset",
                 [],
                 [
-                  "-0.018 -0.021 0"
+                  [-0.018, -0.021, 0]
                 ]
               )
             ]
@@ -19085,7 +19085,7 @@ values
                 "axis",
                 [],
                 [
-                  "0 0 1"
+                  [0, 0, 1]
                 ]
               ),
               mk_Element
@@ -19093,7 +19093,7 @@ values
                 "anchorOffset",
                 [],
                 [
-                  "-0.018 0.021 0"
+                  [-0.018, 0.021, 0]
                 ]
               )
             ]
@@ -19134,7 +19134,7 @@ values
                 "axis",
                 [],
                 [
-                  "0 1 0"
+                  [0, 1, 0]
                 ]
               )
             ]
@@ -19298,7 +19298,7 @@ values
                 "updateRate",
                 [],
                 [
-                  "100.0"
+                  100.0
                 ]
               ),
               mk_Element
@@ -19322,7 +19322,7 @@ values
                     "updateRate",
                     [],
                     [
-                      "100.0"
+                      100.0
                     ]
                   ),
                   mk_Element
@@ -19381,7 +19381,7 @@ values
                 "updateRate",
                 [],
                 [
-                  "100.0"
+                  100.0
                 ]
               ),
               mk_Element
@@ -19405,7 +19405,7 @@ values
                 "xyzOffsets",
                 [],
                 [
-                  "0 0 0"
+                  [0, 0, 0]
                 ]
               ),
               mk_Element
@@ -19413,7 +19413,7 @@ values
                 "rpyOffsets",
                 [],
                 [
-                  "0 0 0"
+                  [0, 0, 0]
                 ]
               ),
               mk_Element
@@ -19421,7 +19421,7 @@ values
                 "gaussianNoise",
                 [],
                 [
-                  "0.0"
+                  0.0
                 ]
               ),
               mk_Element
@@ -19723,7 +19723,7 @@ values
                 "imageSize",
                 [],
                 [
-                  "640 480"
+                  [640, 480]
                 ]
               ),
               mk_Element
@@ -19739,7 +19739,7 @@ values
                 "hfov",
                 [],
                 [
-                  "90"
+                  90
                 ]
               ),
               mk_Element
@@ -19747,7 +19747,7 @@ values
                 "nearClip",
                 [],
                 [
-                  "0.1"
+                  0.1
                 ]
               ),
               mk_Element
@@ -19755,7 +19755,7 @@ values
                 "farClip",
                 [],
                 [
-                  "100"
+                  100
                 ]
               ),
               mk_Element
@@ -19763,7 +19763,7 @@ values
                 "updateRate",
                 [],
                 [
-                  "25.0"
+                  25.0
                 ]
               ),
               mk_Element
@@ -19787,7 +19787,7 @@ values
                     "updateRate",
                     [],
                     [
-                      "25.0"
+                      25.0
                     ]
                   ),
                   mk_Element
@@ -19819,7 +19819,7 @@ values
                     "hackBaseline",
                     [],
                     [
-                      "0"
+                      0
                     ]
                   ),
                   mk_Element
@@ -19827,7 +19827,7 @@ values
                     "CxPrime",
                     [],
                     [
-                      "320.5"
+                      320.5
                     ]
                   ),
                   mk_Element
@@ -19835,7 +19835,7 @@ values
                     "Cx",
                     [],
                     [
-                      "320.5"
+                      320.5
                     ]
                   ),
                   mk_Element
@@ -19843,7 +19843,7 @@ values
                     "Cy",
                     [],
                     [
-                      "240.5"
+                      240.5
                     ]
                   ),
                   mk_Element
@@ -19851,7 +19851,7 @@ values
                     "focal_length",
                     [],
                     [
-                      "320"
+                      320
                     ]
                   ),
                   mk_Element
@@ -19859,7 +19859,7 @@ values
                     "distortion_k1",
                     [],
                     [
-                      "0.00000001"
+                      0.00000001
                     ]
                   ),
                   mk_Element
@@ -19867,7 +19867,7 @@ values
                     "distortion_k2",
                     [],
                     [
-                      "0.00000001"
+                      0.00000001
                     ]
                   ),
                   mk_Element
@@ -19875,7 +19875,7 @@ values
                     "distortion_k3",
                     [],
                     [
-                      "0.00000001"
+                      0.00000001
                     ]
                   ),
                   mk_Element
@@ -19883,7 +19883,7 @@ values
                     "distortion_t1",
                     [],
                     [
-                      "0.00000001"
+                      0.00000001
                     ]
                   ),
                   mk_Element
@@ -19891,7 +19891,7 @@ values
                     "distortion_t2",
                     [],
                     [
-                      "0.00000001"
+                      0.00000001
                     ]
                   ),
                   mk_Element
@@ -20128,7 +20128,7 @@ values
                 "imageSize",
                 [],
                 [
-                  "640 480"
+                  [640, 480]
                 ]
               ),
               mk_Element
@@ -20144,7 +20144,7 @@ values
                 "hfov",
                 [],
                 [
-                  "90"
+                  90
                 ]
               ),
               mk_Element
@@ -20152,7 +20152,7 @@ values
                 "nearClip",
                 [],
                 [
-                  "0.1"
+                  0.1
                 ]
               ),
               mk_Element
@@ -20160,7 +20160,7 @@ values
                 "farClip",
                 [],
                 [
-                  "100"
+                  100
                 ]
               ),
               mk_Element
@@ -20168,7 +20168,7 @@ values
                 "updateRate",
                 [],
                 [
-                  "25.0"
+                  25.0
                 ]
               ),
               mk_Element
@@ -20192,7 +20192,7 @@ values
                     "updateRate",
                     [],
                     [
-                      "25.0"
+                      25.0
                     ]
                   ),
                   mk_Element
@@ -20224,7 +20224,7 @@ values
                     "hackBaseline",
                     [],
                     [
-                      "0"
+                      0
                     ]
                   ),
                   mk_Element
@@ -20232,7 +20232,7 @@ values
                     "CxPrime",
                     [],
                     [
-                      "320.5"
+                      320.5
                     ]
                   ),
                   mk_Element
@@ -20240,7 +20240,7 @@ values
                     "Cx",
                     [],
                     [
-                      "320.5"
+                      320.5
                     ]
                   ),
                   mk_Element
@@ -20248,7 +20248,7 @@ values
                     "Cy",
                     [],
                     [
-                      "240.5"
+                      240.5
                     ]
                   ),
                   mk_Element
@@ -20256,7 +20256,7 @@ values
                     "focal_length",
                     [],
                     [
-                      "320"
+                      320
                     ]
                   ),
                   mk_Element
@@ -20264,7 +20264,7 @@ values
                     "distortion_k1",
                     [],
                     [
-                      "0.00000001"
+                      0.00000001
                     ]
                   ),
                   mk_Element
@@ -20272,7 +20272,7 @@ values
                     "distortion_k2",
                     [],
                     [
-                      "0.00000001"
+                      0.00000001
                     ]
                   ),
                   mk_Element
@@ -20280,7 +20280,7 @@ values
                     "distortion_k3",
                     [],
                     [
-                      "0.00000001"
+                      0.00000001
                     ]
                   ),
                   mk_Element
@@ -20288,7 +20288,7 @@ values
                     "distortion_t1",
                     [],
                     [
-                      "0.00000001"
+                      0.00000001
                     ]
                   ),
                   mk_Element
@@ -20296,7 +20296,7 @@ values
                     "distortion_t2",
                     [],
                     [
-                      "0.00000001"
+                      0.00000001
                     ]
                   ),
                   mk_Element

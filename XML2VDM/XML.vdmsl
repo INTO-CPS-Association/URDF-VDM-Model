@@ -15,4 +15,4 @@ types
 		name		: AName
 		value		: AValue;
 
-	Content = seq of char;
+	Content = real | seq1 of real | seq1 of char;

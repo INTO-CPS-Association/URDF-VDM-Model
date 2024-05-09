@@ -149,23 +149,23 @@ types
 		theta0					: real
 	;
 
-	transmissionType ::
+	passive_joint_transmission ::
+		name					: Name
+	;
+
+	transmission ::
 		leftActuator				: [actuator_transmission]
 		rightActuator				: [actuator_transmission]
 		flexJoint					: [actuator_transmission]
 		rollJoint					: [actuator_transmission]
 		gap_joint					: [gap_joint_transmission]
-		passive_joint				: seq of Name
+		passive_joint				: [seq of passive_joint_transmission]
 		use_simulated_gripper_joint	: bool
 		mechanicalReduction			: [real]
-		actuator					: Name
-		joint						: Name
-	;
-
-	transmission ::
-		name				: String
-		type				: String
-		transmissionTypes	: seq of transmissionType
+		actuator					: [Name]
+		joint						: [Name]
+		name						: String
+		type						: String
 	;
 
 	joint ::

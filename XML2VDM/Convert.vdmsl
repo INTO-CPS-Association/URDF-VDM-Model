@@ -246,9 +246,77 @@ functions
 		)
 	pre xml = nil or xml.type = "material";
 
+	convertActuatorTx: [Element] +> [actuator_transmission]
+	convertActuatorTx(xml) == if xml = nil then nil else
+		mk_actuator_transmission
+		(
+			getAttr(xml, "mechanicalReduction", nil),
+			getAttr(xml, "name", nil)
+		);
+	-- Used for various element types in transmissions
+
+	convertGapJointTx: [Element] +> [gap_joint_transmission]
+	convertGapJointTx(xml) == if xml = nil then nil else
+		mk_gap_joint_transmission
+		(
+			getAttr(xml, "name", nil),
+			getAttr(xml, "L0", nil),
+			getAttr(xml, "a", nil),
+			getAttr(xml, "b", nil),
+			getAttr(xml, "gear_ratio", nil),
+			getAttr(xml, "h", nil),
+			getAttr(xml, "mechanical_reduction", nil),
+			getAttr(xml, "phi0", nil),
+			getAttr(xml, "r", nil),
+			getAttr(xml, "screw_reduction", nil),
+			getAttr(xml, "t0", nil),
+			getAttr(xml, "theta0", nil)
+		)
+	pre xml = nil or xml.type = "gap_joint";
+
+	convertPassiveJointTx: [Element] +> [passive_joint_transmission]
+	convertPassiveJointTx(xml) ==  if xml = nil then nil else
+		mk_passive_joint_transmission
+		(
+			getAttr(xml, "name", nil)
+		)
+	pre xml = nil or xml.type = "passive_joint";
+
 	convertTransmission: [Element] +> [transmission]
-	convertTransmission(xml) == is not yet specified
+	convertTransmission(xml) == if xml = nil then nil else
+		mk_transmission
+		(
+			convertActuatorTx(getChild(xml, "leftActuator")),
+			convertActuatorTx(getChild(xml, "rghtActuator")),
+			convertActuatorTx(getChild(xml, "lexJoint")),
+			convertActuatorTx(getChild(xml, "rollJoint")),
+			convertGapJointTx(getChild(xml, "gap_joint")),
+			[ convertPassiveJointTx(j) | j in seq getChildren(xml, "passive_joint") ],
+			convertBoolean(getChild(xml, "use_simulated_gripper_joint")),
+			convertDouble(getChild(xml, "mechanicalReduction")),
+			convertName(getChild(xml, "actuator")),
+			convertName(getChild(xml, "joint")),
+			getAttr(xml, "name", nil),
+			getAttr(xml, "type", nil)
+		)
 	pre xml = nil or xml.type = "transmission";
+
+	convertName: [Element] +> [Name]
+	convertName(xml) == if xml = nil then nil else
+		getAttr(xml, "name", nil);
+	-- pre any element that has a name attribute
+
+	convertBoolean: [Element] +> bool
+	convertBoolean(xml) ==
+		xml <> nil;
+	-- pre any element whose existence implies "true"
+
+	convertDouble: [Element] +> [real]
+	convertDouble(xml) == if xml = nil then nil else
+		getContent(xml);
+	-- pre assumes any content is a real
+
+
 
 	/**
 	 * XML access functions.
@@ -271,4 +339,11 @@ functions
 		else let s = [ a.value | a in seq xml.attrs & a.name = name ] in
 			if s = []
 			then default
+			else hd s;
+
+	getContent: Element +> [real]
+	getContent(xml) ==
+		let s = [ child | child in seq xml.children & is_(child, Content) ] in
+			if s = []
+			then nil
 			else hd s;
