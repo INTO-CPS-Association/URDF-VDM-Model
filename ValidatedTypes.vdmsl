@@ -42,68 +42,193 @@ types
 	inv l == l <> nil => allOf
 	([
 		-- Invariants of subelements
+		inv_Inertial(l.inertial),
+		inv_Visual(l.visual),
+		inv_Collision(l.collision)
+
 		-- rules that span this element
+	]);
+
+	Inertial = [inertial]
+	inv i == i <> nil => allOf
+	([
+		-- Invariants of subelements
+		inv_Origin(i.origin),
+		inv_Mass(i.mass),
+		inv_Inertia(i.inertia)
+
+		-- rules that span this element
+	]);
+
+	Mass = [mass]
+	inv m == m <> nil => allOf
+	([
+		-- rules about value
+	]);
+
+	Inertia = [inertia]
+	inv i == i <> nil => allOf
+	([
+		-- rules about ixx, ixy, ixz etc,
+	]);
+
+	Visual = [visual]
+	inv v == v <> nil => allOf
+	([
+		-- Invariants of subelements
+		inv_Origin(v.origin),
+		inv_Geometry(v.geometry),
+		inv_Material(v.material)
+
+		-- rules that span this element
+	]);
+
+	Geometry = [geometry]
+	inv g == g <> nil => allOf
+	([
+		-- Invariants of subelements
+		inv_Box(g.box),
+		inv_Cylinder(g.cylinder),
+		inv_Sphere(g.sphere),
+		inv_Mesh(g.mesh)
+
+		-- rules that span this element
+	]);
+
+	Box = [box]
+	inv b == b <> nil => allOf
+	([
+		-- rules about the size coordinates
+	]);
+
+	Cylinder = [cylinder]
+	inv c == c <> nil => allOf
+	([
+		-- rules about radius and length
+	]);
+
+	Sphere = [sphere]
+	inv s == s <> nil => allOf
+	([
+		-- rules about radius
+	]);
+
+	Mesh = [mesh]
+	inv m == m <> nil => allOf
+	([
+		-- rules about filename and scale
+	]);
+
+	Collision = [collision]
+	inv c == c <> nil => allOf
+	([
+		-- Invariants of subelements
+		inv_Origin(c.origin),
+		inv_Geometry(c.geometry),
+		inv_Verbose(c.verbose)
+
+		-- rules that span this element
+	]);
+
+	Verbose = [verbose]
+	inv v == v <> nil => allOf
+	([
+		-- rules about v.value
 	]);
 
 	Material = [material]
 	inv m == m <> nil => allOf
 	([
 		-- Invariants of subelements
+		inv_Color(m.color),
+		inv_Texture(m.texture)
+
 		-- rules that span this element
+	]);
+
+	Color = [color]
+	inv c == c <>  nil => allOf
+	([
+		-- rules about rgba field
+	]);
+
+	Texture = [texture]
+	inv t == t <> nil => allOf
+	([
+		-- rules about filename field
 	]);
 
 	Origin = [origin]
 	inv x == x <> nil => allOf
 	([
-		-- Invariants of subelements
-		-- rules that span this element
+		-- rules about xyz and rpy
 	]);
 
 	Axis = [axis]
 	inv x == x <> nil => allOf
 	([
-		-- Invariants of subelements
-		-- rules that span this element
+		-- rules about axis.xyz
 	]);
 
 	Calibration = [calibration]
 	inv x == x <> nil => allOf
 	([
-		-- Invariants of subelements
-		-- rules that span this element
+		-- rules about reference_position, rising, falling
 	]);
 
 	Dynamics = [dynamics]
 	inv x == x <> nil => allOf
 	([
-		-- Invariants of subelements
-		-- rules that span this element
+		-- rules about damping and friction
 	]);
 
 	Limit = [limit]
 	inv x == x <> nil => allOf
 	([
-		-- Invariants of subelements
-		-- rules that span this element
+		-- rules about lower, upper, effort and velocity
 	]);
 
 	SafetyController = [safety_controller]
 	inv x == x <> nil => allOf
 	([
-		-- Invariants of subelements
-		-- rules that span this element
+		-- rules about soft_lower_limit, soft_upper_limit, k_position, k_velocity
 	]);
 
 	Mimic = [mimic]
 	inv x == x <> nil => allOf
 	([
-		-- Invariants of subelements
-		-- rules that span this element
+		-- rules about joint, multiplier, offset
 	]);
 
 	Transmission = [transmission]
-	inv x == x <> nil => allOf
+	inv t == t <> nil => allOf
 	([
 		-- Invariants of subelements
+		inv_ActuatorTx(t.leftActuator),
+		inv_ActuatorTx(t.rightActuator),
+		inv_ActuatorTx(t.flexJoint),
+		inv_ActuatorTx(t.rollJoint),
+		inv_GapJointTx(t.gap_joint),
+		apply[passive_joint_transmission](inv_PassiveJointTx, t.passive_joint)
+
 		-- rules that span this element
 	]);
+
+	ActuatorTx = [actuator_transmission]
+	inv a == a <> nil => allOf
+	([
+		-- rules about mechanicalReduction, name
+	]);
+
+	GapJointTx = [gap_joint_transmission]
+	inv g == g <> nil => allOf
+	([
+		-- rules about name,L0,a,b,gear_ratio,h,mechanical_reduction,phi0,r,screw_reduction,t0,theta0
+	]);
+
+	PassiveJointTx = passive_joint_transmission
+	inv - == allOf
+	([
+		-- rules about name
+	]);
+
