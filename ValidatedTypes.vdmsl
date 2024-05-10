@@ -17,6 +17,7 @@ types
 		apply[joint](inv_Joint, r.joints),
 		apply[link](inv_Link, r.links),
 		apply[material](inv_Material, r.materials),
+		apply[transmission](inv_Transmission, r.transmissions),
 
 		-- rules that span a robot go here
 		jointsAndLinksMatch(r)
@@ -94,6 +95,13 @@ types
 	]);
 
 	Mimic = [mimic]
+	inv x == x <> nil => allOf
+	([
+		-- Invariants of subelements
+		-- rules that span this element
+	]);
+
+	Transmission = [transmission]
 	inv x == x <> nil => allOf
 	([
 		-- Invariants of subelements
