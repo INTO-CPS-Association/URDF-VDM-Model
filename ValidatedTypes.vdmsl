@@ -63,7 +63,9 @@ types
 	Mass = [mass]
 	inv m == m <> nil => allOf
 	([
-		-- rules about value
+		-- @DocLink("http://wiki.ros.org/urdf/XML")
+		-- @OnFail("Mass value %s must be positive", m.value)
+		( m.value >= 0 )
 	]);
 
 	Inertia = [inertia]
@@ -104,13 +106,21 @@ types
 	Cylinder = [cylinder]
 	inv c == c <> nil => allOf
 	([
-		-- rules about radius and length
+		-- @DocLink("http://wiki.ros.org/urdf/XML")
+		-- @OnFail("Radius %s must be positive", c.radius)
+		( c.radius > 0 ),
+
+		-- @DocLink("http://wiki.ros.org/urdf/XML")
+		-- @OnFail("Length %s must be positive", c.length)
+		( c.length > 0 )
 	]);
 
 	Sphere = [sphere]
 	inv s == s <> nil => allOf
 	([
-		-- rules about radius
+		-- @DocLink("http://wiki.ros.org/urdf/XML")
+		-- @OnFail("Radius %s must be positive", s.radius)
+		( s.radius > 0 )
 	]);
 
 	Mesh = [mesh]
