@@ -1,46 +1,51 @@
 /**
- * VDM created from singularity.urdf on Sun Mar 03 16:10:13 GMT 2024
+ * VDM created from singularity.urdf on Sun May 12 11:55:16 BST 2024
  * DO NOT EDIT!
  */
 values
   singularity_urdf =
   mk_Element
   (
+    "singularity.urdf:2",
     "robot",
     [
-      mk_Attribute("name", "no_visual")
+      mk_Attribute("singularity.urdf:2", "name", "no_visual")
     ],
     [
       mk_Element
       (
+        "singularity.urdf:3",
         "link",
         [
-          mk_Attribute("name", "link1")
+          mk_Attribute("singularity.urdf:3", "name", "link1")
         ],
         [
           mk_Element
           (
+            "singularity.urdf:4",
             "inertial",
             [],
             [
               mk_Element
               (
+                "singularity.urdf:5",
                 "mass",
                 [
-                  mk_Attribute("value", 1)
+                  mk_Attribute("singularity.urdf:5", "value", 1)
                 ],
                 []
               ),
               mk_Element
               (
+                "singularity.urdf:6",
                 "inertia",
                 [
-                  mk_Attribute("ixx", 1),
-                  mk_Attribute("iyy", 1),
-                  mk_Attribute("izz", 1),
-                  mk_Attribute("ixz", 0),
-                  mk_Attribute("ixy", 0),
-                  mk_Attribute("iyz", 0)
+                  mk_Attribute("singularity.urdf:6", "ixx", 1),
+                  mk_Attribute("singularity.urdf:6", "iyy", 1),
+                  mk_Attribute("singularity.urdf:6", "izz", 1),
+                  mk_Attribute("singularity.urdf:6", "ixz", 0),
+                  mk_Attribute("singularity.urdf:6", "ixy", 0),
+                  mk_Attribute("singularity.urdf:6", "iyz", 0)
                 ],
                 []
               )
@@ -50,34 +55,38 @@ values
       ),
       mk_Element
       (
+        "singularity.urdf:9",
         "link",
         [
-          mk_Attribute("name", "link2")
+          mk_Attribute("singularity.urdf:9", "name", "link2")
         ],
         [
           mk_Element
           (
+            "singularity.urdf:10",
             "inertial",
             [],
             [
               mk_Element
               (
+                "singularity.urdf:11",
                 "mass",
                 [
-                  mk_Attribute("value", 1)
+                  mk_Attribute("singularity.urdf:11", "value", 1)
                 ],
                 []
               ),
               mk_Element
               (
+                "singularity.urdf:12",
                 "inertia",
                 [
-                  mk_Attribute("ixx", 1),
-                  mk_Attribute("iyy", 1),
-                  mk_Attribute("izz", 1),
-                  mk_Attribute("ixz", 0),
-                  mk_Attribute("ixy", 0),
-                  mk_Attribute("iyz", 0)
+                  mk_Attribute("singularity.urdf:12", "ixx", 1),
+                  mk_Attribute("singularity.urdf:12", "iyy", 1),
+                  mk_Attribute("singularity.urdf:12", "izz", 1),
+                  mk_Attribute("singularity.urdf:12", "ixz", 0),
+                  mk_Attribute("singularity.urdf:12", "ixy", 0),
+                  mk_Attribute("singularity.urdf:12", "iyz", 0)
                 ],
                 []
               )
@@ -87,34 +96,38 @@ values
       ),
       mk_Element
       (
+        "singularity.urdf:15",
         "joint",
         [
-          mk_Attribute("name", "joint12"),
-          mk_Attribute("type", "fixed")
+          mk_Attribute("singularity.urdf:15", "name", "joint12"),
+          mk_Attribute("singularity.urdf:15", "type", "fixed")
         ],
         [
           mk_Element
           (
+            "singularity.urdf:16",
             "parent",
             [
-              mk_Attribute("link", "link1")
+              mk_Attribute("singularity.urdf:16", "link", "link1")
             ],
             []
           ),
           mk_Element
           (
+            "singularity.urdf:17",
             "child",
             [
-              mk_Attribute("link", "link2")
+              mk_Attribute("singularity.urdf:17", "link", "link2")
             ],
             []
           ),
           mk_Element
           (
+            "singularity.urdf:18",
             "origin",
             [
-              mk_Attribute("xyz", [0, 0, 0]),
-              mk_Attribute("rpy", [1.0, 1.5707963267948966, 0.5707963267948966])
+              mk_Attribute("singularity.urdf:18", "xyz", [0, 0, 0]),
+              mk_Attribute("singularity.urdf:18", "rpy", [1.0, 1.5707963267948966, 0.5707963267948966])
             ],
             []
           )
@@ -122,34 +135,38 @@ values
       ),
       mk_Element
       (
+        "singularity.urdf:20",
         "link",
         [
-          mk_Attribute("name", "link3")
+          mk_Attribute("singularity.urdf:20", "name", "link3")
         ],
         [
           mk_Element
           (
+            "singularity.urdf:21",
             "inertial",
             [],
             [
               mk_Element
               (
+                "singularity.urdf:22",
                 "mass",
                 [
-                  mk_Attribute("value", 1)
+                  mk_Attribute("singularity.urdf:22", "value", 1)
                 ],
                 []
               ),
               mk_Element
               (
+                "singularity.urdf:23",
                 "inertia",
                 [
-                  mk_Attribute("ixx", 1),
-                  mk_Attribute("iyy", 1),
-                  mk_Attribute("izz", 1),
-                  mk_Attribute("ixz", 0),
-                  mk_Attribute("ixy", 0),
-                  mk_Attribute("iyz", 0)
+                  mk_Attribute("singularity.urdf:23", "ixx", 1),
+                  mk_Attribute("singularity.urdf:23", "iyy", 1),
+                  mk_Attribute("singularity.urdf:23", "izz", 1),
+                  mk_Attribute("singularity.urdf:23", "ixz", 0),
+                  mk_Attribute("singularity.urdf:23", "ixy", 0),
+                  mk_Attribute("singularity.urdf:23", "iyz", 0)
                 ],
                 []
               )
@@ -159,34 +176,38 @@ values
       ),
       mk_Element
       (
+        "singularity.urdf:26",
         "joint",
         [
-          mk_Attribute("name", "joint13"),
-          mk_Attribute("type", "fixed")
+          mk_Attribute("singularity.urdf:26", "name", "joint13"),
+          mk_Attribute("singularity.urdf:26", "type", "fixed")
         ],
         [
           mk_Element
           (
+            "singularity.urdf:27",
             "parent",
             [
-              mk_Attribute("link", "link2")
+              mk_Attribute("singularity.urdf:27", "link", "link2")
             ],
             []
           ),
           mk_Element
           (
+            "singularity.urdf:28",
             "child",
             [
-              mk_Attribute("link", "link3")
+              mk_Attribute("singularity.urdf:28", "link", "link3")
             ],
             []
           ),
           mk_Element
           (
+            "singularity.urdf:29",
             "origin",
             [
-              mk_Attribute("xyz", [0, 0, 0]),
-              mk_Attribute("rpy", [1.5707963267948966, 1.5707963267948966, 1.5707963267948966])
+              mk_Attribute("singularity.urdf:29", "xyz", [0, 0, 0]),
+              mk_Attribute("singularity.urdf:29", "rpy", [1.5707963267948966, 1.5707963267948966, 1.5707963267948966])
             ],
             []
           )

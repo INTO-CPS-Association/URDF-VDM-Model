@@ -1,46 +1,51 @@
 /**
- * VDM created from URDF\tests\no_visual.urdf on Tue Mar 12 10:28:30 CET 2024
+ * VDM created from no_visual.urdf on Sun May 12 11:52:27 BST 2024
  * DO NOT EDIT!
  */
 values
   no_visual_urdf =
   mk_Element
   (
+    "no_visual.urdf:2",
     "robot",
     [
-      mk_Attribute("name", "no_visual")
+      mk_Attribute("no_visual.urdf:2", "name", "no_visual")
     ],
     [
       mk_Element
       (
+        "no_visual.urdf:3",
         "link",
         [
-          mk_Attribute("name", "link1")
+          mk_Attribute("no_visual.urdf:3", "name", "link1")
         ],
         [
           mk_Element
           (
+            "no_visual.urdf:4",
             "inertial",
             [],
             [
               mk_Element
               (
+                "no_visual.urdf:5",
                 "mass",
                 [
-                  mk_Attribute("value", 1)
+                  mk_Attribute("no_visual.urdf:5", "value", 1)
                 ],
                 []
               ),
               mk_Element
               (
+                "no_visual.urdf:6",
                 "inertia",
                 [
-                  mk_Attribute("ixx", 1),
-                  mk_Attribute("iyy", 1),
-                  mk_Attribute("izz", 1),
-                  mk_Attribute("ixz", 0),
-                  mk_Attribute("ixy", 0),
-                  mk_Attribute("iyz", 0)
+                  mk_Attribute("no_visual.urdf:6", "ixx", 1),
+                  mk_Attribute("no_visual.urdf:6", "iyy", 1),
+                  mk_Attribute("no_visual.urdf:6", "izz", 1),
+                  mk_Attribute("no_visual.urdf:6", "ixz", 0),
+                  mk_Attribute("no_visual.urdf:6", "ixy", 0),
+                  mk_Attribute("no_visual.urdf:6", "iyz", 0)
                 ],
                 []
               )
@@ -48,19 +53,22 @@ values
           ),
           mk_Element
           (
+            "no_visual.urdf:8",
             "collision",
             [],
             [
               mk_Element
               (
+                "no_visual.urdf:9",
                 "geometry",
                 [],
                 [
                   mk_Element
                   (
+                    "no_visual.urdf:10",
                     "box",
                     [
-                      mk_Attribute("size", [1, 1, 1])
+                      mk_Attribute("no_visual.urdf:10", "size", [1, 1, 1])
                     ],
                     []
                   )

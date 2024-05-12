@@ -1,46 +1,51 @@
 /**
- * VDM created from two_links_one_joint.urdf on Sun Mar 03 16:10:13 GMT 2024
+ * VDM created from two_links_one_joint.urdf on Sun May 12 11:55:16 BST 2024
  * DO NOT EDIT!
  */
 values
   two_links_one_joint_urdf =
   mk_Element
   (
+    "two_links_one_joint.urdf:2",
     "robot",
     [
-      mk_Attribute("name", "two_links_one_joint")
+      mk_Attribute("two_links_one_joint.urdf:2", "name", "two_links_one_joint")
     ],
     [
       mk_Element
       (
+        "two_links_one_joint.urdf:3",
         "link",
         [
-          mk_Attribute("name", "link1")
+          mk_Attribute("two_links_one_joint.urdf:3", "name", "link1")
         ],
         [
           mk_Element
           (
+            "two_links_one_joint.urdf:4",
             "inertial",
             [],
             [
               mk_Element
               (
+                "two_links_one_joint.urdf:5",
                 "mass",
                 [
-                  mk_Attribute("value", 1)
+                  mk_Attribute("two_links_one_joint.urdf:5", "value", 1)
                 ],
                 []
               ),
               mk_Element
               (
+                "two_links_one_joint.urdf:6",
                 "inertia",
                 [
-                  mk_Attribute("ixx", 1),
-                  mk_Attribute("iyy", 1),
-                  mk_Attribute("izz", 1),
-                  mk_Attribute("ixz", 0),
-                  mk_Attribute("ixy", 0),
-                  mk_Attribute("iyz", 0)
+                  mk_Attribute("two_links_one_joint.urdf:6", "ixx", 1),
+                  mk_Attribute("two_links_one_joint.urdf:6", "iyy", 1),
+                  mk_Attribute("two_links_one_joint.urdf:6", "izz", 1),
+                  mk_Attribute("two_links_one_joint.urdf:6", "ixz", 0),
+                  mk_Attribute("two_links_one_joint.urdf:6", "ixy", 0),
+                  mk_Attribute("two_links_one_joint.urdf:6", "iyz", 0)
                 ],
                 []
               )
@@ -50,34 +55,38 @@ values
       ),
       mk_Element
       (
+        "two_links_one_joint.urdf:9",
         "link",
         [
-          mk_Attribute("name", "link2")
+          mk_Attribute("two_links_one_joint.urdf:9", "name", "link2")
         ],
         [
           mk_Element
           (
+            "two_links_one_joint.urdf:10",
             "inertial",
             [],
             [
               mk_Element
               (
+                "two_links_one_joint.urdf:11",
                 "mass",
                 [
-                  mk_Attribute("value", 1)
+                  mk_Attribute("two_links_one_joint.urdf:11", "value", 1)
                 ],
                 []
               ),
               mk_Element
               (
+                "two_links_one_joint.urdf:12",
                 "inertia",
                 [
-                  mk_Attribute("ixx", 1),
-                  mk_Attribute("iyy", 1),
-                  mk_Attribute("izz", 1),
-                  mk_Attribute("ixz", 0),
-                  mk_Attribute("ixy", 0),
-                  mk_Attribute("iyz", 0)
+                  mk_Attribute("two_links_one_joint.urdf:12", "ixx", 1),
+                  mk_Attribute("two_links_one_joint.urdf:12", "iyy", 1),
+                  mk_Attribute("two_links_one_joint.urdf:12", "izz", 1),
+                  mk_Attribute("two_links_one_joint.urdf:12", "ixz", 0),
+                  mk_Attribute("two_links_one_joint.urdf:12", "ixy", 0),
+                  mk_Attribute("two_links_one_joint.urdf:12", "iyz", 0)
                 ],
                 []
               )
@@ -87,25 +96,28 @@ values
       ),
       mk_Element
       (
+        "two_links_one_joint.urdf:15",
         "joint",
         [
-          mk_Attribute("name", "joint12"),
-          mk_Attribute("type", "fixed")
+          mk_Attribute("two_links_one_joint.urdf:15", "name", "joint12"),
+          mk_Attribute("two_links_one_joint.urdf:15", "type", "fixed")
         ],
         [
           mk_Element
           (
+            "two_links_one_joint.urdf:16",
             "parent",
             [
-              mk_Attribute("link", "link1")
+              mk_Attribute("two_links_one_joint.urdf:16", "link", "link1")
             ],
             []
           ),
           mk_Element
           (
+            "two_links_one_joint.urdf:17",
             "child",
             [
-              mk_Attribute("link", "link2")
+              mk_Attribute("two_links_one_joint.urdf:17", "link", "link2")
             ],
             []
           )

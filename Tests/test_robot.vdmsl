@@ -1,28 +1,31 @@
 /**
- * VDM created from test_robot.urdf on Sun Mar 03 16:10:13 GMT 2024
+ * VDM created from test_robot.urdf on Sun May 12 11:55:16 BST 2024
  * DO NOT EDIT!
  */
 values
   test_robot_urdf =
   mk_Element
   (
+    "test_robot.urdf:2",
     "robot",
     [
-      mk_Attribute("name", "r2d2")
+      mk_Attribute("test_robot.urdf:2", "name", "r2d2")
     ],
     [
       mk_Element
       (
+        "test_robot.urdf:4",
         "material",
         [
-          mk_Attribute("name", "blue")
+          mk_Attribute("test_robot.urdf:4", "name", "blue")
         ],
         [
           mk_Element
           (
+            "test_robot.urdf:5",
             "color",
             [
-              mk_Attribute("rgba", [0, 0, 0.8, 1])
+              mk_Attribute("test_robot.urdf:5", "rgba", [0, 0, 0.8, 1])
             ],
             []
           )
@@ -30,16 +33,18 @@ values
       ),
       mk_Element
       (
+        "test_robot.urdf:7",
         "material",
         [
-          mk_Attribute("name", "black")
+          mk_Attribute("test_robot.urdf:7", "name", "black")
         ],
         [
           mk_Element
           (
+            "test_robot.urdf:8",
             "color",
             [
-              mk_Attribute("rgba", [0, 0, 0, 1])
+              mk_Attribute("test_robot.urdf:8", "rgba", [0, 0, 0, 1])
             ],
             []
           )
@@ -47,16 +52,18 @@ values
       ),
       mk_Element
       (
+        "test_robot.urdf:10",
         "material",
         [
-          mk_Attribute("name", "white")
+          mk_Attribute("test_robot.urdf:10", "name", "white")
         ],
         [
           mk_Element
           (
+            "test_robot.urdf:11",
             "color",
             [
-              mk_Attribute("rgba", [1, 1, 1, 1])
+              mk_Attribute("test_robot.urdf:11", "rgba", [1, 1, 1, 1])
             ],
             []
           )
@@ -64,35 +71,40 @@ values
       ),
       mk_Element
       (
+        "test_robot.urdf:14",
         "link",
         [
-          mk_Attribute("name", "dummy_link")
+          mk_Attribute("test_robot.urdf:14", "name", "dummy_link")
         ],
         []
       ),
       mk_Element
       (
+        "test_robot.urdf:16",
         "link",
         [
-          mk_Attribute("name", "base_link")
+          mk_Attribute("test_robot.urdf:16", "name", "base_link")
         ],
         [
           mk_Element
           (
+            "test_robot.urdf:17",
             "visual",
             [],
             [
               mk_Element
               (
+                "test_robot.urdf:18",
                 "geometry",
                 [],
                 [
                   mk_Element
                   (
+                    "test_robot.urdf:19",
                     "cylinder",
                     [
-                      mk_Attribute("length", 0.6),
-                      mk_Attribute("radius", 0.2)
+                      mk_Attribute("test_robot.urdf:19", "length", 0.6),
+                      mk_Attribute("test_robot.urdf:19", "radius", 0.2)
                     ],
                     []
                   )
@@ -100,9 +112,10 @@ values
               ),
               mk_Element
               (
+                "test_robot.urdf:21",
                 "material",
                 [
-                  mk_Attribute("name", "blue")
+                  mk_Attribute("test_robot.urdf:21", "name", "blue")
                 ],
                 []
               )
@@ -110,20 +123,23 @@ values
           ),
           mk_Element
           (
+            "test_robot.urdf:23",
             "collision",
             [],
             [
               mk_Element
               (
+                "test_robot.urdf:24",
                 "geometry",
                 [],
                 [
                   mk_Element
                   (
+                    "test_robot.urdf:25",
                     "cylinder",
                     [
-                      mk_Attribute("length", 0.6),
-                      mk_Attribute("radius", 0.2)
+                      mk_Attribute("test_robot.urdf:25", "length", 0.6),
+                      mk_Attribute("test_robot.urdf:25", "radius", 0.2)
                     ],
                     []
                   )
@@ -133,27 +149,30 @@ values
           ),
           mk_Element
           (
+            "test_robot.urdf:28",
             "inertial",
             [],
             [
               mk_Element
               (
+                "test_robot.urdf:29",
                 "mass",
                 [
-                  mk_Attribute("value", 10)
+                  mk_Attribute("test_robot.urdf:29", "value", 10)
                 ],
                 []
               ),
               mk_Element
               (
+                "test_robot.urdf:30",
                 "inertia",
                 [
-                  mk_Attribute("ixx", 1.0),
-                  mk_Attribute("iyy", 1.0),
-                  mk_Attribute("izz", 1.0),
-                  mk_Attribute("ixz", 0.0),
-                  mk_Attribute("ixy", 0.0),
-                  mk_Attribute("iyz", 0.0)
+                  mk_Attribute("test_robot.urdf:30", "ixx", 1.0),
+                  mk_Attribute("test_robot.urdf:30", "iyy", 1.0),
+                  mk_Attribute("test_robot.urdf:30", "izz", 1.0),
+                  mk_Attribute("test_robot.urdf:30", "ixz", 0.0),
+                  mk_Attribute("test_robot.urdf:30", "ixy", 0.0),
+                  mk_Attribute("test_robot.urdf:30", "iyz", 0.0)
                 ],
                 []
               )
@@ -163,25 +182,28 @@ values
       ),
       mk_Element
       (
+        "test_robot.urdf:34",
         "joint",
         [
-          mk_Attribute("name", "dummy_to_base"),
-          mk_Attribute("type", "fixed")
+          mk_Attribute("test_robot.urdf:34", "name", "dummy_to_base"),
+          mk_Attribute("test_robot.urdf:34", "type", "fixed")
         ],
         [
           mk_Element
           (
+            "test_robot.urdf:35",
             "parent",
             [
-              mk_Attribute("link", "dummy_link")
+              mk_Attribute("test_robot.urdf:35", "link", "dummy_link")
             ],
             []
           ),
           mk_Element
           (
+            "test_robot.urdf:36",
             "child",
             [
-              mk_Attribute("link", "base_link")
+              mk_Attribute("test_robot.urdf:36", "link", "base_link")
             ],
             []
           )
@@ -189,26 +211,30 @@ values
       ),
       mk_Element
       (
+        "test_robot.urdf:39",
         "link",
         [
-          mk_Attribute("name", "right_leg")
+          mk_Attribute("test_robot.urdf:39", "name", "right_leg")
         ],
         [
           mk_Element
           (
+            "test_robot.urdf:40",
             "visual",
             [],
             [
               mk_Element
               (
+                "test_robot.urdf:41",
                 "geometry",
                 [],
                 [
                   mk_Element
                   (
+                    "test_robot.urdf:42",
                     "box",
                     [
-                      mk_Attribute("size", [0.6, 0.1, 0.2])
+                      mk_Attribute("test_robot.urdf:42", "size", [0.6, 0.1, 0.2])
                     ],
                     []
                   )
@@ -216,18 +242,20 @@ values
               ),
               mk_Element
               (
+                "test_robot.urdf:44",
                 "origin",
                 [
-                  mk_Attribute("xyz", [0, 0, -0.3]),
-                  mk_Attribute("rpy", [0, 1.57075, 0])
+                  mk_Attribute("test_robot.urdf:44", "xyz", [0, 0, -0.3]),
+                  mk_Attribute("test_robot.urdf:44", "rpy", [0, 1.57075, 0])
                 ],
                 []
               ),
               mk_Element
               (
+                "test_robot.urdf:45",
                 "material",
                 [
-                  mk_Attribute("name", "white")
+                  mk_Attribute("test_robot.urdf:45", "name", "white")
                 ],
                 []
               )
@@ -235,19 +263,22 @@ values
           ),
           mk_Element
           (
+            "test_robot.urdf:47",
             "collision",
             [],
             [
               mk_Element
               (
+                "test_robot.urdf:48",
                 "geometry",
                 [],
                 [
                   mk_Element
                   (
+                    "test_robot.urdf:49",
                     "box",
                     [
-                      mk_Attribute("size", [0.6, 0.1, 0.2])
+                      mk_Attribute("test_robot.urdf:49", "size", [0.6, 0.1, 0.2])
                     ],
                     []
                   )
@@ -255,10 +286,11 @@ values
               ),
               mk_Element
               (
+                "test_robot.urdf:51",
                 "origin",
                 [
-                  mk_Attribute("xyz", [0, 0, -0.3]),
-                  mk_Attribute("rpy", [0, 1.57075, 0])
+                  mk_Attribute("test_robot.urdf:51", "xyz", [0, 0, -0.3]),
+                  mk_Attribute("test_robot.urdf:51", "rpy", [0, 1.57075, 0])
                 ],
                 []
               )
@@ -266,27 +298,30 @@ values
           ),
           mk_Element
           (
+            "test_robot.urdf:53",
             "inertial",
             [],
             [
               mk_Element
               (
+                "test_robot.urdf:54",
                 "mass",
                 [
-                  mk_Attribute("value", 10)
+                  mk_Attribute("test_robot.urdf:54", "value", 10)
                 ],
                 []
               ),
               mk_Element
               (
+                "test_robot.urdf:55",
                 "inertia",
                 [
-                  mk_Attribute("ixx", 1.0),
-                  mk_Attribute("iyy", 1.0),
-                  mk_Attribute("izz", 1.0),
-                  mk_Attribute("ixz", 0.0),
-                  mk_Attribute("ixy", 0.0),
-                  mk_Attribute("iyz", 0.0)
+                  mk_Attribute("test_robot.urdf:55", "ixx", 1.0),
+                  mk_Attribute("test_robot.urdf:55", "iyy", 1.0),
+                  mk_Attribute("test_robot.urdf:55", "izz", 1.0),
+                  mk_Attribute("test_robot.urdf:55", "ixz", 0.0),
+                  mk_Attribute("test_robot.urdf:55", "ixy", 0.0),
+                  mk_Attribute("test_robot.urdf:55", "iyz", 0.0)
                 ],
                 []
               )
@@ -296,33 +331,37 @@ values
       ),
       mk_Element
       (
+        "test_robot.urdf:58",
         "joint",
         [
-          mk_Attribute("name", "base_to_right_leg"),
-          mk_Attribute("type", "fixed")
+          mk_Attribute("test_robot.urdf:58", "name", "base_to_right_leg"),
+          mk_Attribute("test_robot.urdf:58", "type", "fixed")
         ],
         [
           mk_Element
           (
+            "test_robot.urdf:59",
             "parent",
             [
-              mk_Attribute("link", "base_link")
+              mk_Attribute("test_robot.urdf:59", "link", "base_link")
             ],
             []
           ),
           mk_Element
           (
+            "test_robot.urdf:60",
             "child",
             [
-              mk_Attribute("link", "right_leg")
+              mk_Attribute("test_robot.urdf:60", "link", "right_leg")
             ],
             []
           ),
           mk_Element
           (
+            "test_robot.urdf:61",
             "origin",
             [
-              mk_Attribute("xyz", [0, -0.22, 0.25])
+              mk_Attribute("test_robot.urdf:61", "xyz", [0, -0.22, 0.25])
             ],
             []
           )
@@ -330,26 +369,30 @@ values
       ),
       mk_Element
       (
+        "test_robot.urdf:64",
         "link",
         [
-          mk_Attribute("name", "right_base")
+          mk_Attribute("test_robot.urdf:64", "name", "right_base")
         ],
         [
           mk_Element
           (
+            "test_robot.urdf:65",
             "visual",
             [],
             [
               mk_Element
               (
+                "test_robot.urdf:66",
                 "geometry",
                 [],
                 [
                   mk_Element
                   (
+                    "test_robot.urdf:67",
                     "box",
                     [
-                      mk_Attribute("size", [0.4, 0.1, 0.1])
+                      mk_Attribute("test_robot.urdf:67", "size", [0.4, 0.1, 0.1])
                     ],
                     []
                   )
@@ -357,9 +400,10 @@ values
               ),
               mk_Element
               (
+                "test_robot.urdf:69",
                 "material",
                 [
-                  mk_Attribute("name", "white")
+                  mk_Attribute("test_robot.urdf:69", "name", "white")
                 ],
                 []
               )
@@ -367,19 +411,22 @@ values
           ),
           mk_Element
           (
+            "test_robot.urdf:71",
             "collision",
             [],
             [
               mk_Element
               (
+                "test_robot.urdf:72",
                 "geometry",
                 [],
                 [
                   mk_Element
                   (
+                    "test_robot.urdf:73",
                     "box",
                     [
-                      mk_Attribute("size", [0.4, 0.1, 0.1])
+                      mk_Attribute("test_robot.urdf:73", "size", [0.4, 0.1, 0.1])
                     ],
                     []
                   )
@@ -389,27 +436,30 @@ values
           ),
           mk_Element
           (
+            "test_robot.urdf:76",
             "inertial",
             [],
             [
               mk_Element
               (
+                "test_robot.urdf:77",
                 "mass",
                 [
-                  mk_Attribute("value", 10)
+                  mk_Attribute("test_robot.urdf:77", "value", 10)
                 ],
                 []
               ),
               mk_Element
               (
+                "test_robot.urdf:78",
                 "inertia",
                 [
-                  mk_Attribute("ixx", 1.0),
-                  mk_Attribute("iyy", 1.0),
-                  mk_Attribute("izz", 1.0),
-                  mk_Attribute("ixz", 0.0),
-                  mk_Attribute("ixy", 0.0),
-                  mk_Attribute("iyz", 0.0)
+                  mk_Attribute("test_robot.urdf:78", "ixx", 1.0),
+                  mk_Attribute("test_robot.urdf:78", "iyy", 1.0),
+                  mk_Attribute("test_robot.urdf:78", "izz", 1.0),
+                  mk_Attribute("test_robot.urdf:78", "ixz", 0.0),
+                  mk_Attribute("test_robot.urdf:78", "ixy", 0.0),
+                  mk_Attribute("test_robot.urdf:78", "iyz", 0.0)
                 ],
                 []
               )
@@ -419,33 +469,37 @@ values
       ),
       mk_Element
       (
+        "test_robot.urdf:82",
         "joint",
         [
-          mk_Attribute("name", "right_base_joint"),
-          mk_Attribute("type", "fixed")
+          mk_Attribute("test_robot.urdf:82", "name", "right_base_joint"),
+          mk_Attribute("test_robot.urdf:82", "type", "fixed")
         ],
         [
           mk_Element
           (
+            "test_robot.urdf:83",
             "parent",
             [
-              mk_Attribute("link", "right_leg")
+              mk_Attribute("test_robot.urdf:83", "link", "right_leg")
             ],
             []
           ),
           mk_Element
           (
+            "test_robot.urdf:84",
             "child",
             [
-              mk_Attribute("link", "right_base")
+              mk_Attribute("test_robot.urdf:84", "link", "right_base")
             ],
             []
           ),
           mk_Element
           (
+            "test_robot.urdf:85",
             "origin",
             [
-              mk_Attribute("xyz", [0, 0, -0.6])
+              mk_Attribute("test_robot.urdf:85", "xyz", [0, 0, -0.6])
             ],
             []
           )
@@ -453,36 +507,41 @@ values
       ),
       mk_Element
       (
+        "test_robot.urdf:88",
         "link",
         [
-          mk_Attribute("name", "right_front_wheel")
+          mk_Attribute("test_robot.urdf:88", "name", "right_front_wheel")
         ],
         [
           mk_Element
           (
+            "test_robot.urdf:89",
             "visual",
             [],
             [
               mk_Element
               (
+                "test_robot.urdf:90",
                 "origin",
                 [
-                  mk_Attribute("xyz", [0, 0, 0]),
-                  mk_Attribute("rpy", [1.57075, 0, 0])
+                  mk_Attribute("test_robot.urdf:90", "xyz", [0, 0, 0]),
+                  mk_Attribute("test_robot.urdf:90", "rpy", [1.57075, 0, 0])
                 ],
                 []
               ),
               mk_Element
               (
+                "test_robot.urdf:91",
                 "geometry",
                 [],
                 [
                   mk_Element
                   (
+                    "test_robot.urdf:92",
                     "cylinder",
                     [
-                      mk_Attribute("length", 0.1),
-                      mk_Attribute("radius", 0.035)
+                      mk_Attribute("test_robot.urdf:92", "length", 0.1),
+                      mk_Attribute("test_robot.urdf:92", "radius", 0.035)
                     ],
                     []
                   )
@@ -490,9 +549,10 @@ values
               ),
               mk_Element
               (
+                "test_robot.urdf:94",
                 "material",
                 [
-                  mk_Attribute("name", "black")
+                  mk_Attribute("test_robot.urdf:94", "name", "black")
                 ],
                 []
               )
@@ -500,29 +560,33 @@ values
           ),
           mk_Element
           (
+            "test_robot.urdf:96",
             "collision",
             [],
             [
               mk_Element
               (
+                "test_robot.urdf:97",
                 "origin",
                 [
-                  mk_Attribute("xyz", [0, 0, 0]),
-                  mk_Attribute("rpy", [1.57075, 0, 0])
+                  mk_Attribute("test_robot.urdf:97", "xyz", [0, 0, 0]),
+                  mk_Attribute("test_robot.urdf:97", "rpy", [1.57075, 0, 0])
                 ],
                 []
               ),
               mk_Element
               (
+                "test_robot.urdf:98",
                 "geometry",
                 [],
                 [
                   mk_Element
                   (
+                    "test_robot.urdf:99",
                     "cylinder",
                     [
-                      mk_Attribute("length", 0.1),
-                      mk_Attribute("radius", 0.035)
+                      mk_Attribute("test_robot.urdf:99", "length", 0.1),
+                      mk_Attribute("test_robot.urdf:99", "radius", 0.035)
                     ],
                     []
                   )
@@ -532,27 +596,30 @@ values
           ),
           mk_Element
           (
+            "test_robot.urdf:102",
             "inertial",
             [],
             [
               mk_Element
               (
+                "test_robot.urdf:103",
                 "mass",
                 [
-                  mk_Attribute("value", 1)
+                  mk_Attribute("test_robot.urdf:103", "value", 1)
                 ],
                 []
               ),
               mk_Element
               (
+                "test_robot.urdf:104",
                 "inertia",
                 [
-                  mk_Attribute("ixx", 1.0),
-                  mk_Attribute("iyy", 1.0),
-                  mk_Attribute("izz", 1.0),
-                  mk_Attribute("ixz", 0.0),
-                  mk_Attribute("ixy", 0.0),
-                  mk_Attribute("iyz", 0.0)
+                  mk_Attribute("test_robot.urdf:104", "ixx", 1.0),
+                  mk_Attribute("test_robot.urdf:104", "iyy", 1.0),
+                  mk_Attribute("test_robot.urdf:104", "izz", 1.0),
+                  mk_Attribute("test_robot.urdf:104", "ixz", 0.0),
+                  mk_Attribute("test_robot.urdf:104", "ixy", 0.0),
+                  mk_Attribute("test_robot.urdf:104", "iyz", 0.0)
                 ],
                 []
               )
@@ -562,43 +629,48 @@ values
       ),
       mk_Element
       (
+        "test_robot.urdf:108",
         "joint",
         [
-          mk_Attribute("name", "right_front_wheel_joint"),
-          mk_Attribute("type", "continuous")
+          mk_Attribute("test_robot.urdf:108", "name", "right_front_wheel_joint"),
+          mk_Attribute("test_robot.urdf:108", "type", "continuous")
         ],
         [
           mk_Element
           (
+            "test_robot.urdf:109",
             "axis",
             [
-              mk_Attribute("xyz", [0, 1, 0]),
-              mk_Attribute("rpy", [0, 0, 0])
+              mk_Attribute("test_robot.urdf:109", "xyz", [0, 1, 0]),
+              mk_Attribute("test_robot.urdf:109", "rpy", [0, 0, 0])
             ],
             []
           ),
           mk_Element
           (
+            "test_robot.urdf:110",
             "parent",
             [
-              mk_Attribute("link", "right_base")
+              mk_Attribute("test_robot.urdf:110", "link", "right_base")
             ],
             []
           ),
           mk_Element
           (
+            "test_robot.urdf:111",
             "child",
             [
-              mk_Attribute("link", "right_front_wheel")
+              mk_Attribute("test_robot.urdf:111", "link", "right_front_wheel")
             ],
             []
           ),
           mk_Element
           (
+            "test_robot.urdf:112",
             "origin",
             [
-              mk_Attribute("xyz", [0.133333333333, 0, -0.085]),
-              mk_Attribute("rpy", [0, 0, 0])
+              mk_Attribute("test_robot.urdf:112", "xyz", [0.133333333333, 0, -0.085]),
+              mk_Attribute("test_robot.urdf:112", "rpy", [0, 0, 0])
             ],
             []
           )
@@ -606,36 +678,41 @@ values
       ),
       mk_Element
       (
+        "test_robot.urdf:115",
         "link",
         [
-          mk_Attribute("name", "right_back_wheel")
+          mk_Attribute("test_robot.urdf:115", "name", "right_back_wheel")
         ],
         [
           mk_Element
           (
+            "test_robot.urdf:116",
             "visual",
             [],
             [
               mk_Element
               (
+                "test_robot.urdf:117",
                 "origin",
                 [
-                  mk_Attribute("xyz", [0, 0, 0]),
-                  mk_Attribute("rpy", [1.57075, 0, 0])
+                  mk_Attribute("test_robot.urdf:117", "xyz", [0, 0, 0]),
+                  mk_Attribute("test_robot.urdf:117", "rpy", [1.57075, 0, 0])
                 ],
                 []
               ),
               mk_Element
               (
+                "test_robot.urdf:118",
                 "geometry",
                 [],
                 [
                   mk_Element
                   (
+                    "test_robot.urdf:119",
                     "cylinder",
                     [
-                      mk_Attribute("length", 0.1),
-                      mk_Attribute("radius", 0.035)
+                      mk_Attribute("test_robot.urdf:119", "length", 0.1),
+                      mk_Attribute("test_robot.urdf:119", "radius", 0.035)
                     ],
                     []
                   )
@@ -643,9 +720,10 @@ values
               ),
               mk_Element
               (
+                "test_robot.urdf:121",
                 "material",
                 [
-                  mk_Attribute("name", "black")
+                  mk_Attribute("test_robot.urdf:121", "name", "black")
                 ],
                 []
               )
@@ -653,29 +731,33 @@ values
           ),
           mk_Element
           (
+            "test_robot.urdf:123",
             "collision",
             [],
             [
               mk_Element
               (
+                "test_robot.urdf:124",
                 "origin",
                 [
-                  mk_Attribute("xyz", [0, 0, 0]),
-                  mk_Attribute("rpy", [1.57075, 0, 0])
+                  mk_Attribute("test_robot.urdf:124", "xyz", [0, 0, 0]),
+                  mk_Attribute("test_robot.urdf:124", "rpy", [1.57075, 0, 0])
                 ],
                 []
               ),
               mk_Element
               (
+                "test_robot.urdf:125",
                 "geometry",
                 [],
                 [
                   mk_Element
                   (
+                    "test_robot.urdf:126",
                     "cylinder",
                     [
-                      mk_Attribute("length", 0.1),
-                      mk_Attribute("radius", 0.035)
+                      mk_Attribute("test_robot.urdf:126", "length", 0.1),
+                      mk_Attribute("test_robot.urdf:126", "radius", 0.035)
                     ],
                     []
                   )
@@ -685,27 +767,30 @@ values
           ),
           mk_Element
           (
+            "test_robot.urdf:129",
             "inertial",
             [],
             [
               mk_Element
               (
+                "test_robot.urdf:130",
                 "mass",
                 [
-                  mk_Attribute("value", 1)
+                  mk_Attribute("test_robot.urdf:130", "value", 1)
                 ],
                 []
               ),
               mk_Element
               (
+                "test_robot.urdf:131",
                 "inertia",
                 [
-                  mk_Attribute("ixx", 1.0),
-                  mk_Attribute("iyy", 1.0),
-                  mk_Attribute("izz", 1.0),
-                  mk_Attribute("ixz", 0.0),
-                  mk_Attribute("ixy", 0.0),
-                  mk_Attribute("iyz", 0.0)
+                  mk_Attribute("test_robot.urdf:131", "ixx", 1.0),
+                  mk_Attribute("test_robot.urdf:131", "iyy", 1.0),
+                  mk_Attribute("test_robot.urdf:131", "izz", 1.0),
+                  mk_Attribute("test_robot.urdf:131", "ixz", 0.0),
+                  mk_Attribute("test_robot.urdf:131", "ixy", 0.0),
+                  mk_Attribute("test_robot.urdf:131", "iyz", 0.0)
                 ],
                 []
               )
@@ -715,43 +800,48 @@ values
       ),
       mk_Element
       (
+        "test_robot.urdf:135",
         "joint",
         [
-          mk_Attribute("name", "right_back_wheel_joint"),
-          mk_Attribute("type", "continuous")
+          mk_Attribute("test_robot.urdf:135", "name", "right_back_wheel_joint"),
+          mk_Attribute("test_robot.urdf:135", "type", "continuous")
         ],
         [
           mk_Element
           (
+            "test_robot.urdf:136",
             "axis",
             [
-              mk_Attribute("xyz", [0, 1, 0]),
-              mk_Attribute("rpy", [0, 0, 0])
+              mk_Attribute("test_robot.urdf:136", "xyz", [0, 1, 0]),
+              mk_Attribute("test_robot.urdf:136", "rpy", [0, 0, 0])
             ],
             []
           ),
           mk_Element
           (
+            "test_robot.urdf:137",
             "parent",
             [
-              mk_Attribute("link", "right_base")
+              mk_Attribute("test_robot.urdf:137", "link", "right_base")
             ],
             []
           ),
           mk_Element
           (
+            "test_robot.urdf:138",
             "child",
             [
-              mk_Attribute("link", "right_back_wheel")
+              mk_Attribute("test_robot.urdf:138", "link", "right_back_wheel")
             ],
             []
           ),
           mk_Element
           (
+            "test_robot.urdf:139",
             "origin",
             [
-              mk_Attribute("xyz", [-0.133333333333, 0, -0.085]),
-              mk_Attribute("rpy", [0, 0, 0])
+              mk_Attribute("test_robot.urdf:139", "xyz", [-0.133333333333, 0, -0.085]),
+              mk_Attribute("test_robot.urdf:139", "rpy", [0, 0, 0])
             ],
             []
           )
@@ -759,26 +849,30 @@ values
       ),
       mk_Element
       (
+        "test_robot.urdf:142",
         "link",
         [
-          mk_Attribute("name", "left_leg")
+          mk_Attribute("test_robot.urdf:142", "name", "left_leg")
         ],
         [
           mk_Element
           (
+            "test_robot.urdf:143",
             "visual",
             [],
             [
               mk_Element
               (
+                "test_robot.urdf:144",
                 "geometry",
                 [],
                 [
                   mk_Element
                   (
+                    "test_robot.urdf:145",
                     "box",
                     [
-                      mk_Attribute("size", [0.6, 0.1, 0.2])
+                      mk_Attribute("test_robot.urdf:145", "size", [0.6, 0.1, 0.2])
                     ],
                     []
                   )
@@ -786,18 +880,20 @@ values
               ),
               mk_Element
               (
+                "test_robot.urdf:147",
                 "origin",
                 [
-                  mk_Attribute("xyz", [0, 0, -0.3]),
-                  mk_Attribute("rpy", [0, 1.57075, 0])
+                  mk_Attribute("test_robot.urdf:147", "xyz", [0, 0, -0.3]),
+                  mk_Attribute("test_robot.urdf:147", "rpy", [0, 1.57075, 0])
                 ],
                 []
               ),
               mk_Element
               (
+                "test_robot.urdf:148",
                 "material",
                 [
-                  mk_Attribute("name", "white")
+                  mk_Attribute("test_robot.urdf:148", "name", "white")
                 ],
                 []
               )
@@ -805,19 +901,22 @@ values
           ),
           mk_Element
           (
+            "test_robot.urdf:150",
             "collision",
             [],
             [
               mk_Element
               (
+                "test_robot.urdf:151",
                 "geometry",
                 [],
                 [
                   mk_Element
                   (
+                    "test_robot.urdf:152",
                     "box",
                     [
-                      mk_Attribute("size", [0.6, 0.1, 0.2])
+                      mk_Attribute("test_robot.urdf:152", "size", [0.6, 0.1, 0.2])
                     ],
                     []
                   )
@@ -825,10 +924,11 @@ values
               ),
               mk_Element
               (
+                "test_robot.urdf:154",
                 "origin",
                 [
-                  mk_Attribute("xyz", [0, 0, -0.3]),
-                  mk_Attribute("rpy", [0, 1.57075, 0])
+                  mk_Attribute("test_robot.urdf:154", "xyz", [0, 0, -0.3]),
+                  mk_Attribute("test_robot.urdf:154", "rpy", [0, 1.57075, 0])
                 ],
                 []
               )
@@ -836,27 +936,30 @@ values
           ),
           mk_Element
           (
+            "test_robot.urdf:156",
             "inertial",
             [],
             [
               mk_Element
               (
+                "test_robot.urdf:157",
                 "mass",
                 [
-                  mk_Attribute("value", 10)
+                  mk_Attribute("test_robot.urdf:157", "value", 10)
                 ],
                 []
               ),
               mk_Element
               (
+                "test_robot.urdf:158",
                 "inertia",
                 [
-                  mk_Attribute("ixx", 1.0),
-                  mk_Attribute("iyy", 1.0),
-                  mk_Attribute("izz", 1.0),
-                  mk_Attribute("ixz", 0.0),
-                  mk_Attribute("ixy", 0.0),
-                  mk_Attribute("iyz", 0.0)
+                  mk_Attribute("test_robot.urdf:158", "ixx", 1.0),
+                  mk_Attribute("test_robot.urdf:158", "iyy", 1.0),
+                  mk_Attribute("test_robot.urdf:158", "izz", 1.0),
+                  mk_Attribute("test_robot.urdf:158", "ixz", 0.0),
+                  mk_Attribute("test_robot.urdf:158", "ixy", 0.0),
+                  mk_Attribute("test_robot.urdf:158", "iyz", 0.0)
                 ],
                 []
               )
@@ -866,33 +969,37 @@ values
       ),
       mk_Element
       (
+        "test_robot.urdf:162",
         "joint",
         [
-          mk_Attribute("name", "base_to_left_leg"),
-          mk_Attribute("type", "fixed")
+          mk_Attribute("test_robot.urdf:162", "name", "base_to_left_leg"),
+          mk_Attribute("test_robot.urdf:162", "type", "fixed")
         ],
         [
           mk_Element
           (
+            "test_robot.urdf:163",
             "parent",
             [
-              mk_Attribute("link", "base_link")
+              mk_Attribute("test_robot.urdf:163", "link", "base_link")
             ],
             []
           ),
           mk_Element
           (
+            "test_robot.urdf:164",
             "child",
             [
-              mk_Attribute("link", "left_leg")
+              mk_Attribute("test_robot.urdf:164", "link", "left_leg")
             ],
             []
           ),
           mk_Element
           (
+            "test_robot.urdf:165",
             "origin",
             [
-              mk_Attribute("xyz", [0, 0.22, 0.25])
+              mk_Attribute("test_robot.urdf:165", "xyz", [0, 0.22, 0.25])
             ],
             []
           )
@@ -900,26 +1007,30 @@ values
       ),
       mk_Element
       (
+        "test_robot.urdf:168",
         "link",
         [
-          mk_Attribute("name", "left_base")
+          mk_Attribute("test_robot.urdf:168", "name", "left_base")
         ],
         [
           mk_Element
           (
+            "test_robot.urdf:169",
             "visual",
             [],
             [
               mk_Element
               (
+                "test_robot.urdf:170",
                 "geometry",
                 [],
                 [
                   mk_Element
                   (
+                    "test_robot.urdf:171",
                     "box",
                     [
-                      mk_Attribute("size", [0.4, 0.1, 0.1])
+                      mk_Attribute("test_robot.urdf:171", "size", [0.4, 0.1, 0.1])
                     ],
                     []
                   )
@@ -927,9 +1038,10 @@ values
               ),
               mk_Element
               (
+                "test_robot.urdf:173",
                 "material",
                 [
-                  mk_Attribute("name", "white")
+                  mk_Attribute("test_robot.urdf:173", "name", "white")
                 ],
                 []
               )
@@ -937,19 +1049,22 @@ values
           ),
           mk_Element
           (
+            "test_robot.urdf:175",
             "collision",
             [],
             [
               mk_Element
               (
+                "test_robot.urdf:176",
                 "geometry",
                 [],
                 [
                   mk_Element
                   (
+                    "test_robot.urdf:177",
                     "box",
                     [
-                      mk_Attribute("size", [0.4, 0.1, 0.1])
+                      mk_Attribute("test_robot.urdf:177", "size", [0.4, 0.1, 0.1])
                     ],
                     []
                   )
@@ -959,27 +1074,30 @@ values
           ),
           mk_Element
           (
+            "test_robot.urdf:180",
             "inertial",
             [],
             [
               mk_Element
               (
+                "test_robot.urdf:181",
                 "mass",
                 [
-                  mk_Attribute("value", 10)
+                  mk_Attribute("test_robot.urdf:181", "value", 10)
                 ],
                 []
               ),
               mk_Element
               (
+                "test_robot.urdf:182",
                 "inertia",
                 [
-                  mk_Attribute("ixx", 1.0),
-                  mk_Attribute("iyy", 1.0),
-                  mk_Attribute("izz", 1.0),
-                  mk_Attribute("ixz", 0.0),
-                  mk_Attribute("ixy", 0.0),
-                  mk_Attribute("iyz", 0.0)
+                  mk_Attribute("test_robot.urdf:182", "ixx", 1.0),
+                  mk_Attribute("test_robot.urdf:182", "iyy", 1.0),
+                  mk_Attribute("test_robot.urdf:182", "izz", 1.0),
+                  mk_Attribute("test_robot.urdf:182", "ixz", 0.0),
+                  mk_Attribute("test_robot.urdf:182", "ixy", 0.0),
+                  mk_Attribute("test_robot.urdf:182", "iyz", 0.0)
                 ],
                 []
               )
@@ -989,33 +1107,37 @@ values
       ),
       mk_Element
       (
+        "test_robot.urdf:186",
         "joint",
         [
-          mk_Attribute("name", "left_base_joint"),
-          mk_Attribute("type", "fixed")
+          mk_Attribute("test_robot.urdf:186", "name", "left_base_joint"),
+          mk_Attribute("test_robot.urdf:186", "type", "fixed")
         ],
         [
           mk_Element
           (
+            "test_robot.urdf:187",
             "parent",
             [
-              mk_Attribute("link", "left_leg")
+              mk_Attribute("test_robot.urdf:187", "link", "left_leg")
             ],
             []
           ),
           mk_Element
           (
+            "test_robot.urdf:188",
             "child",
             [
-              mk_Attribute("link", "left_base")
+              mk_Attribute("test_robot.urdf:188", "link", "left_base")
             ],
             []
           ),
           mk_Element
           (
+            "test_robot.urdf:189",
             "origin",
             [
-              mk_Attribute("xyz", [0, 0, -0.6])
+              mk_Attribute("test_robot.urdf:189", "xyz", [0, 0, -0.6])
             ],
             []
           )
@@ -1023,36 +1145,41 @@ values
       ),
       mk_Element
       (
+        "test_robot.urdf:192",
         "link",
         [
-          mk_Attribute("name", "left_front_wheel")
+          mk_Attribute("test_robot.urdf:192", "name", "left_front_wheel")
         ],
         [
           mk_Element
           (
+            "test_robot.urdf:193",
             "visual",
             [],
             [
               mk_Element
               (
+                "test_robot.urdf:194",
                 "origin",
                 [
-                  mk_Attribute("xyz", [0, 0, 0]),
-                  mk_Attribute("rpy", [1.57075, 0, 0])
+                  mk_Attribute("test_robot.urdf:194", "xyz", [0, 0, 0]),
+                  mk_Attribute("test_robot.urdf:194", "rpy", [1.57075, 0, 0])
                 ],
                 []
               ),
               mk_Element
               (
+                "test_robot.urdf:195",
                 "geometry",
                 [],
                 [
                   mk_Element
                   (
+                    "test_robot.urdf:196",
                     "cylinder",
                     [
-                      mk_Attribute("length", 0.1),
-                      mk_Attribute("radius", 0.035)
+                      mk_Attribute("test_robot.urdf:196", "length", 0.1),
+                      mk_Attribute("test_robot.urdf:196", "radius", 0.035)
                     ],
                     []
                   )
@@ -1060,9 +1187,10 @@ values
               ),
               mk_Element
               (
+                "test_robot.urdf:198",
                 "material",
                 [
-                  mk_Attribute("name", "black")
+                  mk_Attribute("test_robot.urdf:198", "name", "black")
                 ],
                 []
               )
@@ -1070,29 +1198,33 @@ values
           ),
           mk_Element
           (
+            "test_robot.urdf:200",
             "collision",
             [],
             [
               mk_Element
               (
+                "test_robot.urdf:201",
                 "origin",
                 [
-                  mk_Attribute("xyz", [0, 0, 0]),
-                  mk_Attribute("rpy", [1.57075, 0, 0])
+                  mk_Attribute("test_robot.urdf:201", "xyz", [0, 0, 0]),
+                  mk_Attribute("test_robot.urdf:201", "rpy", [1.57075, 0, 0])
                 ],
                 []
               ),
               mk_Element
               (
+                "test_robot.urdf:202",
                 "geometry",
                 [],
                 [
                   mk_Element
                   (
+                    "test_robot.urdf:203",
                     "cylinder",
                     [
-                      mk_Attribute("length", 0.1),
-                      mk_Attribute("radius", 0.035)
+                      mk_Attribute("test_robot.urdf:203", "length", 0.1),
+                      mk_Attribute("test_robot.urdf:203", "radius", 0.035)
                     ],
                     []
                   )
@@ -1102,27 +1234,30 @@ values
           ),
           mk_Element
           (
+            "test_robot.urdf:206",
             "inertial",
             [],
             [
               mk_Element
               (
+                "test_robot.urdf:207",
                 "mass",
                 [
-                  mk_Attribute("value", 1)
+                  mk_Attribute("test_robot.urdf:207", "value", 1)
                 ],
                 []
               ),
               mk_Element
               (
+                "test_robot.urdf:208",
                 "inertia",
                 [
-                  mk_Attribute("ixx", 1.0),
-                  mk_Attribute("iyy", 1.0),
-                  mk_Attribute("izz", 1.0),
-                  mk_Attribute("ixz", 0.0),
-                  mk_Attribute("ixy", 0.0),
-                  mk_Attribute("iyz", 0.0)
+                  mk_Attribute("test_robot.urdf:208", "ixx", 1.0),
+                  mk_Attribute("test_robot.urdf:208", "iyy", 1.0),
+                  mk_Attribute("test_robot.urdf:208", "izz", 1.0),
+                  mk_Attribute("test_robot.urdf:208", "ixz", 0.0),
+                  mk_Attribute("test_robot.urdf:208", "ixy", 0.0),
+                  mk_Attribute("test_robot.urdf:208", "iyz", 0.0)
                 ],
                 []
               )
@@ -1132,43 +1267,48 @@ values
       ),
       mk_Element
       (
+        "test_robot.urdf:212",
         "joint",
         [
-          mk_Attribute("name", "left_front_wheel_joint"),
-          mk_Attribute("type", "continuous")
+          mk_Attribute("test_robot.urdf:212", "name", "left_front_wheel_joint"),
+          mk_Attribute("test_robot.urdf:212", "type", "continuous")
         ],
         [
           mk_Element
           (
+            "test_robot.urdf:213",
             "axis",
             [
-              mk_Attribute("xyz", [0, 1, 0]),
-              mk_Attribute("rpy", [0, 0, 0])
+              mk_Attribute("test_robot.urdf:213", "xyz", [0, 1, 0]),
+              mk_Attribute("test_robot.urdf:213", "rpy", [0, 0, 0])
             ],
             []
           ),
           mk_Element
           (
+            "test_robot.urdf:214",
             "parent",
             [
-              mk_Attribute("link", "left_base")
+              mk_Attribute("test_robot.urdf:214", "link", "left_base")
             ],
             []
           ),
           mk_Element
           (
+            "test_robot.urdf:215",
             "child",
             [
-              mk_Attribute("link", "left_front_wheel")
+              mk_Attribute("test_robot.urdf:215", "link", "left_front_wheel")
             ],
             []
           ),
           mk_Element
           (
+            "test_robot.urdf:216",
             "origin",
             [
-              mk_Attribute("xyz", [0.133333333333, 0, -0.085]),
-              mk_Attribute("rpy", [0, 0, 0])
+              mk_Attribute("test_robot.urdf:216", "xyz", [0.133333333333, 0, -0.085]),
+              mk_Attribute("test_robot.urdf:216", "rpy", [0, 0, 0])
             ],
             []
           )
@@ -1176,36 +1316,41 @@ values
       ),
       mk_Element
       (
+        "test_robot.urdf:219",
         "link",
         [
-          mk_Attribute("name", "left_back_wheel")
+          mk_Attribute("test_robot.urdf:219", "name", "left_back_wheel")
         ],
         [
           mk_Element
           (
+            "test_robot.urdf:220",
             "visual",
             [],
             [
               mk_Element
               (
+                "test_robot.urdf:221",
                 "origin",
                 [
-                  mk_Attribute("xyz", [0, 0, 0]),
-                  mk_Attribute("rpy", [1.57075, 0, 0])
+                  mk_Attribute("test_robot.urdf:221", "xyz", [0, 0, 0]),
+                  mk_Attribute("test_robot.urdf:221", "rpy", [1.57075, 0, 0])
                 ],
                 []
               ),
               mk_Element
               (
+                "test_robot.urdf:222",
                 "geometry",
                 [],
                 [
                   mk_Element
                   (
+                    "test_robot.urdf:223",
                     "cylinder",
                     [
-                      mk_Attribute("length", 0.1),
-                      mk_Attribute("radius", 0.035)
+                      mk_Attribute("test_robot.urdf:223", "length", 0.1),
+                      mk_Attribute("test_robot.urdf:223", "radius", 0.035)
                     ],
                     []
                   )
@@ -1213,9 +1358,10 @@ values
               ),
               mk_Element
               (
+                "test_robot.urdf:225",
                 "material",
                 [
-                  mk_Attribute("name", "black")
+                  mk_Attribute("test_robot.urdf:225", "name", "black")
                 ],
                 []
               )
@@ -1223,29 +1369,33 @@ values
           ),
           mk_Element
           (
+            "test_robot.urdf:227",
             "collision",
             [],
             [
               mk_Element
               (
+                "test_robot.urdf:228",
                 "origin",
                 [
-                  mk_Attribute("xyz", [0, 0, 0]),
-                  mk_Attribute("rpy", [1.57075, 0, 0])
+                  mk_Attribute("test_robot.urdf:228", "xyz", [0, 0, 0]),
+                  mk_Attribute("test_robot.urdf:228", "rpy", [1.57075, 0, 0])
                 ],
                 []
               ),
               mk_Element
               (
+                "test_robot.urdf:229",
                 "geometry",
                 [],
                 [
                   mk_Element
                   (
+                    "test_robot.urdf:230",
                     "cylinder",
                     [
-                      mk_Attribute("length", 0.1),
-                      mk_Attribute("radius", 0.035)
+                      mk_Attribute("test_robot.urdf:230", "length", 0.1),
+                      mk_Attribute("test_robot.urdf:230", "radius", 0.035)
                     ],
                     []
                   )
@@ -1255,27 +1405,30 @@ values
           ),
           mk_Element
           (
+            "test_robot.urdf:233",
             "inertial",
             [],
             [
               mk_Element
               (
+                "test_robot.urdf:234",
                 "mass",
                 [
-                  mk_Attribute("value", 1)
+                  mk_Attribute("test_robot.urdf:234", "value", 1)
                 ],
                 []
               ),
               mk_Element
               (
+                "test_robot.urdf:235",
                 "inertia",
                 [
-                  mk_Attribute("ixx", 1.0),
-                  mk_Attribute("iyy", 1.0),
-                  mk_Attribute("izz", 1.0),
-                  mk_Attribute("ixz", 0.0),
-                  mk_Attribute("ixy", 0.0),
-                  mk_Attribute("iyz", 0.0)
+                  mk_Attribute("test_robot.urdf:235", "ixx", 1.0),
+                  mk_Attribute("test_robot.urdf:235", "iyy", 1.0),
+                  mk_Attribute("test_robot.urdf:235", "izz", 1.0),
+                  mk_Attribute("test_robot.urdf:235", "ixz", 0.0),
+                  mk_Attribute("test_robot.urdf:235", "ixy", 0.0),
+                  mk_Attribute("test_robot.urdf:235", "iyz", 0.0)
                 ],
                 []
               )
@@ -1285,43 +1438,48 @@ values
       ),
       mk_Element
       (
+        "test_robot.urdf:239",
         "joint",
         [
-          mk_Attribute("name", "left_back_wheel_joint"),
-          mk_Attribute("type", "continuous")
+          mk_Attribute("test_robot.urdf:239", "name", "left_back_wheel_joint"),
+          mk_Attribute("test_robot.urdf:239", "type", "continuous")
         ],
         [
           mk_Element
           (
+            "test_robot.urdf:240",
             "axis",
             [
-              mk_Attribute("xyz", [0, 1, 0]),
-              mk_Attribute("rpy", [0, 0, 0])
+              mk_Attribute("test_robot.urdf:240", "xyz", [0, 1, 0]),
+              mk_Attribute("test_robot.urdf:240", "rpy", [0, 0, 0])
             ],
             []
           ),
           mk_Element
           (
+            "test_robot.urdf:241",
             "parent",
             [
-              mk_Attribute("link", "left_base")
+              mk_Attribute("test_robot.urdf:241", "link", "left_base")
             ],
             []
           ),
           mk_Element
           (
+            "test_robot.urdf:242",
             "child",
             [
-              mk_Attribute("link", "left_back_wheel")
+              mk_Attribute("test_robot.urdf:242", "link", "left_back_wheel")
             ],
             []
           ),
           mk_Element
           (
+            "test_robot.urdf:243",
             "origin",
             [
-              mk_Attribute("xyz", [-0.133333333333, 0, -0.085]),
-              mk_Attribute("rpy", [0, 0, 0])
+              mk_Attribute("test_robot.urdf:243", "xyz", [-0.133333333333, 0, -0.085]),
+              mk_Attribute("test_robot.urdf:243", "rpy", [0, 0, 0])
             ],
             []
           )
@@ -1329,45 +1487,50 @@ values
       ),
       mk_Element
       (
+        "test_robot.urdf:246",
         "joint",
         [
-          mk_Attribute("name", "gripper_extension"),
-          mk_Attribute("type", "prismatic")
+          mk_Attribute("test_robot.urdf:246", "name", "gripper_extension"),
+          mk_Attribute("test_robot.urdf:246", "type", "prismatic")
         ],
         [
           mk_Element
           (
+            "test_robot.urdf:247",
             "parent",
             [
-              mk_Attribute("link", "base_link")
+              mk_Attribute("test_robot.urdf:247", "link", "base_link")
             ],
             []
           ),
           mk_Element
           (
+            "test_robot.urdf:248",
             "child",
             [
-              mk_Attribute("link", "gripper_pole")
+              mk_Attribute("test_robot.urdf:248", "link", "gripper_pole")
             ],
             []
           ),
           mk_Element
           (
+            "test_robot.urdf:249",
             "limit",
             [
-              mk_Attribute("lower", -0.38),
-              mk_Attribute("upper", 0),
-              mk_Attribute("effort", 1000.0),
-              mk_Attribute("velocity", 0.5)
+              mk_Attribute("test_robot.urdf:249", "lower", -0.38),
+              mk_Attribute("test_robot.urdf:249", "upper", 0),
+              mk_Attribute("test_robot.urdf:249", "effort", 1000.0),
+              mk_Attribute("test_robot.urdf:249", "velocity", 0.5)
             ],
             []
           ),
           mk_Element
           (
+            "test_robot.urdf:250",
             "origin",
             [
-              mk_Attribute("xyz", [0.19, 0, 0.2]),
-              mk_Attribute("rpy", [0, 0, 0])
+              mk_Attribute("test_robot.urdf:250", "xyz", [0.19, 0, 0.2]),
+              mk_Attribute("test_robot.urdf:250", "rpy", [0, 0, 0])
             ],
             []
           )
@@ -1375,27 +1538,31 @@ values
       ),
       mk_Element
       (
+        "test_robot.urdf:253",
         "link",
         [
-          mk_Attribute("name", "gripper_pole")
+          mk_Attribute("test_robot.urdf:253", "name", "gripper_pole")
         ],
         [
           mk_Element
           (
+            "test_robot.urdf:254",
             "visual",
             [],
             [
               mk_Element
               (
+                "test_robot.urdf:255",
                 "geometry",
                 [],
                 [
                   mk_Element
                   (
+                    "test_robot.urdf:256",
                     "cylinder",
                     [
-                      mk_Attribute("length", 0.2),
-                      mk_Attribute("radius", 0.01)
+                      mk_Attribute("test_robot.urdf:256", "length", 0.2),
+                      mk_Attribute("test_robot.urdf:256", "radius", 0.01)
                     ],
                     []
                   )
@@ -1403,10 +1570,11 @@ values
               ),
               mk_Element
               (
+                "test_robot.urdf:258",
                 "origin",
                 [
-                  mk_Attribute("xyz", [0.1, 0, 0]),
-                  mk_Attribute("rpy", [0, 1.57075, 0])
+                  mk_Attribute("test_robot.urdf:258", "xyz", [0.1, 0, 0]),
+                  mk_Attribute("test_robot.urdf:258", "rpy", [0, 1.57075, 0])
                 ],
                 []
               )
@@ -1414,20 +1582,23 @@ values
           ),
           mk_Element
           (
+            "test_robot.urdf:260",
             "collision",
             [],
             [
               mk_Element
               (
+                "test_robot.urdf:261",
                 "geometry",
                 [],
                 [
                   mk_Element
                   (
+                    "test_robot.urdf:262",
                     "cylinder",
                     [
-                      mk_Attribute("length", 0.2),
-                      mk_Attribute("radius", 0.01)
+                      mk_Attribute("test_robot.urdf:262", "length", 0.2),
+                      mk_Attribute("test_robot.urdf:262", "radius", 0.01)
                     ],
                     []
                   )
@@ -1435,10 +1606,11 @@ values
               ),
               mk_Element
               (
+                "test_robot.urdf:264",
                 "origin",
                 [
-                  mk_Attribute("xyz", [0.1, 0, 0]),
-                  mk_Attribute("rpy", [0, 1.57075, 0])
+                  mk_Attribute("test_robot.urdf:264", "xyz", [0.1, 0, 0]),
+                  mk_Attribute("test_robot.urdf:264", "rpy", [0, 1.57075, 0])
                 ],
                 []
               )
@@ -1446,27 +1618,30 @@ values
           ),
           mk_Element
           (
+            "test_robot.urdf:266",
             "inertial",
             [],
             [
               mk_Element
               (
+                "test_robot.urdf:267",
                 "mass",
                 [
-                  mk_Attribute("value", 0.05)
+                  mk_Attribute("test_robot.urdf:267", "value", 0.05)
                 ],
                 []
               ),
               mk_Element
               (
+                "test_robot.urdf:268",
                 "inertia",
                 [
-                  mk_Attribute("ixx", 1.0),
-                  mk_Attribute("iyy", 1.0),
-                  mk_Attribute("izz", 1.0),
-                  mk_Attribute("ixz", 0.0),
-                  mk_Attribute("ixy", 0.0),
-                  mk_Attribute("iyz", 0.0)
+                  mk_Attribute("test_robot.urdf:268", "ixx", 1.0),
+                  mk_Attribute("test_robot.urdf:268", "iyy", 1.0),
+                  mk_Attribute("test_robot.urdf:268", "izz", 1.0),
+                  mk_Attribute("test_robot.urdf:268", "ixz", 0.0),
+                  mk_Attribute("test_robot.urdf:268", "ixy", 0.0),
+                  mk_Attribute("test_robot.urdf:268", "iyz", 0.0)
                 ],
                 []
               )
@@ -1476,53 +1651,59 @@ values
       ),
       mk_Element
       (
+        "test_robot.urdf:272",
         "joint",
         [
-          mk_Attribute("name", "left_gripper_joint"),
-          mk_Attribute("type", "revolute")
+          mk_Attribute("test_robot.urdf:272", "name", "left_gripper_joint"),
+          mk_Attribute("test_robot.urdf:272", "type", "revolute")
         ],
         [
           mk_Element
           (
+            "test_robot.urdf:273",
             "axis",
             [
-              mk_Attribute("xyz", [0, 0, 1])
+              mk_Attribute("test_robot.urdf:273", "xyz", [0, 0, 1])
             ],
             []
           ),
           mk_Element
           (
+            "test_robot.urdf:274",
             "limit",
             [
-              mk_Attribute("lower", 0.0),
-              mk_Attribute("upper", 0.548),
-              mk_Attribute("effort", 1000.0),
-              mk_Attribute("velocity", 0.5)
+              mk_Attribute("test_robot.urdf:274", "lower", 0.0),
+              mk_Attribute("test_robot.urdf:274", "upper", 0.548),
+              mk_Attribute("test_robot.urdf:274", "effort", 1000.0),
+              mk_Attribute("test_robot.urdf:274", "velocity", 0.5)
             ],
             []
           ),
           mk_Element
           (
+            "test_robot.urdf:275",
             "origin",
             [
-              mk_Attribute("xyz", [0.2, 0.01, 0]),
-              mk_Attribute("rpy", [0, 0, 0])
+              mk_Attribute("test_robot.urdf:275", "xyz", [0.2, 0.01, 0]),
+              mk_Attribute("test_robot.urdf:275", "rpy", [0, 0, 0])
             ],
             []
           ),
           mk_Element
           (
+            "test_robot.urdf:276",
             "parent",
             [
-              mk_Attribute("link", "gripper_pole")
+              mk_Attribute("test_robot.urdf:276", "link", "gripper_pole")
             ],
             []
           ),
           mk_Element
           (
+            "test_robot.urdf:277",
             "child",
             [
-              mk_Attribute("link", "left_gripper")
+              mk_Attribute("test_robot.urdf:277", "link", "left_gripper")
             ],
             []
           )
@@ -1530,35 +1711,40 @@ values
       ),
       mk_Element
       (
+        "test_robot.urdf:280",
         "link",
         [
-          mk_Attribute("name", "left_gripper")
+          mk_Attribute("test_robot.urdf:280", "name", "left_gripper")
         ],
         [
           mk_Element
           (
+            "test_robot.urdf:281",
             "visual",
             [],
             [
               mk_Element
               (
+                "test_robot.urdf:282",
                 "origin",
                 [
-                  mk_Attribute("xyz", [0, 0, 0]),
-                  mk_Attribute("rpy", [0.0, 0, 0])
+                  mk_Attribute("test_robot.urdf:282", "xyz", [0, 0, 0]),
+                  mk_Attribute("test_robot.urdf:282", "rpy", [0.0, 0, 0])
                 ],
                 []
               ),
               mk_Element
               (
+                "test_robot.urdf:283",
                 "geometry",
                 [],
                 [
                   mk_Element
                   (
+                    "test_robot.urdf:284",
                     "mesh",
                     [
-                      mk_Attribute("filename", "package://pr2_description/meshes/gripper_v0/l_finger.dae")
+                      mk_Attribute("test_robot.urdf:284", "filename", "package://pr2_description/meshes/gripper_v0/l_finger.dae")
                     ],
                     []
                   )
@@ -1568,19 +1754,22 @@ values
           ),
           mk_Element
           (
+            "test_robot.urdf:287",
             "collision",
             [],
             [
               mk_Element
               (
+                "test_robot.urdf:288",
                 "geometry",
                 [],
                 [
                   mk_Element
                   (
+                    "test_robot.urdf:289",
                     "mesh",
                     [
-                      mk_Attribute("filename", "package://pr2_description/meshes/gripper_v0/l_finger.dae")
+                      mk_Attribute("test_robot.urdf:289", "filename", "package://pr2_description/meshes/gripper_v0/l_finger.dae")
                     ],
                     []
                   )
@@ -1588,10 +1777,11 @@ values
               ),
               mk_Element
               (
+                "test_robot.urdf:291",
                 "origin",
                 [
-                  mk_Attribute("xyz", [0, 0, 0]),
-                  mk_Attribute("rpy", [0.0, 0, 0])
+                  mk_Attribute("test_robot.urdf:291", "xyz", [0, 0, 0]),
+                  mk_Attribute("test_robot.urdf:291", "rpy", [0.0, 0, 0])
                 ],
                 []
               )
@@ -1599,27 +1789,30 @@ values
           ),
           mk_Element
           (
+            "test_robot.urdf:293",
             "inertial",
             [],
             [
               mk_Element
               (
+                "test_robot.urdf:294",
                 "mass",
                 [
-                  mk_Attribute("value", 0.05)
+                  mk_Attribute("test_robot.urdf:294", "value", 0.05)
                 ],
                 []
               ),
               mk_Element
               (
+                "test_robot.urdf:295",
                 "inertia",
                 [
-                  mk_Attribute("ixx", 1.0),
-                  mk_Attribute("iyy", 1.0),
-                  mk_Attribute("izz", 1.0),
-                  mk_Attribute("ixz", 0.0),
-                  mk_Attribute("ixy", 0.0),
-                  mk_Attribute("iyz", 0.0)
+                  mk_Attribute("test_robot.urdf:295", "ixx", 1.0),
+                  mk_Attribute("test_robot.urdf:295", "iyy", 1.0),
+                  mk_Attribute("test_robot.urdf:295", "izz", 1.0),
+                  mk_Attribute("test_robot.urdf:295", "ixz", 0.0),
+                  mk_Attribute("test_robot.urdf:295", "ixy", 0.0),
+                  mk_Attribute("test_robot.urdf:295", "iyz", 0.0)
                 ],
                 []
               )
@@ -1629,25 +1822,28 @@ values
       ),
       mk_Element
       (
+        "test_robot.urdf:299",
         "joint",
         [
-          mk_Attribute("name", "left_tip_joint"),
-          mk_Attribute("type", "fixed")
+          mk_Attribute("test_robot.urdf:299", "name", "left_tip_joint"),
+          mk_Attribute("test_robot.urdf:299", "type", "fixed")
         ],
         [
           mk_Element
           (
+            "test_robot.urdf:300",
             "parent",
             [
-              mk_Attribute("link", "left_gripper")
+              mk_Attribute("test_robot.urdf:300", "link", "left_gripper")
             ],
             []
           ),
           mk_Element
           (
+            "test_robot.urdf:301",
             "child",
             [
-              mk_Attribute("link", "left_tip")
+              mk_Attribute("test_robot.urdf:301", "link", "left_tip")
             ],
             []
           )
@@ -1655,35 +1851,40 @@ values
       ),
       mk_Element
       (
+        "test_robot.urdf:304",
         "link",
         [
-          mk_Attribute("name", "left_tip")
+          mk_Attribute("test_robot.urdf:304", "name", "left_tip")
         ],
         [
           mk_Element
           (
+            "test_robot.urdf:305",
             "visual",
             [],
             [
               mk_Element
               (
+                "test_robot.urdf:306",
                 "origin",
                 [
-                  mk_Attribute("xyz", [0.09137, 0.00495, 0]),
-                  mk_Attribute("rpy", [0.0, 0, 0])
+                  mk_Attribute("test_robot.urdf:306", "xyz", [0.09137, 0.00495, 0]),
+                  mk_Attribute("test_robot.urdf:306", "rpy", [0.0, 0, 0])
                 ],
                 []
               ),
               mk_Element
               (
+                "test_robot.urdf:307",
                 "geometry",
                 [],
                 [
                   mk_Element
                   (
+                    "test_robot.urdf:308",
                     "mesh",
                     [
-                      mk_Attribute("filename", "package://pr2_description/meshes/gripper_v0/l_finger_tip.dae")
+                      mk_Attribute("test_robot.urdf:308", "filename", "package://pr2_description/meshes/gripper_v0/l_finger_tip.dae")
                     ],
                     []
                   )
@@ -1693,19 +1894,22 @@ values
           ),
           mk_Element
           (
+            "test_robot.urdf:311",
             "collision",
             [],
             [
               mk_Element
               (
+                "test_robot.urdf:312",
                 "geometry",
                 [],
                 [
                   mk_Element
                   (
+                    "test_robot.urdf:313",
                     "mesh",
                     [
-                      mk_Attribute("filename", "package://pr2_description/meshes/gripper_v0/l_finger_tip.dae")
+                      mk_Attribute("test_robot.urdf:313", "filename", "package://pr2_description/meshes/gripper_v0/l_finger_tip.dae")
                     ],
                     []
                   )
@@ -1713,10 +1917,11 @@ values
               ),
               mk_Element
               (
+                "test_robot.urdf:315",
                 "origin",
                 [
-                  mk_Attribute("xyz", [0.09137, 0.00495, 0]),
-                  mk_Attribute("rpy", [0.0, 0, 0])
+                  mk_Attribute("test_robot.urdf:315", "xyz", [0.09137, 0.00495, 0]),
+                  mk_Attribute("test_robot.urdf:315", "rpy", [0.0, 0, 0])
                 ],
                 []
               )
@@ -1724,27 +1929,30 @@ values
           ),
           mk_Element
           (
+            "test_robot.urdf:317",
             "inertial",
             [],
             [
               mk_Element
               (
+                "test_robot.urdf:318",
                 "mass",
                 [
-                  mk_Attribute("value", 0.05)
+                  mk_Attribute("test_robot.urdf:318", "value", 0.05)
                 ],
                 []
               ),
               mk_Element
               (
+                "test_robot.urdf:319",
                 "inertia",
                 [
-                  mk_Attribute("ixx", 1.0),
-                  mk_Attribute("iyy", 1.0),
-                  mk_Attribute("izz", 1.0),
-                  mk_Attribute("ixz", 0.0),
-                  mk_Attribute("ixy", 0.0),
-                  mk_Attribute("iyz", 0.0)
+                  mk_Attribute("test_robot.urdf:319", "ixx", 1.0),
+                  mk_Attribute("test_robot.urdf:319", "iyy", 1.0),
+                  mk_Attribute("test_robot.urdf:319", "izz", 1.0),
+                  mk_Attribute("test_robot.urdf:319", "ixz", 0.0),
+                  mk_Attribute("test_robot.urdf:319", "ixy", 0.0),
+                  mk_Attribute("test_robot.urdf:319", "iyz", 0.0)
                 ],
                 []
               )
@@ -1754,53 +1962,59 @@ values
       ),
       mk_Element
       (
+        "test_robot.urdf:323",
         "joint",
         [
-          mk_Attribute("name", "right_gripper_joint"),
-          mk_Attribute("type", "revolute")
+          mk_Attribute("test_robot.urdf:323", "name", "right_gripper_joint"),
+          mk_Attribute("test_robot.urdf:323", "type", "revolute")
         ],
         [
           mk_Element
           (
+            "test_robot.urdf:324",
             "axis",
             [
-              mk_Attribute("xyz", [0, 0, -1])
+              mk_Attribute("test_robot.urdf:324", "xyz", [0, 0, -1])
             ],
             []
           ),
           mk_Element
           (
+            "test_robot.urdf:325",
             "limit",
             [
-              mk_Attribute("lower", 0.0),
-              mk_Attribute("upper", 0.548),
-              mk_Attribute("effort", 1000.0),
-              mk_Attribute("velocity", 0.5)
+              mk_Attribute("test_robot.urdf:325", "lower", 0.0),
+              mk_Attribute("test_robot.urdf:325", "upper", 0.548),
+              mk_Attribute("test_robot.urdf:325", "effort", 1000.0),
+              mk_Attribute("test_robot.urdf:325", "velocity", 0.5)
             ],
             []
           ),
           mk_Element
           (
+            "test_robot.urdf:326",
             "origin",
             [
-              mk_Attribute("xyz", [0.2, -0.01, 0]),
-              mk_Attribute("rpy", [0, 0, 0])
+              mk_Attribute("test_robot.urdf:326", "xyz", [0.2, -0.01, 0]),
+              mk_Attribute("test_robot.urdf:326", "rpy", [0, 0, 0])
             ],
             []
           ),
           mk_Element
           (
+            "test_robot.urdf:327",
             "parent",
             [
-              mk_Attribute("link", "gripper_pole")
+              mk_Attribute("test_robot.urdf:327", "link", "gripper_pole")
             ],
             []
           ),
           mk_Element
           (
+            "test_robot.urdf:328",
             "child",
             [
-              mk_Attribute("link", "right_gripper")
+              mk_Attribute("test_robot.urdf:328", "link", "right_gripper")
             ],
             []
           )
@@ -1808,35 +2022,40 @@ values
       ),
       mk_Element
       (
+        "test_robot.urdf:331",
         "link",
         [
-          mk_Attribute("name", "right_gripper")
+          mk_Attribute("test_robot.urdf:331", "name", "right_gripper")
         ],
         [
           mk_Element
           (
+            "test_robot.urdf:332",
             "visual",
             [],
             [
               mk_Element
               (
+                "test_robot.urdf:333",
                 "origin",
                 [
-                  mk_Attribute("xyz", [0, 0, 0]),
-                  mk_Attribute("rpy", [-3.1415, 0, 0])
+                  mk_Attribute("test_robot.urdf:333", "xyz", [0, 0, 0]),
+                  mk_Attribute("test_robot.urdf:333", "rpy", [-3.1415, 0, 0])
                 ],
                 []
               ),
               mk_Element
               (
+                "test_robot.urdf:334",
                 "geometry",
                 [],
                 [
                   mk_Element
                   (
+                    "test_robot.urdf:335",
                     "mesh",
                     [
-                      mk_Attribute("filename", "package://pr2_description/meshes/gripper_v0/l_finger.dae")
+                      mk_Attribute("test_robot.urdf:335", "filename", "package://pr2_description/meshes/gripper_v0/l_finger.dae")
                     ],
                     []
                   )
@@ -1846,19 +2065,22 @@ values
           ),
           mk_Element
           (
+            "test_robot.urdf:338",
             "collision",
             [],
             [
               mk_Element
               (
+                "test_robot.urdf:339",
                 "geometry",
                 [],
                 [
                   mk_Element
                   (
+                    "test_robot.urdf:340",
                     "mesh",
                     [
-                      mk_Attribute("filename", "package://pr2_description/meshes/gripper_v0/l_finger.dae")
+                      mk_Attribute("test_robot.urdf:340", "filename", "package://pr2_description/meshes/gripper_v0/l_finger.dae")
                     ],
                     []
                   )
@@ -1866,10 +2088,11 @@ values
               ),
               mk_Element
               (
+                "test_robot.urdf:342",
                 "origin",
                 [
-                  mk_Attribute("xyz", [0, 0, 0]),
-                  mk_Attribute("rpy", [-3.1415, 0, 0])
+                  mk_Attribute("test_robot.urdf:342", "xyz", [0, 0, 0]),
+                  mk_Attribute("test_robot.urdf:342", "rpy", [-3.1415, 0, 0])
                 ],
                 []
               )
@@ -1877,27 +2100,30 @@ values
           ),
           mk_Element
           (
+            "test_robot.urdf:344",
             "inertial",
             [],
             [
               mk_Element
               (
+                "test_robot.urdf:345",
                 "mass",
                 [
-                  mk_Attribute("value", 0.05)
+                  mk_Attribute("test_robot.urdf:345", "value", 0.05)
                 ],
                 []
               ),
               mk_Element
               (
+                "test_robot.urdf:346",
                 "inertia",
                 [
-                  mk_Attribute("ixx", 1.0),
-                  mk_Attribute("iyy", 1.0),
-                  mk_Attribute("izz", 1.0),
-                  mk_Attribute("ixz", 0.0),
-                  mk_Attribute("ixy", 0.0),
-                  mk_Attribute("iyz", 0.0)
+                  mk_Attribute("test_robot.urdf:346", "ixx", 1.0),
+                  mk_Attribute("test_robot.urdf:346", "iyy", 1.0),
+                  mk_Attribute("test_robot.urdf:346", "izz", 1.0),
+                  mk_Attribute("test_robot.urdf:346", "ixz", 0.0),
+                  mk_Attribute("test_robot.urdf:346", "ixy", 0.0),
+                  mk_Attribute("test_robot.urdf:346", "iyz", 0.0)
                 ],
                 []
               )
@@ -1907,25 +2133,28 @@ values
       ),
       mk_Element
       (
+        "test_robot.urdf:350",
         "joint",
         [
-          mk_Attribute("name", "right_tip_joint"),
-          mk_Attribute("type", "fixed")
+          mk_Attribute("test_robot.urdf:350", "name", "right_tip_joint"),
+          mk_Attribute("test_robot.urdf:350", "type", "fixed")
         ],
         [
           mk_Element
           (
+            "test_robot.urdf:351",
             "parent",
             [
-              mk_Attribute("link", "right_gripper")
+              mk_Attribute("test_robot.urdf:351", "link", "right_gripper")
             ],
             []
           ),
           mk_Element
           (
+            "test_robot.urdf:352",
             "child",
             [
-              mk_Attribute("link", "right_tip")
+              mk_Attribute("test_robot.urdf:352", "link", "right_tip")
             ],
             []
           )
@@ -1933,35 +2162,40 @@ values
       ),
       mk_Element
       (
+        "test_robot.urdf:355",
         "link",
         [
-          mk_Attribute("name", "right_tip")
+          mk_Attribute("test_robot.urdf:355", "name", "right_tip")
         ],
         [
           mk_Element
           (
+            "test_robot.urdf:356",
             "visual",
             [],
             [
               mk_Element
               (
+                "test_robot.urdf:357",
                 "origin",
                 [
-                  mk_Attribute("xyz", [0.09137, 0.00495, 0]),
-                  mk_Attribute("rpy", [-3.1415, 0, 0])
+                  mk_Attribute("test_robot.urdf:357", "xyz", [0.09137, 0.00495, 0]),
+                  mk_Attribute("test_robot.urdf:357", "rpy", [-3.1415, 0, 0])
                 ],
                 []
               ),
               mk_Element
               (
+                "test_robot.urdf:358",
                 "geometry",
                 [],
                 [
                   mk_Element
                   (
+                    "test_robot.urdf:359",
                     "mesh",
                     [
-                      mk_Attribute("filename", "package://pr2_description/meshes/gripper_v0/l_finger_tip.dae")
+                      mk_Attribute("test_robot.urdf:359", "filename", "package://pr2_description/meshes/gripper_v0/l_finger_tip.dae")
                     ],
                     []
                   )
@@ -1971,19 +2205,22 @@ values
           ),
           mk_Element
           (
+            "test_robot.urdf:362",
             "collision",
             [],
             [
               mk_Element
               (
+                "test_robot.urdf:363",
                 "geometry",
                 [],
                 [
                   mk_Element
                   (
+                    "test_robot.urdf:364",
                     "mesh",
                     [
-                      mk_Attribute("filename", "package://pr2_description/meshes/gripper_v0/l_finger_tip.dae")
+                      mk_Attribute("test_robot.urdf:364", "filename", "package://pr2_description/meshes/gripper_v0/l_finger_tip.dae")
                     ],
                     []
                   )
@@ -1991,10 +2228,11 @@ values
               ),
               mk_Element
               (
+                "test_robot.urdf:366",
                 "origin",
                 [
-                  mk_Attribute("xyz", [0.09137, 0.00495, 0]),
-                  mk_Attribute("rpy", [-3.1415, 0, 0])
+                  mk_Attribute("test_robot.urdf:366", "xyz", [0.09137, 0.00495, 0]),
+                  mk_Attribute("test_robot.urdf:366", "rpy", [-3.1415, 0, 0])
                 ],
                 []
               )
@@ -2002,27 +2240,30 @@ values
           ),
           mk_Element
           (
+            "test_robot.urdf:368",
             "inertial",
             [],
             [
               mk_Element
               (
+                "test_robot.urdf:369",
                 "mass",
                 [
-                  mk_Attribute("value", 0.05)
+                  mk_Attribute("test_robot.urdf:369", "value", 0.05)
                 ],
                 []
               ),
               mk_Element
               (
+                "test_robot.urdf:370",
                 "inertia",
                 [
-                  mk_Attribute("ixx", 1.0),
-                  mk_Attribute("iyy", 1.0),
-                  mk_Attribute("izz", 1.0),
-                  mk_Attribute("ixz", 0.0),
-                  mk_Attribute("ixy", 0.0),
-                  mk_Attribute("iyz", 0.0)
+                  mk_Attribute("test_robot.urdf:370", "ixx", 1.0),
+                  mk_Attribute("test_robot.urdf:370", "iyy", 1.0),
+                  mk_Attribute("test_robot.urdf:370", "izz", 1.0),
+                  mk_Attribute("test_robot.urdf:370", "ixz", 0.0),
+                  mk_Attribute("test_robot.urdf:370", "ixy", 0.0),
+                  mk_Attribute("test_robot.urdf:370", "iyz", 0.0)
                 ],
                 []
               )
@@ -2032,26 +2273,30 @@ values
       ),
       mk_Element
       (
+        "test_robot.urdf:374",
         "link",
         [
-          mk_Attribute("name", "head")
+          mk_Attribute("test_robot.urdf:374", "name", "head")
         ],
         [
           mk_Element
           (
+            "test_robot.urdf:375",
             "visual",
             [],
             [
               mk_Element
               (
+                "test_robot.urdf:376",
                 "geometry",
                 [],
                 [
                   mk_Element
                   (
+                    "test_robot.urdf:377",
                     "sphere",
                     [
-                      mk_Attribute("radius", 0.2)
+                      mk_Attribute("test_robot.urdf:377", "radius", 0.2)
                     ],
                     []
                   )
@@ -2059,9 +2304,10 @@ values
               ),
               mk_Element
               (
+                "test_robot.urdf:379",
                 "material",
                 [
-                  mk_Attribute("name", "white")
+                  mk_Attribute("test_robot.urdf:379", "name", "white")
                 ],
                 []
               )
@@ -2069,19 +2315,22 @@ values
           ),
           mk_Element
           (
+            "test_robot.urdf:381",
             "collision",
             [],
             [
               mk_Element
               (
+                "test_robot.urdf:382",
                 "geometry",
                 [],
                 [
                   mk_Element
                   (
+                    "test_robot.urdf:383",
                     "sphere",
                     [
-                      mk_Attribute("radius", 0.2)
+                      mk_Attribute("test_robot.urdf:383", "radius", 0.2)
                     ],
                     []
                   )
@@ -2091,27 +2340,30 @@ values
           ),
           mk_Element
           (
+            "test_robot.urdf:386",
             "inertial",
             [],
             [
               mk_Element
               (
+                "test_robot.urdf:387",
                 "mass",
                 [
-                  mk_Attribute("value", 2)
+                  mk_Attribute("test_robot.urdf:387", "value", 2)
                 ],
                 []
               ),
               mk_Element
               (
+                "test_robot.urdf:388",
                 "inertia",
                 [
-                  mk_Attribute("ixx", 1.0),
-                  mk_Attribute("iyy", 1.0),
-                  mk_Attribute("izz", 1.0),
-                  mk_Attribute("ixz", 0.0),
-                  mk_Attribute("ixy", 0.0),
-                  mk_Attribute("iyz", 0.0)
+                  mk_Attribute("test_robot.urdf:388", "ixx", 1.0),
+                  mk_Attribute("test_robot.urdf:388", "iyy", 1.0),
+                  mk_Attribute("test_robot.urdf:388", "izz", 1.0),
+                  mk_Attribute("test_robot.urdf:388", "ixz", 0.0),
+                  mk_Attribute("test_robot.urdf:388", "ixy", 0.0),
+                  mk_Attribute("test_robot.urdf:388", "iyz", 0.0)
                 ],
                 []
               )
@@ -2121,41 +2373,46 @@ values
       ),
       mk_Element
       (
+        "test_robot.urdf:392",
         "joint",
         [
-          mk_Attribute("name", "head_swivel"),
-          mk_Attribute("type", "continuous")
+          mk_Attribute("test_robot.urdf:392", "name", "head_swivel"),
+          mk_Attribute("test_robot.urdf:392", "type", "continuous")
         ],
         [
           mk_Element
           (
+            "test_robot.urdf:393",
             "parent",
             [
-              mk_Attribute("link", "base_link")
+              mk_Attribute("test_robot.urdf:393", "link", "base_link")
             ],
             []
           ),
           mk_Element
           (
+            "test_robot.urdf:394",
             "child",
             [
-              mk_Attribute("link", "head")
+              mk_Attribute("test_robot.urdf:394", "link", "head")
             ],
             []
           ),
           mk_Element
           (
+            "test_robot.urdf:395",
             "axis",
             [
-              mk_Attribute("xyz", [0, 0, 1])
+              mk_Attribute("test_robot.urdf:395", "xyz", [0, 0, 1])
             ],
             []
           ),
           mk_Element
           (
+            "test_robot.urdf:396",
             "origin",
             [
-              mk_Attribute("xyz", [0, 0, 0.3])
+              mk_Attribute("test_robot.urdf:396", "xyz", [0, 0, 0.3])
             ],
             []
           )
@@ -2163,26 +2420,30 @@ values
       ),
       mk_Element
       (
+        "test_robot.urdf:399",
         "link",
         [
-          mk_Attribute("name", "box")
+          mk_Attribute("test_robot.urdf:399", "name", "box")
         ],
         [
           mk_Element
           (
+            "test_robot.urdf:400",
             "visual",
             [],
             [
               mk_Element
               (
+                "test_robot.urdf:401",
                 "geometry",
                 [],
                 [
                   mk_Element
                   (
+                    "test_robot.urdf:402",
                     "box",
                     [
-                      mk_Attribute("size", [0.08, 0.08, 0.08])
+                      mk_Attribute("test_robot.urdf:402", "size", [0.08, 0.08, 0.08])
                     ],
                     []
                   )
@@ -2190,17 +2451,19 @@ values
               ),
               mk_Element
               (
+                "test_robot.urdf:404",
                 "material",
                 [
-                  mk_Attribute("name", "blue")
+                  mk_Attribute("test_robot.urdf:404", "name", "blue")
                 ],
                 []
               ),
               mk_Element
               (
+                "test_robot.urdf:405",
                 "origin",
                 [
-                  mk_Attribute("xyz", [-0.04, 0, 0])
+                  mk_Attribute("test_robot.urdf:405", "xyz", [-0.04, 0, 0])
                 ],
                 []
               )
@@ -2208,19 +2471,22 @@ values
           ),
           mk_Element
           (
+            "test_robot.urdf:407",
             "collision",
             [],
             [
               mk_Element
               (
+                "test_robot.urdf:408",
                 "geometry",
                 [],
                 [
                   mk_Element
                   (
+                    "test_robot.urdf:409",
                     "box",
                     [
-                      mk_Attribute("size", [0.08, 0.08, 0.08])
+                      mk_Attribute("test_robot.urdf:409", "size", [0.08, 0.08, 0.08])
                     ],
                     []
                   )
@@ -2230,27 +2496,30 @@ values
           ),
           mk_Element
           (
+            "test_robot.urdf:412",
             "inertial",
             [],
             [
               mk_Element
               (
+                "test_robot.urdf:413",
                 "mass",
                 [
-                  mk_Attribute("value", 1)
+                  mk_Attribute("test_robot.urdf:413", "value", 1)
                 ],
                 []
               ),
               mk_Element
               (
+                "test_robot.urdf:414",
                 "inertia",
                 [
-                  mk_Attribute("ixx", 1.0),
-                  mk_Attribute("iyy", 1.0),
-                  mk_Attribute("izz", 1.0),
-                  mk_Attribute("ixz", 0.0),
-                  mk_Attribute("ixy", 0.0),
-                  mk_Attribute("iyz", 0.0)
+                  mk_Attribute("test_robot.urdf:414", "ixx", 1.0),
+                  mk_Attribute("test_robot.urdf:414", "iyy", 1.0),
+                  mk_Attribute("test_robot.urdf:414", "izz", 1.0),
+                  mk_Attribute("test_robot.urdf:414", "ixz", 0.0),
+                  mk_Attribute("test_robot.urdf:414", "ixy", 0.0),
+                  mk_Attribute("test_robot.urdf:414", "iyz", 0.0)
                 ],
                 []
               )
@@ -2260,33 +2529,37 @@ values
       ),
       mk_Element
       (
+        "test_robot.urdf:418",
         "joint",
         [
-          mk_Attribute("name", "tobox"),
-          mk_Attribute("type", "fixed")
+          mk_Attribute("test_robot.urdf:418", "name", "tobox"),
+          mk_Attribute("test_robot.urdf:418", "type", "fixed")
         ],
         [
           mk_Element
           (
+            "test_robot.urdf:419",
             "parent",
             [
-              mk_Attribute("link", "head")
+              mk_Attribute("test_robot.urdf:419", "link", "head")
             ],
             []
           ),
           mk_Element
           (
+            "test_robot.urdf:420",
             "child",
             [
-              mk_Attribute("link", "box")
+              mk_Attribute("test_robot.urdf:420", "link", "box")
             ],
             []
           ),
           mk_Element
           (
+            "test_robot.urdf:421",
             "origin",
             [
-              mk_Attribute("xyz", [0.1814, 0, 0.1414])
+              mk_Attribute("test_robot.urdf:421", "xyz", [0.1814, 0, 0.1414])
             ],
             []
           )

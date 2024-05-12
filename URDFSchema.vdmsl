@@ -1,3 +1,32 @@
+/*********************************************************************************
+ *
+ *	Copyright (c) 2017-2024, INTO-CPS Association,
+ *	c/o Professor Peter Gorm Larsen, Department of Engineering
+ *	Finlandsgade 22, 8200 Aarhus N.
+ *
+ *	MIT Licence:
+ *
+ *	Permission is hereby granted, free of charge, to any person obtaining a copy of
+ *	this software and associated documentation files (the "Software"), to deal in
+ *	the Software without restriction, including without limitation the rights to use,
+ *	copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the
+ *	Software, and to permit persons to whom the Software is furnished to do so,
+ *	subject to the following conditions:
+ *
+ *	The above copyright notice and this permission notice shall be included in all
+ *	copies or substantial portions of the Software.
+ *
+ *	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+ *	INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+ *	PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+ *	HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+ *	OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+ *	SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ *
+ *	SPDX-License-Identifier: MIT
+ *
+ *********************************************************************************/
+
 /**
  * VDM-SL types to represent a URDF description.
  */
@@ -7,23 +36,28 @@ types
 	Name	= String;
 
 	origin ::
+		$loc	: seq1 of char
 		xyz		: seq1 of real
 		rpy		: seq1 of real /*Represents the fixed axis roll, pitch and yaw angles in radians. */
 	;
 
 	color ::
+		$loc	: seq1 of char
 		rgba	: seq1 of real
 	;
 
 	verbose ::
+		$loc	: seq1 of char
 		value	: String
 	;
 
 	mass ::
+		$loc	: seq1 of char
 		value	: real 
 	;
 
 	inertia ::
+		$loc	: seq1 of char
 		ixx		: real
 		ixy		: real
 		ixz		: real
@@ -33,30 +67,36 @@ types
 	;
 
     inertial ::
+		$loc		: seq1 of char
 		origin		: [origin]
 		mass		: [mass]
 		inertia		: [inertia]
 	;
 
 	box ::
+		$loc		: seq1 of char
 		size		: seq1 of real
 	;
 
 	cylinder ::
+		$loc		: seq1 of char
 		radius		: real
 		length		: real
 	;
 
 	sphere ::
-		radius		 : real
+		$loc		: seq1 of char
+		radius		: real
 	;
 
 	mesh ::
+		$loc		: seq1 of char
 		filename	: anyURI
 		scale		: seq1 of real
 	;
 
 	geometry ::
+		$loc		: seq1 of char
 		box			: [box]
 		cylinder	: [cylinder]
 		sphere		: [sphere]
@@ -64,22 +104,26 @@ types
 	;
 
 	texture ::
+		$loc		: seq1 of char
 		filename	: anyURI
 	;
 
 	material ::
+		$loc		: seq1 of char
 		name		: String
 		color		: [color]
 		texture		: [texture]
 	;
 
 	visual ::
+		$loc		: seq1 of char
 		origin		: [origin]
 		geometry	: geometry
 		material	: [material]
 	;
 
 	collision ::
+		$loc		: seq1 of char
 		name		: [String]
 		origin		: [origin]
 		geometry	: geometry
@@ -87,6 +131,7 @@ types
 	;
 
 	link ::
+		$loc		: seq1 of char
 		name		: String
 		type		: [String]
 		inertial	: [inertial]
@@ -95,21 +140,25 @@ types
 	;
 
 	axis ::
+		$loc		: seq1 of char
 		xyz			: seq1 of real
 	;
 
 	calibration ::
+		$loc				: seq1 of char
 		reference_position	: real
 		rising				: real
 		falling				: real
 	;
 
 	dynamics ::
+		$loc		: seq1 of char
 		damping		: real
 		friction	: real
 	;
 
 	limit ::
+		$loc		: seq1 of char
 		lower		: real
 		upper		: real
 		effort		: real
@@ -117,6 +166,7 @@ types
 	;
 
 	safety_controller ::
+		$loc				: seq1 of char
 		soft_lower_limit	: real
 		soft_upper_limit	: real
 		k_position			: real
@@ -124,17 +174,20 @@ types
 	;
 
 	mimic ::
+		$loc		: seq1 of char
 		joint		: String
 		multiplier	: real	
 		offset		: real	
 	;
 
 	actuator_transmission ::
+		$loc					: seq1 of char
 		mechanicalReduction		: real
 		name					: String
 	;
 
 	gap_joint_transmission ::
+		$loc					: seq1 of char
 		name					: String
 		L0						: real
 		a						: real
@@ -150,10 +203,12 @@ types
 	;
 
 	passive_joint_transmission ::
+		$loc					: seq1 of char
 		name					: Name
 	;
 
 	transmission ::
+		$loc						: seq1 of char
 		leftActuator				: [actuator_transmission]
 		rightActuator				: [actuator_transmission]
 		flexJoint					: [actuator_transmission]
@@ -169,6 +224,7 @@ types
 	;
 
 	joint ::
+		$loc				: seq1 of char
 		name				: String
 		type				: String
 		parent				: String
@@ -183,6 +239,7 @@ types
 	;
 
 	robot ::
+		$loc			: seq1 of char
 		name			: String
 		version			: String
     	joints			: seq of joint

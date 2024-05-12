@@ -1,47 +1,53 @@
 /**
- * VDM created from URDF\tests\rethink_electric_gripper.urdf on Tue Mar 12 10:45:56 CET 2024
+ * VDM created from rethink_electric_gripper.urdf on Sun May 12 12:01:59 BST 2024
  * DO NOT EDIT!
  */
 values
   rethink_electric_gripper_urdf =
   mk_Element
   (
+    "rethink_electric_gripper.urdf:6",
     "robot",
     [
-      mk_Attribute("name", "left_electric_gripper")
+      mk_Attribute("rethink_electric_gripper.urdf:6", "name", "left_electric_gripper")
     ],
     [
       mk_Element
       (
+        "rethink_electric_gripper.urdf:8",
         "link",
         [
-          mk_Attribute("name", "left_gripper_base")
+          mk_Attribute("rethink_electric_gripper.urdf:8", "name", "left_gripper_base")
         ],
         [
           mk_Element
           (
+            "rethink_electric_gripper.urdf:9",
             "visual",
             [],
             [
               mk_Element
               (
+                "rethink_electric_gripper.urdf:10",
                 "origin",
                 [
-                  mk_Attribute("xyz", [0, 0, 0]),
-                  mk_Attribute("rpy", [-1.5707963267948966, 3.141592653589793, 0])
+                  mk_Attribute("rethink_electric_gripper.urdf:10", "xyz", [0.0, 0.0, 0.0]),
+                  mk_Attribute("rethink_electric_gripper.urdf:10", "rpy", [-1.5707963267948966, 3.141592653589793, 0.0])
                 ],
                 []
               ),
               mk_Element
               (
+                "rethink_electric_gripper.urdf:11",
                 "geometry",
                 [],
                 [
                   mk_Element
                   (
+                    "rethink_electric_gripper.urdf:12",
                     "mesh",
                     [
-                      mk_Attribute("filename", "package://rethink_ee_description/meshes/electric_gripper/electric_gripper_base.DAE")
+                      mk_Attribute("rethink_electric_gripper.urdf:12", "filename", "package://rethink_ee_description/meshes/electric_gripper/electric_gripper_base.DAE")
                     ],
                     []
                   )
@@ -51,29 +57,33 @@ values
           ),
           mk_Element
           (
+            "rethink_electric_gripper.urdf:15",
             "collision",
             [],
             [
               mk_Element
               (
+                "rethink_electric_gripper.urdf:16",
                 "origin",
                 [
-                  mk_Attribute("xyz", [0.0, 0.0, 0]),
-                  mk_Attribute("rpy", [-1.5707963267948966, 3.141592653589793, 0])
+                  mk_Attribute("rethink_electric_gripper.urdf:16", "xyz", [0.0, 0.0, 0.0]),
+                  mk_Attribute("rethink_electric_gripper.urdf:16", "rpy", [-1.5707963267948966, 3.141592653589793, 0.0])
                 ],
                 []
               ),
               mk_Element
               (
+                "rethink_electric_gripper.urdf:17",
                 "geometry",
                 [],
                 [
                   mk_Element
                   (
+                    "rethink_electric_gripper.urdf:18",
                     "cylinder",
                     [
-                      mk_Attribute("length", 0.1),
-                      mk_Attribute("radius", 0.029)
+                      mk_Attribute("rethink_electric_gripper.urdf:18", "length", 0.1),
+                      mk_Attribute("rethink_electric_gripper.urdf:18", "radius", 0.029)
                     ],
                     []
                   )
@@ -81,16 +91,18 @@ values
               ),
               mk_Element
               (
+                "rethink_electric_gripper.urdf:20",
                 "material",
                 [
-                  mk_Attribute("name", "darkred")
+                  mk_Attribute("rethink_electric_gripper.urdf:20", "name", "darkred")
                 ],
                 [
                   mk_Element
                   (
+                    "rethink_electric_gripper.urdf:21",
                     "color",
                     [
-                      mk_Attribute("rgba", [0.5, 0.1, 0.1, 1])
+                      mk_Attribute("rethink_electric_gripper.urdf:21", "rgba", [0.5, 0.1, 0.1, 1.0])
                     ],
                     []
                   )
@@ -100,36 +112,40 @@ values
           ),
           mk_Element
           (
+            "rethink_electric_gripper.urdf:24",
             "inertial",
             [],
             [
               mk_Element
               (
+                "rethink_electric_gripper.urdf:25",
                 "origin",
                 [
-                  mk_Attribute("xyz", [0.0, 0.0, 0.0]),
-                  mk_Attribute("rpy", [-1.5707963267948966, 3.141592653589793, 0])
+                  mk_Attribute("rethink_electric_gripper.urdf:25", "xyz", [0.0, 0.0, 0.0]),
+                  mk_Attribute("rethink_electric_gripper.urdf:25", "rpy", [-1.5707963267948966, 3.141592653589793, 0.0])
                 ],
                 []
               ),
               mk_Element
               (
+                "rethink_electric_gripper.urdf:26",
                 "mass",
                 [
-                  mk_Attribute("value", 0.3)
+                  mk_Attribute("rethink_electric_gripper.urdf:26", "value", 0.3)
                 ],
                 []
               ),
               mk_Element
               (
+                "rethink_electric_gripper.urdf:27",
                 "inertia",
                 [
-                  mk_Attribute("ixx", 2e-08),
-                  mk_Attribute("iyy", 3e-08),
-                  mk_Attribute("izz", 2e-08),
-                  mk_Attribute("ixz", 0),
-                  mk_Attribute("ixy", 0),
-                  mk_Attribute("iyz", 0)
+                  mk_Attribute("rethink_electric_gripper.urdf:27", "ixx", 2.0E-8),
+                  mk_Attribute("rethink_electric_gripper.urdf:27", "iyy", 3.0E-8),
+                  mk_Attribute("rethink_electric_gripper.urdf:27", "izz", 2.0E-8),
+                  mk_Attribute("rethink_electric_gripper.urdf:27", "ixz", 0.0),
+                  mk_Attribute("rethink_electric_gripper.urdf:27", "ixy", 0.0),
+                  mk_Attribute("rethink_electric_gripper.urdf:27", "iyz", 0.0)
                 ],
                 []
               )
@@ -139,35 +155,40 @@ values
       ),
       mk_Element
       (
+        "rethink_electric_gripper.urdf:30",
         "link",
         [
-          mk_Attribute("name", "l_gripper_l_finger")
+          mk_Attribute("rethink_electric_gripper.urdf:30", "name", "l_gripper_l_finger")
         ],
         [
           mk_Element
           (
+            "rethink_electric_gripper.urdf:31",
             "visual",
             [],
             [
               mk_Element
               (
+                "rethink_electric_gripper.urdf:32",
                 "origin",
                 [
-                  mk_Attribute("xyz", [0, 0, 0]),
-                  mk_Attribute("rpy", [0, 0, -3.141592653589793])
+                  mk_Attribute("rethink_electric_gripper.urdf:32", "xyz", [0.0, 0.0, 0.0]),
+                  mk_Attribute("rethink_electric_gripper.urdf:32", "rpy", [0.0, 0.0, -3.141592653589793])
                 ],
                 []
               ),
               mk_Element
               (
+                "rethink_electric_gripper.urdf:33",
                 "geometry",
                 [],
                 [
                   mk_Element
                   (
+                    "rethink_electric_gripper.urdf:34",
                     "mesh",
                     [
-                      mk_Attribute("filename", "package://rethink_ee_description/meshes/electric_gripper/fingers/extended_narrow.DAE")
+                      mk_Attribute("rethink_electric_gripper.urdf:34", "filename", "package://rethink_ee_description/meshes/electric_gripper/fingers/extended_narrow.DAE")
                     ],
                     []
                   )
@@ -177,28 +198,32 @@ values
           ),
           mk_Element
           (
+            "rethink_electric_gripper.urdf:37",
             "collision",
             [],
             [
               mk_Element
               (
+                "rethink_electric_gripper.urdf:38",
                 "origin",
                 [
-                  mk_Attribute("xyz", [0, 0.01725, 0.0615]),
-                  mk_Attribute("rpy", [0, 0, -3.141592653589793])
+                  mk_Attribute("rethink_electric_gripper.urdf:38", "xyz", [0.0, 0.01725, 0.0615]),
+                  mk_Attribute("rethink_electric_gripper.urdf:38", "rpy", [0.0, 0.0, -3.141592653589793])
                 ],
                 []
               ),
               mk_Element
               (
+                "rethink_electric_gripper.urdf:39",
                 "geometry",
                 [],
                 [
                   mk_Element
                   (
+                    "rethink_electric_gripper.urdf:40",
                     "box",
                     [
-                      mk_Attribute("size", [0.01, 0.0135, 0.1127])
+                      mk_Attribute("rethink_electric_gripper.urdf:40", "size", [0.01, 0.0135, 0.1127])
                     ],
                     []
                   )
@@ -208,28 +233,32 @@ values
           ),
           mk_Element
           (
+            "rethink_electric_gripper.urdf:43",
             "collision",
             [],
             [
               mk_Element
               (
+                "rethink_electric_gripper.urdf:44",
                 "origin",
                 [
-                  mk_Attribute("xyz", [-0.005, -0.003, 0.0083]),
-                  mk_Attribute("rpy", [0, 0, -3.141592653589793])
+                  mk_Attribute("rethink_electric_gripper.urdf:44", "xyz", [-0.005, -0.003, 0.0083]),
+                  mk_Attribute("rethink_electric_gripper.urdf:44", "rpy", [0.0, 0.0, -3.141592653589793])
                 ],
                 []
               ),
               mk_Element
               (
+                "rethink_electric_gripper.urdf:45",
                 "geometry",
                 [],
                 [
                   mk_Element
                   (
+                    "rethink_electric_gripper.urdf:46",
                     "box",
                     [
-                      mk_Attribute("size", [0.01, 0.05, 0.017])
+                      mk_Attribute("rethink_electric_gripper.urdf:46", "size", [0.01, 0.05, 0.017])
                     ],
                     []
                   )
@@ -239,36 +268,40 @@ values
           ),
           mk_Element
           (
+            "rethink_electric_gripper.urdf:49",
             "inertial",
             [],
             [
               mk_Element
               (
+                "rethink_electric_gripper.urdf:50",
                 "origin",
                 [
-                  mk_Attribute("xyz", [0, 0, 0]),
-                  mk_Attribute("rpy", [0, 0, -3.141592653589793])
+                  mk_Attribute("rethink_electric_gripper.urdf:50", "xyz", [0.0, 0.0, 0.0]),
+                  mk_Attribute("rethink_electric_gripper.urdf:50", "rpy", [0.0, 0.0, -3.141592653589793])
                 ],
                 []
               ),
               mk_Element
               (
+                "rethink_electric_gripper.urdf:51",
                 "mass",
                 [
-                  mk_Attribute("value", 0.02)
+                  mk_Attribute("rethink_electric_gripper.urdf:51", "value", 0.02)
                 ],
                 []
               ),
               mk_Element
               (
+                "rethink_electric_gripper.urdf:52",
                 "inertia",
                 [
-                  mk_Attribute("ixx", 0.01),
-                  mk_Attribute("iyy", 0.01),
-                  mk_Attribute("izz", 0.01),
-                  mk_Attribute("ixz", 0),
-                  mk_Attribute("ixy", 0),
-                  mk_Attribute("iyz", 0)
+                  mk_Attribute("rethink_electric_gripper.urdf:52", "ixx", 0.01),
+                  mk_Attribute("rethink_electric_gripper.urdf:52", "iyy", 0.01),
+                  mk_Attribute("rethink_electric_gripper.urdf:52", "izz", 0.01),
+                  mk_Attribute("rethink_electric_gripper.urdf:52", "ixz", 0.0),
+                  mk_Attribute("rethink_electric_gripper.urdf:52", "ixy", 0.0),
+                  mk_Attribute("rethink_electric_gripper.urdf:52", "iyz", 0.0)
                 ],
                 []
               )
@@ -278,84 +311,95 @@ values
       ),
       mk_Element
       (
+        "rethink_electric_gripper.urdf:55",
         "gazebo",
         [
-          mk_Attribute("reference", "l_gripper_l_finger")
+          mk_Attribute("rethink_electric_gripper.urdf:55", "reference", "l_gripper_l_finger")
         ],
         [
           mk_Element
           (
+            "rethink_electric_gripper.urdf:56",
             "mu1",
             [],
             [
-              "1000"
+              1000.0
             ]
           ),
           mk_Element
           (
+            "rethink_electric_gripper.urdf:57",
             "mu2",
             [],
             [
-              "1000"
+              1000.0
             ]
           ),
           mk_Element
           (
+            "rethink_electric_gripper.urdf:58",
             "fdir1",
             [],
             [
-              "0.0 0.0 1.0"
+              [0.0, 0.0, 1.0]
             ]
           ),
           mk_Element
           (
+            "rethink_electric_gripper.urdf:59",
             "kp",
             [],
             [
-              "1e5"
+              100000.0
             ]
           ),
           mk_Element
           (
+            "rethink_electric_gripper.urdf:60",
             "kd",
             [],
             [
-              "1.0"
+              1.0
             ]
           )
         ]
       ),
       mk_Element
       (
+        "rethink_electric_gripper.urdf:62",
         "link",
         [
-          mk_Attribute("name", "l_gripper_l_finger_tip")
+          mk_Attribute("rethink_electric_gripper.urdf:62", "name", "l_gripper_l_finger_tip")
         ],
         [
           mk_Element
           (
+            "rethink_electric_gripper.urdf:63",
             "visual",
             [],
             [
               mk_Element
               (
+                "rethink_electric_gripper.urdf:64",
                 "origin",
                 [
-                  mk_Attribute("xyz", [0, 0, 0]),
-                  mk_Attribute("rpy", [0, 0, 3.141592653589793])
+                  mk_Attribute("rethink_electric_gripper.urdf:64", "xyz", [0.0, 0.0, 0.0]),
+                  mk_Attribute("rethink_electric_gripper.urdf:64", "rpy", [0.0, 0.0, 3.141592653589793])
                 ],
                 []
               ),
               mk_Element
               (
+                "rethink_electric_gripper.urdf:65",
                 "geometry",
                 [],
                 [
                   mk_Element
                   (
+                    "rethink_electric_gripper.urdf:66",
                     "mesh",
                     [
-                      mk_Attribute("filename", "package://rethink_ee_description/meshes/electric_gripper/fingers/paddle_tip.DAE")
+                      mk_Attribute("rethink_electric_gripper.urdf:66", "filename", "package://rethink_ee_description/meshes/electric_gripper/fingers/paddle_tip.DAE")
                     ],
                     []
                   )
@@ -365,28 +409,32 @@ values
           ),
           mk_Element
           (
+            "rethink_electric_gripper.urdf:69",
             "collision",
             [],
             [
               mk_Element
               (
+                "rethink_electric_gripper.urdf:70",
                 "origin",
                 [
-                  mk_Attribute("xyz", [0, -0.0045, -0.015]),
-                  mk_Attribute("rpy", [0, 0, 3.141592653589793])
+                  mk_Attribute("rethink_electric_gripper.urdf:70", "xyz", [0.0, -0.0045, -0.015]),
+                  mk_Attribute("rethink_electric_gripper.urdf:70", "rpy", [0.0, 0.0, 3.141592653589793])
                 ],
                 []
               ),
               mk_Element
               (
+                "rethink_electric_gripper.urdf:71",
                 "geometry",
                 [],
                 [
                   mk_Element
                   (
+                    "rethink_electric_gripper.urdf:72",
                     "box",
                     [
-                      mk_Attribute("size", [0.042, 0.0065, 0.037])
+                      mk_Attribute("rethink_electric_gripper.urdf:72", "size", [0.042, 0.0065, 0.037])
                     ],
                     []
                   )
@@ -396,36 +444,40 @@ values
           ),
           mk_Element
           (
+            "rethink_electric_gripper.urdf:75",
             "inertial",
             [],
             [
               mk_Element
               (
+                "rethink_electric_gripper.urdf:76",
                 "origin",
                 [
-                  mk_Attribute("xyz", [0, 0, 0]),
-                  mk_Attribute("rpy", [0, 0, 3.141592653589793])
+                  mk_Attribute("rethink_electric_gripper.urdf:76", "xyz", [0.0, 0.0, 0.0]),
+                  mk_Attribute("rethink_electric_gripper.urdf:76", "rpy", [0.0, 0.0, 3.141592653589793])
                 ],
                 []
               ),
               mk_Element
               (
+                "rethink_electric_gripper.urdf:77",
                 "mass",
                 [
-                  mk_Attribute("value", 0.01)
+                  mk_Attribute("rethink_electric_gripper.urdf:77", "value", 0.01)
                 ],
                 []
               ),
               mk_Element
               (
+                "rethink_electric_gripper.urdf:78",
                 "inertia",
                 [
-                  mk_Attribute("ixx", 0.01),
-                  mk_Attribute("iyy", 0.01),
-                  mk_Attribute("izz", 0.01),
-                  mk_Attribute("ixz", 0),
-                  mk_Attribute("ixy", 0),
-                  mk_Attribute("iyz", 0)
+                  mk_Attribute("rethink_electric_gripper.urdf:78", "ixx", 0.01),
+                  mk_Attribute("rethink_electric_gripper.urdf:78", "iyy", 0.01),
+                  mk_Attribute("rethink_electric_gripper.urdf:78", "izz", 0.01),
+                  mk_Attribute("rethink_electric_gripper.urdf:78", "ixz", 0.0),
+                  mk_Attribute("rethink_electric_gripper.urdf:78", "ixy", 0.0),
+                  mk_Attribute("rethink_electric_gripper.urdf:78", "iyz", 0.0)
                 ],
                 []
               )
@@ -435,34 +487,38 @@ values
       ),
       mk_Element
       (
+        "rethink_electric_gripper.urdf:81",
         "joint",
         [
-          mk_Attribute("name", "l_gripper_l_finger_tip_joint"),
-          mk_Attribute("type", "fixed")
+          mk_Attribute("rethink_electric_gripper.urdf:81", "name", "l_gripper_l_finger_tip_joint"),
+          mk_Attribute("rethink_electric_gripper.urdf:81", "type", "fixed")
         ],
         [
           mk_Element
           (
+            "rethink_electric_gripper.urdf:82",
             "origin",
             [
-              mk_Attribute("xyz", [0.0, 0.01725, 0.1127]),
-              mk_Attribute("rpy", [0, 0, 0])
+              mk_Attribute("rethink_electric_gripper.urdf:82", "xyz", [0.0, 0.01725, 0.1127]),
+              mk_Attribute("rethink_electric_gripper.urdf:82", "rpy", [0.0, 0.0, 0.0])
             ],
             []
           ),
           mk_Element
           (
+            "rethink_electric_gripper.urdf:83",
             "parent",
             [
-              mk_Attribute("link", "l_gripper_l_finger")
+              mk_Attribute("rethink_electric_gripper.urdf:83", "link", "l_gripper_l_finger")
             ],
             []
           ),
           mk_Element
           (
+            "rethink_electric_gripper.urdf:84",
             "child",
             [
-              mk_Attribute("link", "l_gripper_l_finger_tip")
+              mk_Attribute("rethink_electric_gripper.urdf:84", "link", "l_gripper_l_finger_tip")
             ],
             []
           )
@@ -470,35 +526,40 @@ values
       ),
       mk_Element
       (
+        "rethink_electric_gripper.urdf:86",
         "link",
         [
-          mk_Attribute("name", "l_gripper_r_finger")
+          mk_Attribute("rethink_electric_gripper.urdf:86", "name", "l_gripper_r_finger")
         ],
         [
           mk_Element
           (
+            "rethink_electric_gripper.urdf:87",
             "visual",
             [],
             [
               mk_Element
               (
+                "rethink_electric_gripper.urdf:88",
                 "origin",
                 [
-                  mk_Attribute("xyz", [0, 0, 0]),
-                  mk_Attribute("rpy", [0, 0, -0.0])
+                  mk_Attribute("rethink_electric_gripper.urdf:88", "xyz", [0.0, 0.0, 0.0]),
+                  mk_Attribute("rethink_electric_gripper.urdf:88", "rpy", [0.0, 0.0, -0.0])
                 ],
                 []
               ),
               mk_Element
               (
+                "rethink_electric_gripper.urdf:89",
                 "geometry",
                 [],
                 [
                   mk_Element
                   (
+                    "rethink_electric_gripper.urdf:90",
                     "mesh",
                     [
-                      mk_Attribute("filename", "package://rethink_ee_description/meshes/electric_gripper/fingers/extended_narrow.DAE")
+                      mk_Attribute("rethink_electric_gripper.urdf:90", "filename", "package://rethink_ee_description/meshes/electric_gripper/fingers/extended_narrow.DAE")
                     ],
                     []
                   )
@@ -508,28 +569,32 @@ values
           ),
           mk_Element
           (
+            "rethink_electric_gripper.urdf:93",
             "collision",
             [],
             [
               mk_Element
               (
+                "rethink_electric_gripper.urdf:94",
                 "origin",
                 [
-                  mk_Attribute("xyz", [0, -0.01725, 0.0615]),
-                  mk_Attribute("rpy", [0, 0, -0.0])
+                  mk_Attribute("rethink_electric_gripper.urdf:94", "xyz", [0.0, -0.01725, 0.0615]),
+                  mk_Attribute("rethink_electric_gripper.urdf:94", "rpy", [0.0, 0.0, -0.0])
                 ],
                 []
               ),
               mk_Element
               (
+                "rethink_electric_gripper.urdf:95",
                 "geometry",
                 [],
                 [
                   mk_Element
                   (
+                    "rethink_electric_gripper.urdf:96",
                     "box",
                     [
-                      mk_Attribute("size", [0.01, 0.0135, 0.1127])
+                      mk_Attribute("rethink_electric_gripper.urdf:96", "size", [0.01, 0.0135, 0.1127])
                     ],
                     []
                   )
@@ -539,28 +604,32 @@ values
           ),
           mk_Element
           (
+            "rethink_electric_gripper.urdf:99",
             "collision",
             [],
             [
               mk_Element
               (
+                "rethink_electric_gripper.urdf:100",
                 "origin",
                 [
-                  mk_Attribute("xyz", [0.005, 0.003, 0.0083]),
-                  mk_Attribute("rpy", [0, 0, -0.0])
+                  mk_Attribute("rethink_electric_gripper.urdf:100", "xyz", [0.005, 0.003, 0.0083]),
+                  mk_Attribute("rethink_electric_gripper.urdf:100", "rpy", [0.0, 0.0, -0.0])
                 ],
                 []
               ),
               mk_Element
               (
+                "rethink_electric_gripper.urdf:101",
                 "geometry",
                 [],
                 [
                   mk_Element
                   (
+                    "rethink_electric_gripper.urdf:102",
                     "box",
                     [
-                      mk_Attribute("size", [0.01, 0.05, 0.017])
+                      mk_Attribute("rethink_electric_gripper.urdf:102", "size", [0.01, 0.05, 0.017])
                     ],
                     []
                   )
@@ -570,36 +639,40 @@ values
           ),
           mk_Element
           (
+            "rethink_electric_gripper.urdf:105",
             "inertial",
             [],
             [
               mk_Element
               (
+                "rethink_electric_gripper.urdf:106",
                 "origin",
                 [
-                  mk_Attribute("xyz", [0, 0, 0]),
-                  mk_Attribute("rpy", [0, 0, -0.0])
+                  mk_Attribute("rethink_electric_gripper.urdf:106", "xyz", [0.0, 0.0, 0.0]),
+                  mk_Attribute("rethink_electric_gripper.urdf:106", "rpy", [0.0, 0.0, -0.0])
                 ],
                 []
               ),
               mk_Element
               (
+                "rethink_electric_gripper.urdf:107",
                 "mass",
                 [
-                  mk_Attribute("value", 0.02)
+                  mk_Attribute("rethink_electric_gripper.urdf:107", "value", 0.02)
                 ],
                 []
               ),
               mk_Element
               (
+                "rethink_electric_gripper.urdf:108",
                 "inertia",
                 [
-                  mk_Attribute("ixx", 0.01),
-                  mk_Attribute("iyy", 0.01),
-                  mk_Attribute("izz", 0.01),
-                  mk_Attribute("ixz", 0),
-                  mk_Attribute("ixy", 0),
-                  mk_Attribute("iyz", 0)
+                  mk_Attribute("rethink_electric_gripper.urdf:108", "ixx", 0.01),
+                  mk_Attribute("rethink_electric_gripper.urdf:108", "iyy", 0.01),
+                  mk_Attribute("rethink_electric_gripper.urdf:108", "izz", 0.01),
+                  mk_Attribute("rethink_electric_gripper.urdf:108", "ixz", 0.0),
+                  mk_Attribute("rethink_electric_gripper.urdf:108", "ixy", 0.0),
+                  mk_Attribute("rethink_electric_gripper.urdf:108", "iyz", 0.0)
                 ],
                 []
               )
@@ -609,84 +682,95 @@ values
       ),
       mk_Element
       (
+        "rethink_electric_gripper.urdf:111",
         "gazebo",
         [
-          mk_Attribute("reference", "l_gripper_r_finger")
+          mk_Attribute("rethink_electric_gripper.urdf:111", "reference", "l_gripper_r_finger")
         ],
         [
           mk_Element
           (
+            "rethink_electric_gripper.urdf:112",
             "mu1",
             [],
             [
-              "1000"
+              1000.0
             ]
           ),
           mk_Element
           (
+            "rethink_electric_gripper.urdf:113",
             "mu2",
             [],
             [
-              "1000"
+              1000.0
             ]
           ),
           mk_Element
           (
+            "rethink_electric_gripper.urdf:114",
             "fdir1",
             [],
             [
-              "0.0 0.0 1.0"
+              [0.0, 0.0, 1.0]
             ]
           ),
           mk_Element
           (
+            "rethink_electric_gripper.urdf:115",
             "kp",
             [],
             [
-              "1e5"
+              100000.0
             ]
           ),
           mk_Element
           (
+            "rethink_electric_gripper.urdf:116",
             "kd",
             [],
             [
-              "1.0"
+              1.0
             ]
           )
         ]
       ),
       mk_Element
       (
+        "rethink_electric_gripper.urdf:118",
         "link",
         [
-          mk_Attribute("name", "l_gripper_r_finger_tip")
+          mk_Attribute("rethink_electric_gripper.urdf:118", "name", "l_gripper_r_finger_tip")
         ],
         [
           mk_Element
           (
+            "rethink_electric_gripper.urdf:119",
             "visual",
             [],
             [
               mk_Element
               (
+                "rethink_electric_gripper.urdf:120",
                 "origin",
                 [
-                  mk_Attribute("xyz", [0, 0, 0]),
-                  mk_Attribute("rpy", [0, 0, 0.0])
+                  mk_Attribute("rethink_electric_gripper.urdf:120", "xyz", [0.0, 0.0, 0.0]),
+                  mk_Attribute("rethink_electric_gripper.urdf:120", "rpy", [0.0, 0.0, 0.0])
                 ],
                 []
               ),
               mk_Element
               (
+                "rethink_electric_gripper.urdf:121",
                 "geometry",
                 [],
                 [
                   mk_Element
                   (
+                    "rethink_electric_gripper.urdf:122",
                     "mesh",
                     [
-                      mk_Attribute("filename", "package://rethink_ee_description/meshes/electric_gripper/fingers/basic_hard_tip.DAE")
+                      mk_Attribute("rethink_electric_gripper.urdf:122", "filename", "package://rethink_ee_description/meshes/electric_gripper/fingers/basic_hard_tip.DAE")
                     ],
                     []
                   )
@@ -696,28 +780,32 @@ values
           ),
           mk_Element
           (
+            "rethink_electric_gripper.urdf:125",
             "collision",
             [],
             [
               mk_Element
               (
+                "rethink_electric_gripper.urdf:126",
                 "origin",
                 [
-                  mk_Attribute("xyz", [0, 0.0045, -0.015]),
-                  mk_Attribute("rpy", [0, 0, 0.0])
+                  mk_Attribute("rethink_electric_gripper.urdf:126", "xyz", [0.0, 0.0045, -0.015]),
+                  mk_Attribute("rethink_electric_gripper.urdf:126", "rpy", [0.0, 0.0, 0.0])
                 ],
                 []
               ),
               mk_Element
               (
+                "rethink_electric_gripper.urdf:127",
                 "geometry",
                 [],
                 [
                   mk_Element
                   (
+                    "rethink_electric_gripper.urdf:128",
                     "box",
                     [
-                      mk_Attribute("size", [0.016, 0.0065, 0.037])
+                      mk_Attribute("rethink_electric_gripper.urdf:128", "size", [0.016, 0.0065, 0.037])
                     ],
                     []
                   )
@@ -727,36 +815,40 @@ values
           ),
           mk_Element
           (
+            "rethink_electric_gripper.urdf:131",
             "inertial",
             [],
             [
               mk_Element
               (
+                "rethink_electric_gripper.urdf:132",
                 "origin",
                 [
-                  mk_Attribute("xyz", [0, 0, 0]),
-                  mk_Attribute("rpy", [0, 0, 0.0])
+                  mk_Attribute("rethink_electric_gripper.urdf:132", "xyz", [0.0, 0.0, 0.0]),
+                  mk_Attribute("rethink_electric_gripper.urdf:132", "rpy", [0.0, 0.0, 0.0])
                 ],
                 []
               ),
               mk_Element
               (
+                "rethink_electric_gripper.urdf:133",
                 "mass",
                 [
-                  mk_Attribute("value", 0.01)
+                  mk_Attribute("rethink_electric_gripper.urdf:133", "value", 0.01)
                 ],
                 []
               ),
               mk_Element
               (
+                "rethink_electric_gripper.urdf:134",
                 "inertia",
                 [
-                  mk_Attribute("ixx", 0.01),
-                  mk_Attribute("iyy", 0.01),
-                  mk_Attribute("izz", 0.01),
-                  mk_Attribute("ixz", 0),
-                  mk_Attribute("ixy", 0),
-                  mk_Attribute("iyz", 0)
+                  mk_Attribute("rethink_electric_gripper.urdf:134", "ixx", 0.01),
+                  mk_Attribute("rethink_electric_gripper.urdf:134", "iyy", 0.01),
+                  mk_Attribute("rethink_electric_gripper.urdf:134", "izz", 0.01),
+                  mk_Attribute("rethink_electric_gripper.urdf:134", "ixz", 0.0),
+                  mk_Attribute("rethink_electric_gripper.urdf:134", "ixy", 0.0),
+                  mk_Attribute("rethink_electric_gripper.urdf:134", "iyz", 0.0)
                 ],
                 []
               )
@@ -766,34 +858,38 @@ values
       ),
       mk_Element
       (
+        "rethink_electric_gripper.urdf:137",
         "joint",
         [
-          mk_Attribute("name", "l_gripper_r_finger_tip_joint"),
-          mk_Attribute("type", "fixed")
+          mk_Attribute("rethink_electric_gripper.urdf:137", "name", "l_gripper_r_finger_tip_joint"),
+          mk_Attribute("rethink_electric_gripper.urdf:137", "type", "fixed")
         ],
         [
           mk_Element
           (
+            "rethink_electric_gripper.urdf:138",
             "origin",
             [
-              mk_Attribute("xyz", [0.0, -0.01725, 0.1127]),
-              mk_Attribute("rpy", [0, 0, 0])
+              mk_Attribute("rethink_electric_gripper.urdf:138", "xyz", [0.0, -0.01725, 0.1127]),
+              mk_Attribute("rethink_electric_gripper.urdf:138", "rpy", [0.0, 0.0, 0.0])
             ],
             []
           ),
           mk_Element
           (
+            "rethink_electric_gripper.urdf:139",
             "parent",
             [
-              mk_Attribute("link", "l_gripper_r_finger")
+              mk_Attribute("rethink_electric_gripper.urdf:139", "link", "l_gripper_r_finger")
             ],
             []
           ),
           mk_Element
           (
+            "rethink_electric_gripper.urdf:140",
             "child",
             [
-              mk_Attribute("link", "l_gripper_r_finger_tip")
+              mk_Attribute("rethink_electric_gripper.urdf:140", "link", "l_gripper_r_finger_tip")
             ],
             []
           )
@@ -801,34 +897,38 @@ values
       ),
       mk_Element
       (
+        "rethink_electric_gripper.urdf:143",
         "joint",
         [
-          mk_Attribute("name", "left_gripper_base"),
-          mk_Attribute("type", "fixed")
+          mk_Attribute("rethink_electric_gripper.urdf:143", "name", "left_gripper_base"),
+          mk_Attribute("rethink_electric_gripper.urdf:143", "type", "fixed")
         ],
         [
           mk_Element
           (
+            "rethink_electric_gripper.urdf:144",
             "origin",
             [
-              mk_Attribute("xyz", [0, 0, 0.025]),
-              mk_Attribute("rpy", [0, 0, 0])
+              mk_Attribute("rethink_electric_gripper.urdf:144", "xyz", [0.0, 0.0, 0.025]),
+              mk_Attribute("rethink_electric_gripper.urdf:144", "rpy", [0.0, 0.0, 0.0])
             ],
             []
           ),
           mk_Element
           (
+            "rethink_electric_gripper.urdf:145",
             "parent",
             [
-              mk_Attribute("link", "left_hand")
+              mk_Attribute("rethink_electric_gripper.urdf:145", "link", "left_hand")
             ],
             []
           ),
           mk_Element
           (
+            "rethink_electric_gripper.urdf:146",
             "child",
             [
-              mk_Attribute("link", "left_gripper_base")
+              mk_Attribute("rethink_electric_gripper.urdf:146", "link", "left_gripper_base")
             ],
             []
           )
@@ -836,34 +936,38 @@ values
       ),
       mk_Element
       (
+        "rethink_electric_gripper.urdf:149",
         "joint",
         [
-          mk_Attribute("name", "left_endpoint"),
-          mk_Attribute("type", "fixed")
+          mk_Attribute("rethink_electric_gripper.urdf:149", "name", "left_endpoint"),
+          mk_Attribute("rethink_electric_gripper.urdf:149", "type", "fixed")
         ],
         [
           mk_Element
           (
+            "rethink_electric_gripper.urdf:150",
             "origin",
             [
-              mk_Attribute("xyz", [0, 0, 0.13269999999999998]),
-              mk_Attribute("rpy", [0, 0, 0])
+              mk_Attribute("rethink_electric_gripper.urdf:150", "xyz", [0.0, 0.0, 0.13269999999999998]),
+              mk_Attribute("rethink_electric_gripper.urdf:150", "rpy", [0.0, 0.0, 0.0])
             ],
             []
           ),
           mk_Element
           (
+            "rethink_electric_gripper.urdf:151",
             "parent",
             [
-              mk_Attribute("link", "left_gripper_base")
+              mk_Attribute("rethink_electric_gripper.urdf:151", "link", "left_gripper_base")
             ],
             []
           ),
           mk_Element
           (
+            "rethink_electric_gripper.urdf:152",
             "child",
             [
-              mk_Attribute("link", "left_gripper")
+              mk_Attribute("rethink_electric_gripper.urdf:152", "link", "left_gripper")
             ],
             []
           )
@@ -871,43 +975,48 @@ values
       ),
       mk_Element
       (
+        "rethink_electric_gripper.urdf:155",
         "link",
         [
-          mk_Attribute("name", "left_gripper")
+          mk_Attribute("rethink_electric_gripper.urdf:155", "name", "left_gripper")
         ],
         [
           mk_Element
           (
+            "rethink_electric_gripper.urdf:156",
             "inertial",
             [],
             [
               mk_Element
               (
+                "rethink_electric_gripper.urdf:157",
                 "origin",
                 [
-                  mk_Attribute("xyz", [0, 0, 0]),
-                  mk_Attribute("rpy", [0, 0, 0])
+                  mk_Attribute("rethink_electric_gripper.urdf:157", "xyz", [0.0, 0.0, 0.0]),
+                  mk_Attribute("rethink_electric_gripper.urdf:157", "rpy", [0.0, 0.0, 0.0])
                 ],
                 []
               ),
               mk_Element
               (
+                "rethink_electric_gripper.urdf:158",
                 "mass",
                 [
-                  mk_Attribute("value", 0.0001)
+                  mk_Attribute("rethink_electric_gripper.urdf:158", "value", 1.0E-4)
                 ],
                 []
               ),
               mk_Element
               (
+                "rethink_electric_gripper.urdf:159",
                 "inertia",
                 [
-                  mk_Attribute("ixx", 0),
-                  mk_Attribute("iyy", 0),
-                  mk_Attribute("izz", 0.0),
-                  mk_Attribute("ixz", 0),
-                  mk_Attribute("ixy", 0),
-                  mk_Attribute("iyz", 0)
+                  mk_Attribute("rethink_electric_gripper.urdf:159", "ixx", 0.0),
+                  mk_Attribute("rethink_electric_gripper.urdf:159", "iyy", 0.0),
+                  mk_Attribute("rethink_electric_gripper.urdf:159", "izz", 0.0),
+                  mk_Attribute("rethink_electric_gripper.urdf:159", "ixz", 0.0),
+                  mk_Attribute("rethink_electric_gripper.urdf:159", "ixy", 0.0),
+                  mk_Attribute("rethink_electric_gripper.urdf:159", "iyz", 0.0)
                 ],
                 []
               )
@@ -917,62 +1026,69 @@ values
       ),
       mk_Element
       (
+        "rethink_electric_gripper.urdf:162",
         "joint",
         [
-          mk_Attribute("name", "l_gripper_l_finger_joint"),
-          mk_Attribute("type", "prismatic")
+          mk_Attribute("rethink_electric_gripper.urdf:162", "name", "l_gripper_l_finger_joint"),
+          mk_Attribute("rethink_electric_gripper.urdf:162", "type", "prismatic")
         ],
         [
           mk_Element
           (
+            "rethink_electric_gripper.urdf:163",
             "origin",
             [
-              mk_Attribute("xyz", [0.0, -0.0014999999999999996, 0.02]),
-              mk_Attribute("rpy", [0, 0, 0])
+              mk_Attribute("rethink_electric_gripper.urdf:163", "xyz", [0.0, -0.0014999999999999996, 0.02]),
+              mk_Attribute("rethink_electric_gripper.urdf:163", "rpy", [0.0, 0.0, 0.0])
             ],
             []
           ),
           mk_Element
           (
+            "rethink_electric_gripper.urdf:164",
             "axis",
             [
-              mk_Attribute("xyz", [0, 1, 0])
+              mk_Attribute("rethink_electric_gripper.urdf:164", "xyz", [0.0, 1.0, 0.0])
             ],
             []
           ),
           mk_Element
           (
+            "rethink_electric_gripper.urdf:165",
             "parent",
             [
-              mk_Attribute("link", "left_gripper_base")
+              mk_Attribute("rethink_electric_gripper.urdf:165", "link", "left_gripper_base")
             ],
             []
           ),
           mk_Element
           (
+            "rethink_electric_gripper.urdf:166",
             "child",
             [
-              mk_Attribute("link", "l_gripper_l_finger")
+              mk_Attribute("rethink_electric_gripper.urdf:166", "link", "l_gripper_l_finger")
             ],
             []
           ),
           mk_Element
           (
+            "rethink_electric_gripper.urdf:167",
             "limit",
             [
-              mk_Attribute("lower", 0.0),
-              mk_Attribute("upper", 0.020833),
-              mk_Attribute("effort", 20.0),
-              mk_Attribute("velocity", 5.0)
+              mk_Attribute("rethink_electric_gripper.urdf:167", "lower", 0.0),
+              mk_Attribute("rethink_electric_gripper.urdf:167", "upper", 0.020833),
+              mk_Attribute("rethink_electric_gripper.urdf:167", "effort", 20.0),
+              mk_Attribute("rethink_electric_gripper.urdf:167", "velocity", 5.0)
             ],
             []
           ),
           mk_Element
           (
+            "rethink_electric_gripper.urdf:168",
             "dynamics",
             [
-              mk_Attribute("damping", 0.7),
-              mk_Attribute("friction", 0.0)
+              mk_Attribute("rethink_electric_gripper.urdf:168", "damping", 0.7),
+              mk_Attribute("rethink_electric_gripper.urdf:168", "friction", 0.0)
             ],
             []
           )
@@ -980,71 +1096,79 @@ values
       ),
       mk_Element
       (
+        "rethink_electric_gripper.urdf:170",
         "joint",
         [
-          mk_Attribute("name", "l_gripper_r_finger_joint"),
-          mk_Attribute("type", "prismatic")
+          mk_Attribute("rethink_electric_gripper.urdf:170", "name", "l_gripper_r_finger_joint"),
+          mk_Attribute("rethink_electric_gripper.urdf:170", "type", "prismatic")
         ],
         [
           mk_Element
           (
+            "rethink_electric_gripper.urdf:171",
             "origin",
             [
-              mk_Attribute("xyz", [0.0, 0.0014999999999999996, 0.02]),
-              mk_Attribute("rpy", [0, 0, 0])
+              mk_Attribute("rethink_electric_gripper.urdf:171", "xyz", [0.0, 0.0014999999999999996, 0.02]),
+              mk_Attribute("rethink_electric_gripper.urdf:171", "rpy", [0.0, 0.0, 0.0])
             ],
             []
           ),
           mk_Element
           (
+            "rethink_electric_gripper.urdf:172",
             "axis",
             [
-              mk_Attribute("xyz", [0, 1, 0])
+              mk_Attribute("rethink_electric_gripper.urdf:172", "xyz", [0.0, 1.0, 0.0])
             ],
             []
           ),
           mk_Element
           (
+            "rethink_electric_gripper.urdf:173",
             "parent",
             [
-              mk_Attribute("link", "left_gripper_base")
+              mk_Attribute("rethink_electric_gripper.urdf:173", "link", "left_gripper_base")
             ],
             []
           ),
           mk_Element
           (
+            "rethink_electric_gripper.urdf:174",
             "child",
             [
-              mk_Attribute("link", "l_gripper_r_finger")
+              mk_Attribute("rethink_electric_gripper.urdf:174", "link", "l_gripper_r_finger")
             ],
             []
           ),
           mk_Element
           (
+            "rethink_electric_gripper.urdf:175",
             "limit",
             [
-              mk_Attribute("lower", -0.020833),
-              mk_Attribute("upper", 0.0),
-              mk_Attribute("effort", 20.0),
-              mk_Attribute("velocity", 5.0)
+              mk_Attribute("rethink_electric_gripper.urdf:175", "lower", -0.020833),
+              mk_Attribute("rethink_electric_gripper.urdf:175", "upper", 0.0),
+              mk_Attribute("rethink_electric_gripper.urdf:175", "effort", 20.0),
+              mk_Attribute("rethink_electric_gripper.urdf:175", "velocity", 5.0)
             ],
             []
           ),
           mk_Element
           (
+            "rethink_electric_gripper.urdf:176",
             "mimic",
             [
-              mk_Attribute("joint", "l_gripper_l_finger_joint"),
-              mk_Attribute("multiplier", -1.0)
+              mk_Attribute("rethink_electric_gripper.urdf:176", "joint", "l_gripper_l_finger_joint"),
+              mk_Attribute("rethink_electric_gripper.urdf:176", "multiplier", -1.0)
             ],
             []
           ),
           mk_Element
           (
+            "rethink_electric_gripper.urdf:177",
             "dynamics",
             [
-              mk_Attribute("damping", 0.7),
-              mk_Attribute("friction", 0.0)
+              mk_Attribute("rethink_electric_gripper.urdf:177", "damping", 0.7),
+              mk_Attribute("rethink_electric_gripper.urdf:177", "friction", 0.0)
             ],
             []
           )

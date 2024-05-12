@@ -1,3 +1,32 @@
+/*********************************************************************************
+ *
+ *	Copyright (c) 2017-2024, INTO-CPS Association,
+ *	c/o Professor Peter Gorm Larsen, Department of Engineering
+ *	Finlandsgade 22, 8200 Aarhus N.
+ *
+ *	MIT Licence:
+ *
+ *	Permission is hereby granted, free of charge, to any person obtaining a copy of
+ *	this software and associated documentation files (the "Software"), to deal in
+ *	the Software without restriction, including without limitation the rights to use,
+ *	copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the
+ *	Software, and to permit persons to whom the Software is furnished to do so,
+ *	subject to the following conditions:
+ *
+ *	The above copyright notice and this permission notice shall be included in all
+ *	copies or substantial portions of the Software.
+ *
+ *	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+ *	INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+ *	PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+ *	HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+ *	OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+ *	SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ *
+ *	SPDX-License-Identifier: MIT
+ *
+ *********************************************************************************/
+
 /**
  * A simple model of XML document elements.
  */
@@ -7,12 +36,45 @@ types
 	AValue	= real | seq1 of real | seq1 of char;
 
 	Element ::
+		$loc		: seq1 of char
 		type		: QName
 		attrs		: seq of Attribute
 		children	: seq of (Element | Content);
 
 	Attribute ::
+		$loc		: seq1 of char
 		name		: AName
 		value		: AValue;
 
 	Content = real | seq1 of real | seq1 of char;
+
+functions
+	/**
+	 * XML access functions.
+	 */
+	getChildren: Element * QName +> seq of Element
+	getChildren(xml, qname) ==
+		[ child | child in seq xml.children & is_(child, Element) and child.type = qname ];
+
+	getChild: Element * QName +> [Element]
+	getChild(xml, qname) ==
+		let s = [ child | child in seq xml.children & is_(child, Element) and child.type = qname ] in
+			if s = []
+			then nil
+			else hd s;
+
+	getAttr: [Element] * AName * [AValue] +> [AValue]
+	getAttr(xml, name, default) ==
+		if xml = nil
+		then nil
+		else let s = [ a.value | a in seq xml.attrs & a.name = name ] in
+			if s = []
+			then default
+			else hd s;
+
+	getContent: Element +> [real]
+	getContent(xml) ==
+		let s = [ child | child in seq xml.children & is_(child, Content) ] in
+			if s = []
+			then nil
+			else hd s;

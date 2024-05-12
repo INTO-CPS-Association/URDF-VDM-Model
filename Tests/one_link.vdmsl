@@ -1,46 +1,51 @@
 /**
- * VDM created from one_link.urdf on Sun Mar 03 16:10:12 GMT 2024
+ * VDM created from one_link.urdf on Sun May 12 11:55:16 BST 2024
  * DO NOT EDIT!
  */
 values
   one_link_urdf =
   mk_Element
   (
+    "one_link.urdf:2",
     "robot",
     [
-      mk_Attribute("name", "one_link")
+      mk_Attribute("one_link.urdf:2", "name", "one_link")
     ],
     [
       mk_Element
       (
+        "one_link.urdf:3",
         "link",
         [
-          mk_Attribute("name", "link1")
+          mk_Attribute("one_link.urdf:3", "name", "link1")
         ],
         [
           mk_Element
           (
+            "one_link.urdf:4",
             "inertial",
             [],
             [
               mk_Element
               (
+                "one_link.urdf:5",
                 "mass",
                 [
-                  mk_Attribute("value", 1)
+                  mk_Attribute("one_link.urdf:5", "value", 1)
                 ],
                 []
               ),
               mk_Element
               (
+                "one_link.urdf:6",
                 "inertia",
                 [
-                  mk_Attribute("ixx", 1),
-                  mk_Attribute("iyy", 1),
-                  mk_Attribute("izz", 1),
-                  mk_Attribute("ixz", 0),
-                  mk_Attribute("ixy", 0),
-                  mk_Attribute("iyz", 0)
+                  mk_Attribute("one_link.urdf:6", "ixx", 1),
+                  mk_Attribute("one_link.urdf:6", "iyy", 1),
+                  mk_Attribute("one_link.urdf:6", "izz", 1),
+                  mk_Attribute("one_link.urdf:6", "ixz", 0),
+                  mk_Attribute("one_link.urdf:6", "ixy", 0),
+                  mk_Attribute("one_link.urdf:6", "iyz", 0)
                 ],
                 []
               )
@@ -48,19 +53,22 @@ values
           ),
           mk_Element
           (
+            "one_link.urdf:8",
             "visual",
             [],
             [
               mk_Element
               (
+                "one_link.urdf:9",
                 "geometry",
                 [],
                 [
                   mk_Element
                   (
+                    "one_link.urdf:10",
                     "box",
                     [
-                      mk_Attribute("size", [1, 1, 1])
+                      mk_Attribute("one_link.urdf:10", "size", [1, 1, 1])
                     ],
                     []
                   )
@@ -70,19 +78,22 @@ values
           ),
           mk_Element
           (
+            "one_link.urdf:13",
             "collision",
             [],
             [
               mk_Element
               (
+                "one_link.urdf:14",
                 "geometry",
                 [],
                 [
                   mk_Element
                   (
+                    "one_link.urdf:15",
                     "box",
                     [
-                      mk_Attribute("size", [1, 1, 1])
+                      mk_Attribute("one_link.urdf:15", "size", [1, 1, 1])
                     ],
                     []
                   )

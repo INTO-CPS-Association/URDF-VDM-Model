@@ -1,3 +1,32 @@
+/*********************************************************************************
+ *
+ *	Copyright (c) 2017-2024, INTO-CPS Association,
+ *	c/o Professor Peter Gorm Larsen, Department of Engineering
+ *	Finlandsgade 22, 8200 Aarhus N.
+ *
+ *	MIT Licence:
+ *
+ *	Permission is hereby granted, free of charge, to any person obtaining a copy of
+ *	this software and associated documentation files (the "Software"), to deal in
+ *	the Software without restriction, including without limitation the rights to use,
+ *	copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the
+ *	Software, and to permit persons to whom the Software is furnished to do so,
+ *	subject to the following conditions:
+ *
+ *	The above copyright notice and this permission notice shall be included in all
+ *	copies or substantial portions of the Software.
+ *
+ *	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+ *	INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+ *	PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+ *	HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+ *	OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+ *	SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ *
+ *	SPDX-License-Identifier: MIT
+ *
+ *********************************************************************************/
+
 /**
  * Convert raw XML types to URDF types.
  */
@@ -6,6 +35,7 @@ functions
 	convertRobot(xml) == if xml = nil then nil else
 		mk_robot
 		(
+			xml.$loc,
 			getAttr(xml, "name", nil),
 			getAttr(xml, "version", "1.0"),
 			[ convertJoint(j)			| j in seq getChildren(xml, "joint") ],
@@ -19,6 +49,7 @@ functions
 	convertJoint(xml) == if xml = nil then nil else
 		mk_joint
 		(
+			xml.$loc,
 			getAttr(xml, "name", nil),
 			getAttr(xml, "type", nil),
 			getAttr(getChild(xml, "parent"), "link", nil),
@@ -37,6 +68,7 @@ functions
 	convertLink(xml) == if xml = nil then nil else
 		mk_link
 		(
+			xml.$loc,
 			getAttr(xml, "name", nil),
 			getAttr(xml, "type", nil),
 			convertInertial(getChild(xml, "inertial")),
@@ -49,6 +81,7 @@ functions
 	convertOrigin(xml) == if xml = nil then nil else
 		mk_origin
 		(
+			xml.$loc,
 			getAttr(xml, "xyz", [0,0,0]),
 			getAttr(xml, "rpy", [0,0,0])
 		)
@@ -58,6 +91,7 @@ functions
 	convertAxis(xml) == if xml = nil then nil else
 		mk_axis
 		(
+			xml.$loc,
 			getAttr(xml, "xyz", [1, 0, 0])
 		)
 	pre xml = nil or xml.type = "axis";
@@ -66,6 +100,7 @@ functions
 	convertCalibration(xml) == if xml = nil then nil else
 		mk_calibration
 		(
+			xml.$loc,
 			getAttr(xml, "reference_position", 0),
 			getAttr(xml, "rising", 0),
 			getAttr(xml, "falling", 0)
@@ -76,6 +111,7 @@ functions
 	convertDynamics(xml) == if xml = nil then nil else
 		mk_dynamics
 		(
+			xml.$loc,
 			getAttr(xml, "damping", 0),
 			getAttr(xml, "friction", 0)
 		)
@@ -85,6 +121,7 @@ functions
 	convertLimit(xml) == if xml = nil then nil else
 		mk_limit
 		(
+			xml.$loc,
 			getAttr(xml, "lower", 0),
 			getAttr(xml, "upper", 0),
 			getAttr(xml, "effort", 0),
@@ -96,6 +133,7 @@ functions
 	convertSafetyController(xml) == if xml = nil then nil else
 		mk_safety_controller
 		(
+			xml.$loc,
 			getAttr(xml, "soft_lower_limit", 0),
 			getAttr(xml, "soft_upper_limit", 0),
 			getAttr(xml, "k_position", 0),
@@ -107,6 +145,7 @@ functions
 	convertMimic(xml) == if xml = nil then nil else
 		mk_mimic
 		(
+			xml.$loc,
 			getAttr(xml, "joint", nil),
 			getAttr(xml, "multiplier", 1),
 			getAttr(xml, "offset", 0)
@@ -117,6 +156,7 @@ functions
 	convertInertial(xml) == if xml = nil then nil else
 		mk_inertial
 		(
+			xml.$loc,
 			convertOrigin(getChild(xml, "origin")),
 			convertMass(getChild(xml, "mass")),
 			convertInertia(getChild(xml, "inertia"))
@@ -127,6 +167,7 @@ functions
 	convertVisual(xml) == if xml = nil then nil else
 		mk_visual
 		(
+			xml.$loc,
 			convertOrigin(getChild(xml, "origin")),
 			convertGeometry(getChild(xml, "geometry")),
 			convertMaterial(getChild(xml, "material"))
@@ -138,6 +179,7 @@ functions
 	convertCollision(xml) == if xml = nil then nil else
 		mk_collision
 		(
+			xml.$loc,
 			getAttr(xml, "name", nil),
 			convertOrigin(getChild(xml, "origin")),
 			convertGeometry(getChild(xml, "geometry")),
@@ -149,6 +191,7 @@ functions
 	convertMass(xml) == if xml = nil then nil else
 		mk_mass
 		(
+			xml.$loc,
 			getAttr(xml, "value", 0)
 		)
 	pre xml = nil or xml.type = "mass";
@@ -157,6 +200,7 @@ functions
 	convertInertia(xml) == if xml = nil then nil else
 		mk_inertia
 		(
+			xml.$loc,
 			getAttr(xml, "ixx", 0),
 			getAttr(xml, "ixy", 0),
 			getAttr(xml, "ixz", 0),
@@ -170,6 +214,7 @@ functions
 	convertGeometry(xml) == if xml = nil then nil else
 		mk_geometry
 		(
+			xml.$loc,
 			convertBox(getChild(xml, "box")),
 			convertCylinder(getChild(xml, "cylinder")),
 			convertSphere(getChild(xml, "sphere")),
@@ -182,6 +227,7 @@ functions
 	convertVerbose(xml) == if xml = nil then nil else
 		mk_verbose
 		(
+			xml.$loc,
 			getAttr(xml, "value", nil)
 		)
 	pre xml = nil or xml.type = "verbose";
@@ -190,6 +236,7 @@ functions
 	convertBox(xml) == if xml = nil then nil else
 		mk_box
 		(
+			xml.$loc,
 			getAttr(xml, "size", [0, 0, 0])
 		)
 	pre xml = nil or xml.type = "box";
@@ -198,6 +245,7 @@ functions
 	convertCylinder(xml) == if xml = nil then nil else
 		mk_cylinder
 		(
+			xml.$loc,
 			getAttr(xml, "radius", 0),
 			getAttr(xml, "length", 0)
 		)
@@ -207,6 +255,7 @@ functions
 	convertSphere(xml) == if xml = nil then nil else
 		mk_sphere
 		(
+			xml.$loc,
 			getAttr(xml, "radius", 0)
 		)
 	pre xml = nil or xml.type = "sphere";
@@ -215,6 +264,7 @@ functions
 	convertMesh(xml) == if xml = nil then nil else
 		mk_mesh
 		(
+			xml.$loc,
 			getAttr(xml, "filename", nil),
 			getAttr(xml, "scale", [1, 1, 1])
 		)
@@ -224,6 +274,7 @@ functions
 	convertColor(xml) == if xml = nil then nil else
 		mk_color
 		(
+			xml.$loc,
 			getAttr(xml, "rgba", nil)
 		)
 	pre xml = nil or xml.type = "color";
@@ -232,6 +283,7 @@ functions
 	convertTexture(xml) ==  if xml = nil then nil else
 		mk_texture
 		(
+			xml.$loc,
 			getAttr(xml, "filename", nil)
 		)
 	pre xml = nil or xml.type = "texture";
@@ -240,6 +292,7 @@ functions
 	convertMaterial(xml) == if xml = nil then nil else
 		mk_material
 		(
+			xml.$loc,
 			getAttr(xml, "name", nil),
 			convertColor(getChild(xml, "color")),
 			convertTexture(getChild(xml, "texture"))
@@ -250,6 +303,7 @@ functions
 	convertActuatorTx(xml) == if xml = nil then nil else
 		mk_actuator_transmission
 		(
+			xml.$loc,
 			getAttr(xml, "mechanicalReduction", nil),
 			getAttr(xml, "name", nil)
 		);
@@ -259,6 +313,7 @@ functions
 	convertGapJointTx(xml) == if xml = nil then nil else
 		mk_gap_joint_transmission
 		(
+			xml.$loc,
 			getAttr(xml, "name", nil),
 			getAttr(xml, "L0", nil),
 			getAttr(xml, "a", nil),
@@ -278,6 +333,7 @@ functions
 	convertPassiveJointTx(xml) ==  if xml = nil then nil else
 		mk_passive_joint_transmission
 		(
+			xml.$loc,
 			getAttr(xml, "name", nil)
 		)
 	pre xml = nil or xml.type = "passive_joint";
@@ -286,6 +342,7 @@ functions
 	convertTransmission(xml) == if xml = nil then nil else
 		mk_transmission
 		(
+			xml.$loc,
 			convertActuatorTx(getChild(xml, "leftActuator")),
 			convertActuatorTx(getChild(xml, "rghtActuator")),
 			convertActuatorTx(getChild(xml, "lexJoint")),
@@ -315,35 +372,3 @@ functions
 	convertDouble(xml) == if xml = nil then nil else
 		getContent(xml);
 	-- pre assumes any content is a real
-
-
-
-	/**
-	 * XML access functions.
-	 */
-	getChildren: Element * QName +> seq of Element
-	getChildren(xml, qname) ==
-		[ child | child in seq xml.children & is_(child, Element) and child.type = qname ];
-
-	getChild: Element * QName +> [Element]
-	getChild(xml, qname) ==
-		let s = [ child | child in seq xml.children & is_(child, Element) and child.type = qname ] in
-			if s = []
-			then nil
-			else hd s;
-
-	getAttr: [Element] * AName * [AValue] +> [AValue]
-	getAttr(xml, name, default) ==
-		if xml = nil
-		then nil
-		else let s = [ a.value | a in seq xml.attrs & a.name = name ] in
-			if s = []
-			then default
-			else hd s;
-
-	getContent: Element +> [real]
-	getContent(xml) ==
-		let s = [ child | child in seq xml.children & is_(child, Content) ] in
-			if s = []
-			then nil
-			else hd s;
