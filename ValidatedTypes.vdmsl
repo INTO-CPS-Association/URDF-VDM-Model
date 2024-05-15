@@ -92,7 +92,7 @@ types
 	Mass = [mass]
 	inv m == m <> nil => allOf
 	([
-		-- @DocLink("http://wiki.ros.org/urdf/XML")
+		-- @DocLink("http://wiki.ros.org/urdf/XML/mass")
 		-- @OnFail("Mass value %s must be positive at %#s", m.value, m.$loc)
 		( m.value >= 0 )
 	]);
@@ -121,9 +121,12 @@ types
 		inv_Box(g.box),
 		inv_Cylinder(g.cylinder),
 		inv_Sphere(g.sphere),
-		inv_Mesh(g.mesh)
+		inv_Mesh(g.mesh),
 
 		-- rules that span this element
+		-- @DocLink("http://wiki.ros.org/urdf/XML/geometry")
+		-- @OnFail("Only one of box, cylinder, sphere or mesh at %#s", g.$loc)
+		( card {g.box, g.cylinder, g.sphere, g.mesh, nil} = 2 )	-- Field and nil.
 	]);
 
 	Box = [box]
@@ -135,11 +138,11 @@ types
 	Cylinder = [cylinder]
 	inv c == c <> nil => allOf
 	([
-		-- @DocLink("http://wiki.ros.org/urdf/XML")
+		-- @DocLink("http://wiki.ros.org/urdf/XML/cylinder")
 		-- @OnFail("Radius %s must be positive at %#s", c.radius, c.$loc)
 		( c.radius > 0 ),
 
-		-- @DocLink("http://wiki.ros.org/urdf/XML")
+		-- @DocLink("http://wiki.ros.org/urdf/XML/cylinder")
 		-- @OnFail("Length %s must be positive at %#s", c.length, c.$loc)
 		( c.length > 0 )
 	]);
@@ -147,7 +150,7 @@ types
 	Sphere = [sphere]
 	inv s == s <> nil => allOf
 	([
-		-- @DocLink("http://wiki.ros.org/urdf/XML")
+		-- @DocLink("http://wiki.ros.org/urdf/XML/sphere")
 		-- @OnFail("Radius %s must be positive at %#s", s.radius, s.$loc)
 		( s.radius > 0 )
 	]);
