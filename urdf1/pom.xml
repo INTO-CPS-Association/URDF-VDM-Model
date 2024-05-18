@@ -32,7 +32,9 @@
                                     <filtering>false</filtering>
                                     <exclude>${project.build.directory}/**</exclude>
                                     <exclude>pom.xml</exclude>
-                                    <include>**.vdmsl</include>
+                                    <include>*.vdmsl</include>
+                                    <include>XML2VDM/*.vdmsl</include>
+                                    <include>Tests/*.vdmsl</include>
                                 </resource>
                             </resources>
                         </configuration>
@@ -49,7 +51,7 @@
                                 <resource>
                                     <directory>${project.basedir}/../..</directory>
                                     <filtering>false</filtering>
-                                    <include>MIT-LICENCE</include>
+                                    <include>GPL3-LICENCE</include>
                                 </resource>
                             </resources>
                         </configuration>
@@ -64,10 +66,10 @@
                         <phase>package</phase>
                         <configuration>
                             <useDefaultManifestFile>true</useDefaultManifestFile>
-                            <classesDirectory>${project.build.directory}</classesDirectory>
+                            <classesDirectory>${project.build.directory}/urdf1-rule-model</classesDirectory>
                             <includes>
-                                <include>urdf1-rule-model/**.vdmsl</include>
-                                <include>MIT-LICENCE</include>
+                                <include>**.vdmsl</include>
+                                <include>GPL3-LICENCE</include>
                             </includes>
                         </configuration>
                     </execution>
@@ -81,7 +83,7 @@
                             <classifier>javadoc</classifier>
                             <classesDirectory>${project.build.directory}</classesDirectory>
                             <includes>
-                                <include>MIT-LICENCE</include>
+                                <include>GPL3-LICENCE</include>
                             </includes>
                         </configuration>
                     </execution>
@@ -95,7 +97,7 @@
                             <classifier>sources</classifier>
                             <classesDirectory>${project.build.directory}</classesDirectory>
                             <includes>
-                                <include>MIT-LICENCE</include>
+                                <include>GPL3-LICENCE</include>
                             </includes>
                         </configuration>
                     </execution>
