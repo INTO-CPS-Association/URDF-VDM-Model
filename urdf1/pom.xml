@@ -25,7 +25,7 @@
                             <goal>copy-resources</goal>
                         </goals>
                         <configuration>
-                            <outputDirectory>${project.build.directory}/urdf1-rule-model</outputDirectory>
+                            <outputDirectory>${project.build.directory}</outputDirectory>
                             <resources>
                                 <resource>
                                     <directory>${project.basedir}</directory>
@@ -49,7 +49,7 @@
                             <outputDirectory>${project.build.directory}</outputDirectory>
                             <resources>
                                 <resource>
-                                    <directory>${project.basedir}/../..</directory>
+                                    <directory>${project.basedir}/..</directory>
                                     <filtering>false</filtering>
                                     <include>GPL3-LICENCE</include>
                                 </resource>
@@ -66,9 +66,10 @@
                         <phase>package</phase>
                         <configuration>
                             <useDefaultManifestFile>true</useDefaultManifestFile>
-                            <classesDirectory>${project.build.directory}/urdf1-rule-model</classesDirectory>
+                            <classesDirectory>${project.build.directory}</classesDirectory>
                             <includes>
-                                <include>**.vdmsl</include>
+                                <include>*.vdmsl</include>
+                                <include>XML2VDM/*.vdmsl</include>
                                 <include>GPL3-LICENCE</include>
                             </includes>
                         </configuration>
