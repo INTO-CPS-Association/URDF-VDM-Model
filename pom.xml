@@ -42,8 +42,8 @@
 
     <!-- sub modules -->
     <modules>
-        <module>urdf1</module>
-        <module>urdfReader</module>
+        <module>rule-model</module>
+        <module>xmlReader</module>
     </modules>
 
     <dependencyManagement>

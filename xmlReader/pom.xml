@@ -11,11 +11,11 @@
 	</parent>
 
 	<groupId>org.into-cps.urdfcheck</groupId>
-	<artifactId>urdfReader</artifactId>
+	<artifactId>xmlReader</artifactId>
 	<packaging>jar</packaging>
 	
-	<name>urdfReader</name>
-	<description>A VDMJ ExternalFormatReader for reading URDF files</description>
+	<name>xmlReader</name>
+	<description>A VDMJ ExternalFormatReader for reading XML files</description>
 
 	<dependencies>
 		<dependency>
@@ -38,7 +38,7 @@
 				<configuration>
 					<archive>
 						<manifestEntries>
-							<Main-Class>urdfreader.URDFReader</Main-Class>
+							<Main-Class>xmlreader.XMLReader</Main-Class>
 							<Implementation-Version>${project.version} build ${maven.build.timestamp}</Implementation-Version>
 							<Class-Path>.</Class-Path>
 						</manifestEntries>
