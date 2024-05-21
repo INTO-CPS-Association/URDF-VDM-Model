@@ -11,7 +11,7 @@
         <version>7</version>
     </parent>
 
-    <!-- parent pom -->
+    <!-- root pom -->
     <groupId>org.into-cps</groupId>
     <artifactId>urdfcheck</artifactId>
     <version>${revision}${sha1}${changelist}</version>
@@ -44,6 +44,7 @@
     <modules>
         <module>rule-model</module>
         <module>xmlReader</module>
+        <module>tool</module>
     </modules>
 
     <dependencyManagement>
@@ -62,11 +63,6 @@
                 <groupId>org.into-cps.vdmcheck</groupId>
                 <artifactId>xsd2vdm</artifactId>
                 <version>${xsd2vdm.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.into-cps.urdf</groupId>
-                <artifactId>urdfReader</artifactId>
-                <version>${project.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
