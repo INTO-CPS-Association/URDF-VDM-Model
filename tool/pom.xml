@@ -28,7 +28,7 @@
         </dependency>
         <dependency>
             <groupId>org.into-cps.urdfcheck</groupId>
-            <artifactId>urdfReader</artifactId>
+            <artifactId>xmlReader</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
