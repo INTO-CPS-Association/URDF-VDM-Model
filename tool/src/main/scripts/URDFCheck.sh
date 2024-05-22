@@ -55,7 +55,7 @@ SCRIPT=$0
 	cd "$dir"
 	
 	MODEL="rule-model rule-model/XML2VDM"
-	VARNAME=$(echo $FILE | sed -e "s/\./_/g")
+	VARNAME=$(basename "$FILE" | sed -e "s/\./_/g")
 	
 	# Fix Class Path Separator - Default to colon for Unix-like systems, semicolon for msys
 	CLASSPATH_SEPARATOR=":"
@@ -69,7 +69,7 @@ SCRIPT=$0
 		-Dvdmj.parser.merge_comments=true \
 		-Dvdmj.readers=.urdf=xmlreader.XMLReader \
 		-cp vdmj.jar${CLASSPATH_SEPARATOR}annotations.jar${CLASSPATH_SEPARATOR}xsd2vdm.jar${CLASSPATH_SEPARATOR}xmlReader.jar com.fujitsu.vdmj.VDMJ \
-		-vdmsl -q -annotations -e "validate($VARNAME)" $MODEL "$FILE" |
+		-vdmsl -q -annotations -e "validateURDF(convertRobot($VARNAME))" $MODEL "$FILE" |
 		awk '/^true$/{ print "No errors found."; exit 0 };/^false$/{ print "Errors found."; exit 1 };{ print }'
 )
 
