@@ -1,0 +1,48 @@
+<assembly xmlns="http://maven.apache.org/ASSEMBLY/2.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/ASSEMBLY/2.0.0 http://maven.apache.org/xsd/assembly-2.0.0.xsd">
+	<id>distribution-rules</id>
+
+	<formats>
+		<format>zip</format>
+	</formats>
+	
+	<baseDirectory>urdfcheck-${project.version}</baseDirectory>
+
+	<files>
+		<file>
+			<source>src/main/scripts/URDFCheck.sh</source>
+			<destName>URDFCheck.sh</destName>
+			<filtered>true</filtered>
+		</file>
+		<file>
+			<source>../GPL3-LICENCE</source>
+			<destName>GPL3-LICENCE</destName>
+		</file>
+	</files>
+
+	<dependencySets>
+		<dependencySet>
+			<includes>
+				<include>org.into-cps.urdfcheck:rule-model</include>
+			</includes>
+			<unpack>true</unpack>
+			<outputDirectory>rule-model</outputDirectory>
+			<unpackOptions>
+				<excludes>
+					<exclude>Tests/**</exclude>
+					<exclude>META-INF/**</exclude>
+				</excludes>
+			</unpackOptions>
+		</dependencySet>
+		<dependencySet>
+			<includes>
+				<include>org.into-cps.vdmcheck:xsd2vdm</include>
+				<include>org.into-cps.urdfcheck:urdfReader</include>
+				<include>dk.au.ece.vdmj:vdmj</include>
+				<include>dk.au.ece.vdmj:annotations</include>
+			</includes>
+			<outputFileNameMapping>${artifact.artifactId}.${artifact.extension}</outputFileNameMapping>
+		</dependencySet>
+	</dependencySets>
+</assembly>
