@@ -66,5 +66,6 @@ functions
 		if is_(value, @T)
 		then value
 		else
-			-- @Printf("Unexpected attribute value at %#s\n", $loc)
+			-- @Printf("Unexpected attribute value %s at %#s\n", value, $loc)
 			value;
+			
