@@ -27,7 +27,7 @@
 # Process a URDF file, and validate the XML structure using the VDM-SL model.
 #
 
-USAGE="Usage: URDFCheck.sh <file>"
+USAGE="Usage: URDFCheck.sh <file>.urdf"
 
 if [ $# = 1 ]
 then
@@ -43,6 +43,12 @@ fi
 if [ ! -e "$FILE" ]
 then
 	echo "File not found: $FILE"
+	exit 1
+fi
+
+if [[ "$FILE" != *.urdf ]]
+then
+	echo "File must be named *.urdf"
 	exit 1
 fi
 
