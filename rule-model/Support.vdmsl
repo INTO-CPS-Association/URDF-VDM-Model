@@ -59,7 +59,7 @@ functions
 	measure is not yet specified;
 
 	/**
-	 * Check the type of the AValue passed, raising an Printf for mismatches.
+	 * Check the type of the AValue passed, raising a Printf for mismatches.
 	 */
 	isType[@T]: seq1 of char * AValue +> AValue
 	isType($loc, value) ==

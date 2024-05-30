@@ -82,8 +82,8 @@ functions
 		mk_origin
 		(
 			xml.$loc,
-			isType[seq of real](xml.$loc, getAttr(xml, "xyz", [0,0,0])),
-			isType[seq of real](xml.$loc, getAttr(xml, "rpy", [0,0,0]))
+			isType[seq1 of real](xml.$loc, getAttr(xml, "xyz", [0,0,0])),
+			isType[seq1 of real](xml.$loc, getAttr(xml, "rpy", [0,0,0]))
 		)
 	pre xml = nil or xml.type = "origin";
 
@@ -92,7 +92,7 @@ functions
 		mk_axis
 		(
 			xml.$loc,
-			getAttr(xml, "xyz", [1, 0, 0])
+			isType[seq1 of real](xml.$loc, getAttr(xml, "xyz", [1, 0, 0]))
 		)
 	pre xml = nil or xml.type = "axis";
 
@@ -237,7 +237,7 @@ functions
 		mk_box
 		(
 			xml.$loc,
-			getAttr(xml, "size", [0, 0, 0])
+			isType[seq1 of real](xml.$loc, getAttr(xml, "size", [0, 0, 0]))
 		)
 	pre xml = nil or xml.type = "box";
 
@@ -266,7 +266,7 @@ functions
 		(
 			xml.$loc,
 			getAttr(xml, "filename", nil),
-			getAttr(xml, "scale", [1, 1, 1])
+			isType[seq1 of real](xml.$loc, getAttr(xml, "scale", [1, 1, 1]))
 		)
 	pre xml = nil or xml.type = "mesh";
 
@@ -275,7 +275,7 @@ functions
 		mk_color
 		(
 			xml.$loc,
-			getAttr(xml, "rgba", nil)
+			isType[seq1 of real](xml.$loc, getAttr(xml, "rgba", nil))
 		)
 	pre xml = nil or xml.type = "color";
 
