@@ -82,8 +82,8 @@ functions
 		mk_origin
 		(
 			xml.$loc,
-			getAttr(xml, "xyz", [0,0,0]),
-			getAttr(xml, "rpy", [0,0,0])
+			isType[seq of real](xml.$loc, getAttr(xml, "xyz", [0,0,0])),
+			isType[seq of real](xml.$loc, getAttr(xml, "rpy", [0,0,0]))
 		)
 	pre xml = nil or xml.type = "origin";
 

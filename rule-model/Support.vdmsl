@@ -57,3 +57,14 @@ functions
 				then allOf(e)
 				else e
 	measure is not yet specified;
+
+	/**
+	 * Check the type of the AValue passed, raising an Printf for mismatches.
+	 */
+	isType[@T]: seq1 of char * AValue +> AValue
+	isType($loc, value) ==
+		if is_(value, @T)
+		then value
+		else
+			-- @Printf("Unexpected attribute value at %#s\n", $loc)
+			value;
