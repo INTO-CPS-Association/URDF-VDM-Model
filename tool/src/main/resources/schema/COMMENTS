@@ -3,6 +3,8 @@
 # The hope is that they can be condensed into recommendations for improvement of the schema.
 #
 
+The original URDF XSD schema itself is not valid. There is an xs:all element with entries that have "unbounded" maxOccurs. These must be "1" in an xs:all. The top level <schema> namespace settings were also causing problems, such that the validator could not find <robot> (perhaps expecting <ros:robot>).
+
 The initial translation of the URDF schema into VDM-SL types failed when using the xsd2vdm tool, which was developed for the FMI Standard model. The reason for this is that the names for many things overlap - types, elements, and attributes. By contrast, the FMI schema uses various name patterns to keep these things distinct (similar to the Java naming convention, with CamelCase for elements, fmi2SomeThing for types and lowerCaseNames for attributes).
 
 There is some weak typing in the schema. For example, several attributes have type xs:string, but in fact have structural requirements for a space-separated list of integers or reals, with a particular length. These would be better as "x", "y", "z" attributes of (say) xs:double, perhaps via a complexType.
