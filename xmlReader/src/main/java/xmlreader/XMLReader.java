@@ -40,14 +40,16 @@ import xsd2vdm.Xsd2Raw;
 public class XMLReader implements ExternalFormatReader
 {
 	@Override
-	public char[] getText(File file, Charset charset) throws IOException
+	public char[] getText(File xmlFile, Charset charset) throws IOException
 	{
 		try
 		{
 			OutputStream os = new ByteArrayOutputStream();
 			PrintStream ps = new PrintStream(os);
+			String xsd = System.getProperty("xmlreader.schema");
+			File xsdFile = xsd == null ? null : new File(xsd);
 			
-			Xsd2Raw converter = new Xsd2Raw(file, ps);
+			Xsd2Raw converter = new Xsd2Raw(xsdFile, xmlFile, ps);
 			converter.process();
 			
 			String s = os.toString();

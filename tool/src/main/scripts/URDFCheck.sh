@@ -72,6 +72,7 @@ SCRIPT=$0
 	fi
 	
 	java -Xmx1g \
+		-Dxmlreader.schema=schema/urdf.xsd \
 		-Dvdmj.parser.merge_comments=true \
 		-Dvdmj.readers=.urdf=xmlreader.XMLReader \
 		-cp vdmj.jar${CLASSPATH_SEPARATOR}annotations.jar${CLASSPATH_SEPARATOR}xsd2vdm.jar${CLASSPATH_SEPARATOR}xmlReader.jar com.fujitsu.vdmj.VDMJ \
