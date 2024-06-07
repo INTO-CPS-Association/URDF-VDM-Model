@@ -72,7 +72,7 @@ functions
 			then default
 			else hd s;
 
-	getContent: Element +> [real]
+	getContent: Element +> [AValue]
 	getContent(xml) ==
 		let s = [ child | child in seq xml.children & is_(child, Content) ] in
 			if s = []

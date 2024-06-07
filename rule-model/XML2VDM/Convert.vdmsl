@@ -370,5 +370,8 @@ functions
 
 	convertDouble: [Element] +> [real]
 	convertDouble(xml) == if xml = nil then nil else
-		getContent(xml);
+		let c = getContent(xml) in
+			if is_real(c)
+			then c
+			else nil;
 	-- pre assumes any content is a real
