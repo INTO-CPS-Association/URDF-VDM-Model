@@ -1,0 +1,3 @@
+- each element must have a non-empty name (robot, link, joint)
+- does the xml parser check that the robot is the root element?
+- the xsd doesn't define the joint types (revolute, continuous, prismatic, fixed, floating, and planar), so these can be added in the rules
