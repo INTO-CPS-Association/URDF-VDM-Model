@@ -12,3 +12,8 @@ There is some weak typing in the schema. For example, several attributes have ty
 There is a "mechanicalReduction" sub-element of "transmission" which has xs:double CDATA content. Other single values, including mechanicalReducation attributes elsewhere, are just xs:double attributes.
 
 There is one instance where the existence of an (empty) "use_simulated_gripper_joint" element implies that the setting is "true". This is usually done with xs:boolean attributes.
+
+The ROS wiki describes that a link's collision element can optionally contain a name, origin, and geometry.
+However, the XSD defines that a link's collision can have a "verbose" element, see https://github.com/INTO-CPS-Association/URDF-VDM-Model/blob/a89a9d1451903646c4e77893094f85521064449e/tool/src/main/resources/schema/urdf.xsd#L139.
+Thus, there is a discrepancy between the ROS wiki and the XSD on which elements are allowed in the link's collision.
+Furthermore, multiple URDFs were tested (e.g. irb2400.urdf), and we found they contained "material" elements within the link's collision elements. This conflicts with the XSD upon validation, as a link's collision element is not allowed to have a "material" element within.
